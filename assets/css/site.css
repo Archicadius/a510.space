@@ -1,0 +1,113 @@
+/* ---------------------------------------------------------------------------
+   site.css — дополнительные стили поверх main.min.css
+   Содержит:
+     1) фильтр-меню на странице /projects/
+     2) хлебные крошки на страницах отдельных проектов
+   --------------------------------------------------------------------------- */
+
+
+/* ===== Filter menu (projects index page) ================================= */
+
+.filter-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.filter-menu a {
+    text-transform: lowercase;
+    margin: 0 .25em;
+    transition: background-position .3s ease-in-out, opacity .3s ease-in-out;
+    background-image: linear-gradient(var(--text-color) 0 0);
+    background-size: 200% .1em;
+    background-position: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+.filter-menu a:first-of-type {
+    margin-left: 0;
+}
+
+.filter-menu a:hover,
+.filter-menu a.is-active {
+    background-position: 100% 100%;
+}
+
+.filter-menu .sep {
+    margin: 0 .15em;
+    opacity: .5;
+    user-select: none;
+}
+
+/* Скрываем карточки, не совпадающие с выбранной категорией.
+   На main ставится data-active-cat="<slug>" из URL ?cat=<slug>. */
+main[data-active-cat="residential"]    .complex-grid > a:not([data-category="residential"]),
+main[data-active-cat="commercial"]     .complex-grid > a:not([data-category="commercial"]),
+main[data-active-cat="interior"]       .complex-grid > a:not([data-category="interior"]),
+main[data-active-cat="social"]         .complex-grid > a:not([data-category="social"]),
+main[data-active-cat="masterplanning"] .complex-grid > a:not([data-category="masterplanning"]) {
+    display: none;
+}
+
+/* В режиме фильтра JS пересчитывает размеры карточек и сам расставляет
+   .is-reversed / .is-left / .is-right на нужные элементы.
+   Исходное правило :nth-of-type(9n+...) в main.min.css считает все <a> в DOM
+   (включая скрытые), поэтому отменяем его, чтобы оно не вмешивалось. */
+@media screen and (min-width: 1400px) {
+    main[data-active-cat] .complex-grid .small:nth-of-type(9n+2),
+    main[data-active-cat] .complex-grid .small:nth-of-type(9n+3) {
+        flex-direction: row;
+    }
+
+    /* small справа от big: картинка справа, подпись слева (внутрь сетки) */
+    main[data-active-cat] .complex-grid .small.is-reversed {
+        flex-direction: row-reverse;
+    }
+
+    /* small слева от big: явно ставим в первые две колонки */
+    main[data-active-cat] .complex-grid .small.is-left {
+        grid-column: 1 / span 2;
+    }
+
+    /* big в зеркальном блоке: явно ставим в правые 4 колонки */
+    main[data-active-cat] .complex-grid .big.is-right {
+        grid-column: 3 / span 4;
+    }
+}
+
+
+/* ===== Breadcrumbs (project page) ======================================== */
+
+.breadcrumbs {
+    width: 100%;
+    font-size: .9rem;
+    text-transform: lowercase;
+    margin: 0 0 1rem 0;
+    opacity: .9;
+}
+
+.breadcrumbs a {
+    transition: background-position .3s ease-in-out, opacity .3s ease-in-out;
+    background-image: linear-gradient(var(--text-color) 0 0);
+    background-size: 200% .1em;
+    background-position: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+.breadcrumbs a:hover {
+    background-position: 100% 100%;
+}
+
+.breadcrumbs .sep {
+    margin: 0 .35em;
+    opacity: .5;
+    user-select: none;
+}
+
+.breadcrumbs [aria-current="page"] {
+    opacity: .65;
+}
