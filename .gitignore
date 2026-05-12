@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Linux FUSE / Dropbox temporary files
+.fuse_hidden*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
