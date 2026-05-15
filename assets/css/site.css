@@ -226,6 +226,122 @@ main[data-active-cat="masterplanning"] .complex-grid > a:not([data-category="mas
 }
 
 
+/* ===== Catalog editor (?edit=1 on projects/index.html) =================== */
+
+/* В режиме редактирования ужимаем сетку до узкой колонки посередине,
+   чтобы каталог поместился в экран по высоте без скролла */
+body.is-editor main {
+    max-width: 40vw;
+    margin: 0 auto;
+}
+body.is-editor .complex-grid {
+    gap: 0.4rem;
+}
+body.is-editor .complex-grid img {
+    aspect-ratio: 16 / 6;   /* сжимаем картинки по вертикали ~на 1/3 */
+}
+body.is-editor .filter-menu,
+body.is-editor #header,
+body.is-editor #footer,
+body.is-editor .complex-grid .caption {
+    display: none;
+}
+
+body.is-editor .complex-grid > a {
+    opacity: 1 !important;
+    cursor: grab;
+    position: relative;
+    outline: 1px dashed transparent;
+    outline-offset: -2px;
+    transition: outline-color .2s ease;
+}
+body.is-editor .complex-grid > a:hover {
+    outline-color: var(--text-color);
+}
+body.is-editor .complex-grid > a.dragging {
+    opacity: 0.3 !important;
+    cursor: grabbing;
+}
+body.is-editor .complex-grid > a.drag-target {
+    outline: 2px solid var(--text-color);
+    outline-offset: -2px;
+}
+
+.editor-btn {
+    position: absolute;
+    background: var(--back-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    font: inherit;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    z-index: 5;
+}
+.editor-del {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.editor-del:hover {
+    background: var(--text-color);
+    color: var(--back-color);
+}
+
+.editor-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--back-color);
+    border-top: 1px solid var(--text-color);
+    padding: 1rem var(--pad);
+    z-index: 100;
+    max-height: 45vh;
+    overflow-y: auto;
+    box-shadow: 0 -8px 16px rgba(0,0,0,.15);
+}
+.editor-panel.is-collapsed { max-height: 3rem; overflow: hidden; }
+.editor-panel.is-collapsed .editor-output,
+.editor-panel.is-collapsed .editor-copy,
+.editor-panel.is-collapsed h3,
+.editor-panel.is-collapsed p { display: none; }
+
+.editor-panel h3 { margin: 0 0 0.25rem; font-size: 1rem; }
+.editor-panel p { margin: 0 0 0.5rem; font-size: 0.8rem; opacity: 0.65; max-width: none; }
+
+.editor-output {
+    display: block;
+    width: 100%;
+    height: 8rem;
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: var(--back-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 0.5rem;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 0.5rem;
+}
+
+.editor-panel button {
+    padding: 0.4rem 0.9rem;
+    background: var(--text-color);
+    color: var(--back-color);
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.85rem;
+}
+.editor-panel button:hover { opacity: 0.85; }
+
+
 /* ===== Breadcrumbs (project page) ======================================== */
 
 .breadcrumbs {
