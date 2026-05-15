@@ -43,12 +43,26 @@
     user-select: none;
 }
 
+/* Универсальная подпись small-карточки: всегда «внутрь сетки».
+   JS на странице расставляет класс .caption-left small-карточкам,
+   стоящим в правой половине сетки. Старое :nth-of-type(9n+2/3) из
+   main.min.css отменяем, чтобы оно не мешалось. */
+@media screen and (min-width: 1400px) {
+    .complex-grid .small:nth-of-type(9n+2),
+    .complex-grid .small:nth-of-type(9n+3) {
+        flex-direction: row;
+    }
+    .complex-grid .small.caption-left {
+        flex-direction: row-reverse;
+    }
+}
+
 /* Скрываем карточки, не совпадающие с выбранной категорией.
    На main ставится data-active-cat="<slug>" из URL ?cat=<slug>. */
 main[data-active-cat="residential"]    .complex-grid > a:not([data-category="residential"]),
 main[data-active-cat="commercial"]     .complex-grid > a:not([data-category="commercial"]),
 main[data-active-cat="interior"]       .complex-grid > a:not([data-category="interior"]),
-main[data-active-cat="social"]         .complex-grid > a:not([data-category="social"]),
+main[data-active-cat="public"]         .complex-grid > a:not([data-category="public"]),
 main[data-active-cat="masterplanning"] .complex-grid > a:not([data-category="masterplanning"]) {
     display: none;
 }
