@@ -332,7 +332,12 @@ main {
 }
 
 #contacts .icons svg {
-    stroke: none
+    stroke: none;
+    fill: var(--text-color)
+}
+
+#contacts .icons svg path {
+    fill: var(--text-color)
 }
 
 .projects {
