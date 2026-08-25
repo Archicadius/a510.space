@@ -1,12 +1,1 @@
-{
- "v": 1,
- "envelopes": [
-  {
-   "id": "260825-from-test",
-   "to": "archicadius@gmail.com",
-   "subject": "APERTIS: проверка отправителя (apertis@a510.space)",
-   "from_name": "APERTIS · A510 Architects",
-   "body": "Контрольное письмо: отправитель должен быть APERTIS · A510 Architects <apertis@a510.space>, а не bureau-gmail. Если так — личность бюро в порядке."
-  }
- ]
-}
+{"v":1,"envelopes":[]}
