@@ -1,1 +1,12 @@
-{"v":1,"envelopes":[]}
+{
+ "v": 1,
+ "envelopes": [
+  {
+   "id": "260825-from-test2",
+   "to": "archicadius@gmail.com",
+   "subject": "APERTIS: проверка отправителя, дубль 2",
+   "from_name": "APERTIS · A510 Architects",
+   "body": "Теперь логин ak@a510.space, отправитель — алиас apertis@a510.space. В поле From должно быть: APERTIS · A510 Architects <apertis@a510.space>."
+  }
+ ]
+}
