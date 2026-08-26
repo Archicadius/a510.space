@@ -1,0 +1,31 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>APERTIS · ссылки</title>
+<style>
+body{background:#111;color:#eee;font:15px/1.5 -apple-system,system-ui,sans-serif;
+ max-width:640px;margin:0 auto;padding:28px 16px}
+h1{font-size:17px;letter-spacing:.14em;font-weight:600;margin:0 0 4px}
+p{color:#888;font-size:12.5px;margin:0 0 22px}
+.row{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;
+ padding:11px 0;border-bottom:1px solid #2a2a2a}
+.row b{flex:1 1 160px;font-weight:600}
+.d{color:#888;font-size:12.5px;flex:0 0 auto}
+.l{flex:0 0 auto;display:flex;gap:8px;align-items:center}
+a{color:#7ab8ff;text-decoration:none}a:hover{text-decoration:underline}
+.na{color:#555}
+button{background:#222;border:1px solid #3a3a3a;color:#aaa;border-radius:6px;
+ font-size:11.5px;padding:2px 8px;cursor:pointer}
+button:active{background:#2e4a2e;color:#cfc}
+</style></head><body>
+<h1>APERTIS · КЕЙС-ССЫЛКИ</h1>
+<p>Приватный реестр для отправки знакомым. Обновляется автоматически при каждом новом оффере.</p>
+<div class="row"><b>Grup Aura</b><span class="d">26.08.2026</span><span class="l"><a href="https://a510.space/apertis/case/grup-aura/tr/">TR</a><button data-c="https://a510.space/apertis/case/grup-aura/tr/">коп.</button> <a href="https://a510.space/apertis/case/grup-aura/">EN</a><button data-c="https://a510.space/apertis/case/grup-aura/">коп.</button></span></div>
+<div class="row"><b>Çınar Elite Yapı</b><span class="d">25.08.2026</span><span class="l"><a href="https://a510.space/apertis/case/cinar-elite/tr/">TR</a><button data-c="https://a510.space/apertis/case/cinar-elite/tr/">коп.</button> <a href="https://a510.space/apertis/case/cinar-elite/">EN</a><button data-c="https://a510.space/apertis/case/cinar-elite/">коп.</button></span></div>
+<div class="row"><b>Pardo Yapı</b><span class="d">25.08.2026 (WhatsApp)</span><span class="l"><a href="https://a510.space/apertis/case/pardo-yapi/tr/">TR</a><button data-c="https://a510.space/apertis/case/pardo-yapi/tr/">коп.</button> <a href="https://a510.space/apertis/case/pardo-yapi/">EN</a><button data-c="https://a510.space/apertis/case/pardo-yapi/">коп.</button></span></div>
+<div class="row"><b>Yeditepe Yapı</b><span class="d">25.08.2026</span><span class="l"><a href="https://a510.space/apertis/case/yeditepe-yapi/tr/">TR</a><button data-c="https://a510.space/apertis/case/yeditepe-yapi/tr/">коп.</button> <a href="https://a510.space/apertis/case/yeditepe-yapi/">EN</a><button data-c="https://a510.space/apertis/case/yeditepe-yapi/">коп.</button></span></div>
+<div class="row"><b>The Pearl Gümüşlük</b><span class="d">— в работе</span><span class="l"><span class="na">TR —</span> <span class="na">EN —</span></span></div>
+<script>
+document.querySelectorAll("button[data-c]").forEach(b=>b.onclick=async()=>{
+ try{await navigator.clipboard.writeText(b.dataset.c);b.textContent="ок ✓";
+ setTimeout(()=>b.textContent="коп.",1200)}catch(e){}});
+</script></body></html>
