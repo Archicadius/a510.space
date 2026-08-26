@@ -1,31 +1,136 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>APERTIS · ссылки</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>APERTIS · Selected Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&display=swap" rel="stylesheet" />
 <style>
-body{background:#111;color:#eee;font:15px/1.5 -apple-system,system-ui,sans-serif;
- max-width:640px;margin:0 auto;padding:28px 16px}
-h1{font-size:17px;letter-spacing:.14em;font-weight:600;margin:0 0 4px}
-p{color:#888;font-size:12.5px;margin:0 0 22px}
-.row{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;
- padding:11px 0;border-bottom:1px solid #2a2a2a}
-.row b{flex:1 1 160px;font-weight:600}
-.d{color:#888;font-size:12.5px;flex:0 0 auto}
-.l{flex:0 0 auto;display:flex;gap:8px;align-items:center}
-a{color:#7ab8ff;text-decoration:none}a:hover{text-decoration:underline}
-.na{color:#555}
-button{background:#222;border:1px solid #3a3a3a;color:#aaa;border-radius:6px;
- font-size:11.5px;padding:2px 8px;cursor:pointer}
-button:active{background:#2e4a2e;color:#cfc}
-</style></head><body>
-<h1>APERTIS · КЕЙС-ССЫЛКИ</h1>
-<p>Приватный реестр для отправки знакомым. Обновляется автоматически при каждом новом оффере.</p>
-<div class="row"><b>Grup Aura</b><span class="d">26.08.2026</span><span class="l"><a href="https://a510.space/apertis/case/grup-aura/tr/">TR</a><button data-c="https://a510.space/apertis/case/grup-aura/tr/">коп.</button> <a href="https://a510.space/apertis/case/grup-aura/">EN</a><button data-c="https://a510.space/apertis/case/grup-aura/">коп.</button></span></div>
-<div class="row"><b>Çınar Elite Yapı</b><span class="d">25.08.2026</span><span class="l"><a href="https://a510.space/apertis/case/cinar-elite/tr/">TR</a><button data-c="https://a510.space/apertis/case/cinar-elite/tr/">коп.</button> <a href="https://a510.space/apertis/case/cinar-elite/">EN</a><button data-c="https://a510.space/apertis/case/cinar-elite/">коп.</button></span></div>
-<div class="row"><b>Pardo Yapı</b><span class="d">25.08.2026 (WhatsApp)</span><span class="l"><a href="https://a510.space/apertis/case/pardo-yapi/tr/">TR</a><button data-c="https://a510.space/apertis/case/pardo-yapi/tr/">коп.</button> <a href="https://a510.space/apertis/case/pardo-yapi/">EN</a><button data-c="https://a510.space/apertis/case/pardo-yapi/">коп.</button></span></div>
-<div class="row"><b>Yeditepe Yapı</b><span class="d">25.08.2026</span><span class="l"><a href="https://a510.space/apertis/case/yeditepe-yapi/tr/">TR</a><button data-c="https://a510.space/apertis/case/yeditepe-yapi/tr/">коп.</button> <a href="https://a510.space/apertis/case/yeditepe-yapi/">EN</a><button data-c="https://a510.space/apertis/case/yeditepe-yapi/">коп.</button></span></div>
-<div class="row"><b>The Pearl Gümüşlük</b><span class="d">— в работе</span><span class="l"><span class="na">TR —</span> <span class="na">EN —</span></span></div>
+  :root {
+    --paper:#F3F1EC; --ink:#16150F; --muted:#5A574E; --line:#CFCAC0;
+    --field:#E4E1D9; --field-2:#D6D2C8;
+    --serif:"Newsreader","Iowan Old Style",Georgia,serif;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper:#100F0D; --ink:#EBE7DE; --muted:#9C978B; --line:#2E2C27;
+            --field:#1C1B18; --field-2:#262420; }
+  }
+  *{box-sizing:border-box} html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+    font-optical-sizing:auto;font-weight:300;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+  a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+  a:hover{color:var(--muted)}
+  ::selection{background:var(--field-2)}
+  .page{max-width:940px;margin:0 auto;padding:0 clamp(18px,5vw,44px)}
+  .meta{font-family:var(--sans);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .rule{display:flex;justify-content:space-between;align-items:baseline;gap:24px;
+    border-bottom:1px solid var(--line);padding-bottom:12px}
+  header{display:flex;flex-direction:column;gap:clamp(28px,7vw,48px);
+    padding:clamp(26px,8vw,64px) 0 clamp(30px,8vw,56px)}
+  h1{margin:0;font-weight:300;font-size:clamp(2.35rem,10.5vw,5.1rem);line-height:1.02;letter-spacing:-.015em}
+  .intro{margin:0;max-width:34em;font-size:clamp(1.12rem,4.4vw,1.42rem);line-height:1.55}
+  .cases{display:flex;flex-direction:column;padding-bottom:clamp(52px,12vw,96px)}
+  .case{border-top:1px solid var(--line);padding:clamp(18px,4vw,26px) 0}
+  .case-head{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
+  .name{font-size:clamp(1.35rem,5vw,1.9rem);line-height:1.15}
+  .date{font-family:var(--sans);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+  .case-links{display:flex;justify-content:space-between;align-items:baseline;gap:18px;flex-wrap:wrap;margin-top:10px}
+  .note{font-style:italic;color:var(--muted);font-size:1.02rem}
+  .links{display:flex;align-items:baseline;gap:14px;font-family:var(--sans);font-size:11.5px;
+    letter-spacing:.1em;text-transform:uppercase}
+  .links a{border-bottom:1px solid var(--ink)}
+  .links button{font-family:var(--sans);font-size:9px;letter-spacing:.16em;text-transform:uppercase;
+    background:none;border:1px solid var(--line);color:var(--muted);padding:3px 8px;cursor:pointer;margin-left:-6px}
+  .links button:hover{border-color:var(--muted);color:var(--ink)}
+  footer{border-top:1px solid var(--line);padding:16px 0 clamp(28px,7vw,48px);
+    display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="rule">
+      <span class="meta">APERTIS · A510 Architects</span>
+      <span class="meta">Selected work</span>
+    </div>
+    <div>
+      <h1>Second versions.</h1>
+    </div>
+    <p class="intro">Developers&rsquo; own marketing images, prepared anew by our studio.
+    Nothing redesigned &mdash; same building, same camera, same geometry.
+    Each case opens side by side, before and after.</p>
+  </header>
+  <div class="cases">
+    <div class="case">
+      <div class="case-head">
+        <span class="name">Grup Aura</span>
+        <span class="date">Aug 2026</span>
+      </div>
+      <div class="case-links">
+        <span class="note">Four images · four projects</span>
+        <span class="links">
+          <a href="https://a510.space/apertis/case/grup-aura/">English</a><button data-c="https://a510.space/apertis/case/grup-aura/" aria-label="Copy English link">copy</button>
+          <a href="https://a510.space/apertis/case/grup-aura/tr/">Türkçe</a><button data-c="https://a510.space/apertis/case/grup-aura/tr/" aria-label="Copy Turkish link">copy</button>
+        </span>
+      </div>
+    </div>
+    <div class="case">
+      <div class="case-head">
+        <span class="name">Çınar Elite Yapı</span>
+        <span class="date">Aug 2026</span>
+      </div>
+      <div class="case-links">
+        <span class="note">Two images · Soulmate</span>
+        <span class="links">
+          <a href="https://a510.space/apertis/case/cinar-elite/">English</a><button data-c="https://a510.space/apertis/case/cinar-elite/" aria-label="Copy English link">copy</button>
+          <a href="https://a510.space/apertis/case/cinar-elite/tr/">Türkçe</a><button data-c="https://a510.space/apertis/case/cinar-elite/tr/" aria-label="Copy Turkish link">copy</button>
+        </span>
+      </div>
+    </div>
+    <div class="case">
+      <div class="case-head">
+        <span class="name">Pardo Yapı</span>
+        <span class="date">Aug 2026</span>
+      </div>
+      <div class="case-links">
+        <span class="note">Two images</span>
+        <span class="links">
+          <a href="https://a510.space/apertis/case/pardo-yapi/">English</a><button data-c="https://a510.space/apertis/case/pardo-yapi/" aria-label="Copy English link">copy</button>
+          <a href="https://a510.space/apertis/case/pardo-yapi/tr/">Türkçe</a><button data-c="https://a510.space/apertis/case/pardo-yapi/tr/" aria-label="Copy Turkish link">copy</button>
+        </span>
+      </div>
+    </div>
+    <div class="case">
+      <div class="case-head">
+        <span class="name">Yeditepe Yapı</span>
+        <span class="date">Aug 2026</span>
+      </div>
+      <div class="case-links">
+        <span class="note">Two images · two projects</span>
+        <span class="links">
+          <a href="https://a510.space/apertis/case/yeditepe-yapi/">English</a><button data-c="https://a510.space/apertis/case/yeditepe-yapi/" aria-label="Copy English link">copy</button>
+          <a href="https://a510.space/apertis/case/yeditepe-yapi/tr/">Türkçe</a><button data-c="https://a510.space/apertis/case/yeditepe-yapi/tr/" aria-label="Copy Turkish link">copy</button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="meta">APERTIS · A510 Architects</span>
+    <span class="meta">apertis@a510.space · a510.space</span>
+  </footer>
+</div>
 <script>
-document.querySelectorAll("button[data-c]").forEach(b=>b.onclick=async()=>{
- try{await navigator.clipboard.writeText(b.dataset.c);b.textContent="ок ✓";
- setTimeout(()=>b.textContent="коп.",1200)}catch(e){}});
-</script></body></html>
+document.querySelectorAll("button[data-c]").forEach(function(b){
+  b.addEventListener("click", async function(){
+    try{ await navigator.clipboard.writeText(b.dataset.c);
+      b.textContent="copied"; setTimeout(function(){b.textContent="copy"},1200);
+    }catch(e){}
+  });
+});
+</script>
+</body>
+</html>
