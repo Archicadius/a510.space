@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Pearl Gümüşlük — 17 özel villa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0F141A; --night-2:#161D26; --paper:#F5F3EF; --stone:#9A9285;
+  --line:rgba(255,255,255,.14); --pool:#3BB0BD; --wa:#25D366;
+  --disp:"Marcellus",Georgia,serif; --sans:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--night);color:var(--paper);font-family:var(--sans);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(18px,5vw,48px)}
+.k{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--stone)}
+h2{font-family:var(--disp);font-weight:400;font-size:clamp(1.7rem,5.5vw,2.6rem);line-height:1.15;margin:14px 0 18px}
+section{padding:clamp(52px,11vw,110px) 0}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.on{opacity:1;transform:none}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end}
+.hero-bg{position:absolute;inset:0;background:url(img/hero.jpg) center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,20,26,.35) 0%,rgba(15,20,26,.05) 40%,rgba(15,20,26,.88) 100%)}
+.hero-in{position:relative;width:100%;padding-bottom:clamp(40px,9vw,84px)}
+.hero .k{color:rgba(245,243,239,.75)}
+h1{font-family:var(--disp);font-weight:400;font-size:clamp(2.6rem,11vw,5.6rem);line-height:1.02;letter-spacing:.01em;margin:12px 0 10px}
+.hero-sub{font-size:clamp(1rem,3.6vw,1.25rem);color:rgba(245,243,239,.85);max-width:32em}
+.hero-top{position:absolute;top:0;left:0;right:0;padding:20px 0}
+.hero-top .wrap{display:flex;justify-content:space-between;align-items:center}
+.brand{font-family:var(--disp);font-size:15px;letter-spacing:.12em}
+/* facts */
+.facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--night-2)}
+.facts .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:26px 18px;padding-top:clamp(30px,6vw,48px);padding-bottom:clamp(30px,6vw,48px)}
+@media(min-width:720px){.facts .wrap{grid-template-columns:repeat(4,1fr)}}
+.fact b{display:block;font-family:var(--disp);font-weight:400;font-size:clamp(1.9rem,6vw,2.7rem);line-height:1.1}
+.fact span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone)}
+/* proje */
+.split{display:grid;gap:clamp(24px,5vw,56px)}
+@media(min-width:860px){.split{grid-template-columns:1.15fr .85fr;align-items:center}}
+.split p{color:rgba(245,243,239,.82);max-width:36em;margin-top:6px}
+.frame{overflow:hidden;border-radius:2px}
+.frame img{transition:transform 1.2s ease}
+.frame:hover img{transform:scale(1.03)}
+/* gallery */
+.gal{padding-left:clamp(18px,5vw,48px)}
+.gal-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px clamp(18px,5vw,48px) 26px 0;scrollbar-width:none}
+.gal-track::-webkit-scrollbar{display:none}
+.gal-track .frame{flex:0 0 82%;max-width:560px;scroll-snap-align:start}
+@media(min-width:720px){.gal-track .frame{flex-basis:46%}}
+.gal-hint{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--stone)}
+/* interiors */
+.grid3{display:grid;gap:14px}
+@media(min-width:720px){.grid3{grid-template-columns:repeat(3,1fr)}}
+/* konum */
+.konum{position:relative}
+.konum .frame{margin-top:8px}
+.btn-line{display:inline-block;margin-top:18px;padding:12px 22px;border:1px solid var(--line);font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.btn-line:hover{border-color:var(--paper)}
+/* cta */
+.cta{background:var(--night-2);border-top:1px solid var(--line);text-align:center}
+.cta h2{margin-bottom:10px}
+.cta p{color:rgba(245,243,239,.8);max-width:34em;margin:0 auto}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:2px}
+.btn-wa{background:var(--wa);color:#08110b;font-weight:500}
+.btn-tel{border:1px solid var(--line)}
+.btn-tel:hover{border-color:var(--paper)}
+footer{padding:26px 0 110px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;font-size:12px;color:var(--stone)}
+/* sticky wa */
+.stick{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px clamp(14px,4vw,28px) calc(10px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(15,20,26,0),rgba(15,20,26,.92) 40%);display:flex;justify-content:center}
+.stick .btn{width:100%;max-width:520px;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.45)}
+@media(min-width:900px){.stick{display:none}}
+.wa-ic{width:18px;height:18px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-top"><div class="wrap"><span class="brand">ATILIM CONSTRUCTION</span><span class="k">2024 Yatırım Projeleri</span></div></div>
+  <div class="hero-in wrap">
+    <span class="k">Bodrum · Gümüşlük</span>
+    <h1>The Pearl</h1>
+    <p class="hero-sub">Gümüşlük tepelerinde, her biri 1.000 m² arsa içinde özel havuzlu 17 villa.</p>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="wrap">
+    <div class="fact reveal"><b>17</b><span>Özel villa</span></div>
+    <div class="fact reveal"><b>1.000 m²</b><span>Villa başına arsa</span></div>
+    <div class="fact reveal"><b>21.500 m²</b><span>Proje alanı</span></div>
+    <div class="fact reveal"><b>∞</b><span>Özel sonsuzluk havuzu</span></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap split">
+    <div class="frame reveal"><img src="img/proje.jpg" alt="The Pearl Gümüşlük villa" loading="lazy"></div>
+    <div class="reveal">
+      <span class="k">Proje</span>
+      <h2>Taş, ahşap ve ufuk çizgisi</h2>
+      <p>The Pearl, Gümüşlük'ün sakin tepelerinde doğal taş ve ahşabın çağdaş bir çizgiyle buluştuğu
+      bir yaşam önerisi. Her villa kendi arsasında, kendi havuzuyla ve komşusundan bağımsız
+      bir mahremiyetle konumlanır.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gal">
+  <span class="k">Villalar</span>
+  <h2>Projeden kareler</h2>
+  <div class="gal-track">
+    <div class="frame"><img src="img/villa-a.jpg" alt="" loading="lazy"></div>
+    <div class="frame"><img src="img/havuz.jpg" alt="" loading="lazy"></div>
+    <div class="frame"><img src="img/villa-b.jpg" alt="" loading="lazy"></div>
+    <div class="frame"><img src="img/villa-c.jpg" alt="" loading="lazy"></div>
+  </div>
+  <span class="gal-hint">Kaydırın →</span>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="k">İç mekân</span>
+    <h2>Körfeze açılan salonlar</h2>
+    <div class="grid3">
+      <div class="frame reveal"><img src="img/int-yasam.jpg" alt="" loading="lazy"></div>
+      <div class="frame reveal"><img src="img/int-yatak1.jpg" alt="" loading="lazy"></div>
+      <div class="frame reveal"><img src="img/int-yatak2.jpg" alt="" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="k">Vaziyet planı</span>
+      <h2>Tepeye yerleşen 17 parsel</h2>
+      <p>Villalar, manzara koridorları korunarak yamaca kademeli yerleştirildi.
+      Her parselin kendi yolu, otoparkı ve bahçesi bulunur.</p>
+    </div>
+    <div class="frame reveal"><img src="img/master.jpg" alt="Vaziyet planı" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="konum">
+  <div class="wrap">
+    <span class="k">Konum</span>
+    <h2>Gümüşlük: Bodrum'un sakin yakası</h2>
+    <div class="frame reveal"><img src="img/konum.jpg" alt="Gümüşlük koyu" loading="lazy"></div>
+    <p style="margin-top:16px;color:rgba(245,243,239,.8);max-width:38em">Balıkçı koyları, batımda Tavşan Adası
+    ve Bodrum merkeze 20 dakika. The Pearl, Gümüşlük'ün tepesinden bu manzaraya bakar.</p>
+    <a class="btn-line" href="https://maps.google.com/?q=G%C3%BCm%C3%BC%C5%9Fl%C3%BCk%2C%20Bodrum" target="_blank" rel="noopener">Haritada aç</a>
+  </div>
+</section>
+
+<section class="cta" id="iletisim">
+  <div class="wrap">
+    <span class="k">Satış ofisi</span>
+    <h2>Villanızı yerinde görün</h2>
+    <p>Satış ekibimiz proje alanında. Randevu için yazın — planlar, fiyat listesi
+    ve örnek villa gezisi için sizi bekliyoruz.</p>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/905321597051?text=Merhaba%2C%20The%20Pearl%20G%C3%BCm%C3%BC%C5%9Fl%C3%BCk%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">
+        <svg class="wa-ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4 0-.5.1-.7l.5-.6c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.2 2.1-.6 3.5a11.6 11.6 0 0 0 4.4 4.7c1.6.9 2.6 1 3.5.8.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.2-.6-.3Z"/></svg>
+        WhatsApp
+      </a>
+      <a class="btn btn-tel" href="tel:+902523585511">0 252 358 55 11</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© Atılım Construction · The Pearl Gümüşlük</span>
+    <span>Müskebi Mah. 2645 Sok. No:4/2, Bodrum</span>
+  </div>
+</footer>
+
+<div class="stick">
+  <a class="btn btn-wa" href="https://wa.me/905321597051?text=Merhaba%2C%20The%20Pearl%20G%C3%BCm%C3%BC%C5%9Fl%C3%BCk%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">
+    <svg class="wa-ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4 0-.5.1-.7l.5-.6c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.2 2.1-.6 3.5a11.6 11.6 0 0 0 4.4 4.7c1.6.9 2.6 1 3.5.8.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.2-.6-.3Z"/></svg>
+    WhatsApp ile yazın
+  </a>
+</div>
+
+<script>
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+(function(){var T='pearl-demo1';var B='https://a510-hub.vercel.app/api/apertis/visit';
+try{fetch(B+'?t='+T,{mode:'no-cors'});}catch(e){}
+var t0=Date.now();
+addEventListener('pagehide',function(){
+  try{navigator.sendBeacon(B+'?t='+T+'&d='+Math.round((Date.now()-t0)/1000));}catch(e){}
+});})();
+</script>
+</body>
+</html>
