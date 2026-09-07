@@ -1,0 +1,611 @@
+{
+ "medousa-amore": [
+  {
+   "code": "01-01",
+   "file": "img-01.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-02",
+   "file": "img-02.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-03",
+   "file": "img-03.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-04",
+   "file": "img-04.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-05",
+   "file": "img-05.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-06",
+   "file": "img-06.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-07",
+   "file": "img-07.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-08",
+   "file": "img-08.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-09",
+   "file": "img-09.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-10",
+   "file": "img-10.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-11",
+   "file": "img-11.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-12",
+   "file": "img-12.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-13",
+   "file": "img-13.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-14",
+   "file": "img-14.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-15",
+   "file": "img-15.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-16",
+   "file": "img-16.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-17",
+   "file": "img-17.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-18",
+   "file": "img-18.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-19",
+   "file": "img-19.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-20",
+   "file": "img-20.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-21",
+   "file": "img-21.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-22",
+   "file": "img-22.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-23",
+   "file": "img-23.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-24",
+   "file": "img-24.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-25",
+   "file": "img-25.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-26",
+   "file": "img-26.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-27",
+   "file": "img-27.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-28",
+   "file": "img-28.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-29",
+   "file": "img-29.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "01-30",
+   "file": "img-30.jpg",
+   "size": "1620x1080"
+  }
+ ],
+ "toumazis-orion": [
+  {
+   "code": "02-01",
+   "file": "img-01.jpg",
+   "size": "1920x960"
+  },
+  {
+   "code": "02-02",
+   "file": "img-02.jpg",
+   "size": "1024x768"
+  },
+  {
+   "code": "02-03",
+   "file": "img-03.jpg",
+   "size": "6500x4417"
+  },
+  {
+   "code": "02-04",
+   "file": "img-05.jpg",
+   "size": "6500x4029"
+  },
+  {
+   "code": "02-05",
+   "file": "img-07.jpg",
+   "size": "6000x3848"
+  },
+  {
+   "code": "02-06",
+   "file": "img-09.jpg",
+   "size": "6000x4500"
+  },
+  {
+   "code": "02-07",
+   "file": "img-11.jpg",
+   "size": "7000x5250"
+  },
+  {
+   "code": "02-08",
+   "file": "img-13.jpg",
+   "size": "2000x1500"
+  },
+  {
+   "code": "02-09",
+   "file": "img-15.jpg",
+   "size": "2000x1500"
+  },
+  {
+   "code": "02-10",
+   "file": "img-17.jpg",
+   "size": "2000x1333"
+  },
+  {
+   "code": "02-11",
+   "file": "img-19.jpg",
+   "size": "2000x1333"
+  },
+  {
+   "code": "02-12",
+   "file": "img-21.jpg",
+   "size": "2000x1333"
+  },
+  {
+   "code": "02-13",
+   "file": "img-23.jpg",
+   "size": "2000x1333"
+  },
+  {
+   "code": "02-14",
+   "file": "img-25.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "02-15",
+   "file": "img-27.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "02-16",
+   "file": "img-29.jpg",
+   "size": "2000x1500"
+  }
+ ],
+ "prospecta-breeze2": [
+  {
+   "code": "03-01",
+   "file": "src-01_typ-b-closeup-back-front-xtr-daylight-4k-14-02-2025.webp",
+   "size": "1920x1080"
+  },
+  {
+   "code": "03-02",
+   "file": "src-02_typ-a-closeup-back-xtr-4k-14-02-2025.webp",
+   "size": "1200x675"
+  },
+  {
+   "code": "03-03",
+   "file": "src-03_typ-a-closeup-front-xtr-4k-19-02-2025.webp",
+   "size": "1200x675"
+  },
+  {
+   "code": "03-04",
+   "file": "src-04_typ-b-closeup-back-front-xtr-daylight-galwebp.webp",
+   "size": "1200x675"
+  },
+  {
+   "code": "03-05",
+   "file": "src-05_typ-b-closeup-back-xtr-daylight-4k-14-02-2025.webp",
+   "size": "1200x675"
+  },
+  {
+   "code": "03-06",
+   "file": "src-06_typ-b-closeup-front-xtr-4k-19-02-2025.webp",
+   "size": "1920x960"
+  },
+  {
+   "code": "03-07",
+   "file": "src-07_breeze2-aerial-main-4k-19-02-2025.webp",
+   "size": "1920x1080"
+  },
+  {
+   "code": "03-08",
+   "file": "src-08_breeze2-aerial-main-4k-19-02-2025-1536x864.webp",
+   "size": "1536x864"
+  }
+ ],
+ "toumazis-hidden-gem": [
+  {
+   "code": "04-01",
+   "file": "img-01.jpg",
+   "size": "1570x785"
+  },
+  {
+   "code": "04-02",
+   "file": "img-02.jpg",
+   "size": "1024x576"
+  },
+  {
+   "code": "04-03",
+   "file": "img-03.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-04",
+   "file": "img-05.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-05",
+   "file": "img-07.jpg",
+   "size": "2000x2000"
+  },
+  {
+   "code": "04-06",
+   "file": "img-09.jpg",
+   "size": "2000x2000"
+  },
+  {
+   "code": "04-07",
+   "file": "img-11.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-08",
+   "file": "img-13.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-09",
+   "file": "img-15.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-10",
+   "file": "img-17.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-11",
+   "file": "img-19.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-12",
+   "file": "img-21.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-13",
+   "file": "img-23.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-14",
+   "file": "img-25.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-15",
+   "file": "img-27.jpg",
+   "size": "1920x1080"
+  },
+  {
+   "code": "04-16",
+   "file": "img-29.jpg",
+   "size": "1920x1080"
+  }
+ ],
+ "aristo-aquamarine": [
+  {
+   "code": "05-01",
+   "file": "src-01.jpg",
+   "size": "1920x720"
+  },
+  {
+   "code": "05-02",
+   "file": "src-02.jpg",
+   "size": "1920x720"
+  },
+  {
+   "code": "05-03",
+   "file": "src-03.jpg",
+   "size": "1920x720"
+  },
+  {
+   "code": "05-04",
+   "file": "src-04.jpg",
+   "size": "1920x720"
+  },
+  {
+   "code": "05-05",
+   "file": "src-05.jpg",
+   "size": "1920x720"
+  },
+  {
+   "code": "05-06",
+   "file": "src-06.jpg",
+   "size": "1920x720"
+  },
+  {
+   "code": "05-07",
+   "file": "src-07.jpg",
+   "size": "1920x720"
+  }
+ ],
+ "toumazis-panorama-c": [
+  {
+   "code": "06-01",
+   "file": "img-01.jpg",
+   "size": "1920x960"
+  },
+  {
+   "code": "06-02",
+   "file": "img-02.jpg",
+   "size": "1024x681"
+  },
+  {
+   "code": "06-03",
+   "file": "img-03.jpg",
+   "size": "2500x2000"
+  },
+  {
+   "code": "06-04",
+   "file": "img-05.jpg",
+   "size": "2500x2000"
+  },
+  {
+   "code": "06-05",
+   "file": "img-07.jpg",
+   "size": "2000x1332"
+  },
+  {
+   "code": "06-06",
+   "file": "img-09.jpg",
+   "size": "2000x1332"
+  },
+  {
+   "code": "06-07",
+   "file": "img-11.jpg",
+   "size": "2000x1332"
+  },
+  {
+   "code": "06-08",
+   "file": "img-15.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-09",
+   "file": "img-16.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-10",
+   "file": "img-17.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-11",
+   "file": "img-18.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-12",
+   "file": "img-19.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-13",
+   "file": "img-20.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-14",
+   "file": "img-21.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-15",
+   "file": "img-22.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-16",
+   "file": "img-23.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-17",
+   "file": "img-24.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-18",
+   "file": "img-25.jpg",
+   "size": "1024x723"
+  },
+  {
+   "code": "06-19",
+   "file": "img-26.jpg",
+   "size": "1024x724"
+  },
+  {
+   "code": "06-20",
+   "file": "img-27.jpg",
+   "size": "1024x724"
+  },
+  {
+   "code": "06-21",
+   "file": "img-28.jpg",
+   "size": "1024x724"
+  },
+  {
+   "code": "06-22",
+   "file": "img-29.jpg",
+   "size": "1024x724"
+  }
+ ],
+ "medousa-royal-horizon": [
+  {
+   "code": "07-01",
+   "file": "img-01.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-02",
+   "file": "img-02.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-03",
+   "file": "img-03.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-04",
+   "file": "img-04.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-05",
+   "file": "img-05.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-06",
+   "file": "img-06.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-07",
+   "file": "img-07.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-08",
+   "file": "img-08.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-09",
+   "file": "img-09.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-10",
+   "file": "img-10.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-11",
+   "file": "img-11.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-12",
+   "file": "img-12.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-13",
+   "file": "img-13.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-14",
+   "file": "img-14.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-15",
+   "file": "img-15.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-16",
+   "file": "img-16.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-17",
+   "file": "img-17.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-18",
+   "file": "img-18.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-19",
+   "file": "img-19.jpg",
+   "size": "1620x1080"
+  },
+  {
+   "code": "07-20",
+   "file": "img-20.jpg",
+   "size": "1620x1080"
+  }
+ ]
+}

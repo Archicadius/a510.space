@@ -4,149 +4,287 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>APERTIS · Кипр, виллы — подборка 07.09</title>
+<title>APERTIS · Кипр, виллы — доска для ревью</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#F3F1EC;--ink:#16150F;--muted:#5A574E;--line:#CFCAC0;
- --serif:"Newsreader",Georgia,serif;--sans:"Helvetica Neue",Arial,sans-serif}
+:root{--paper:#F3F1EC;--ink:#16150F;--muted:#5A574E;--line:#CFCAC0;--serif:"Newsreader",Georgia,serif;--sans:"Helvetica Neue",Arial,sans-serif}
 @media(prefers-color-scheme:dark){:root{--paper:#100F0D;--ink:#EBE7DE;--muted:#9C978B;--line:#2E2C27}}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);
- font-family:var(--serif);font-weight:300;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-weight:300;-webkit-font-smoothing:antialiased}
 a{color:var(--ink)}
-.page{max-width:960px;margin:0 auto;padding:0 clamp(16px,4vw,40px) 80px}
+.page{max-width:1240px;margin:0 auto;padding:0 clamp(16px,3vw,40px) 80px}
 .k{font-family:var(--sans);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-header{padding:clamp(26px,7vw,54px) 0 10px;border-bottom:1px solid var(--line);
- display:flex;justify-content:space-between;align-items:baseline;gap:16px}
-h1{font-weight:300;font-size:clamp(1.9rem,7vw,3rem);margin:18px 0 8px}
-h3{font-weight:400;font-size:1.05rem;margin:44px 0 0;letter-spacing:.02em;color:var(--muted)}
-.note{color:var(--muted);font-size:1.02rem;max-width:46em;margin:0 0 8px;line-height:1.5}
-.cand{border-bottom:1px solid var(--line);padding:clamp(22px,5vw,34px) 0}
-.cand h2{font-weight:400;font-size:clamp(1.3rem,4.5vw,1.7rem);margin:0 0 2px}
+header{padding:clamp(26px,5vw,44px) 0 10px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+h1{font-weight:300;font-size:clamp(1.9rem,5vw,2.8rem);margin:18px 0 8px}
+.note{color:var(--muted);font-size:1.02rem;max-width:60em;margin:0 0 8px;line-height:1.5}
+.cand{border-bottom:1px solid var(--line);padding:clamp(22px,4vw,34px) 0}
+.cand h2{font-weight:400;font-size:clamp(1.3rem,3.5vw,1.7rem);margin:0 0 2px}
 .cand h2 small{font-weight:300;color:var(--muted);font-size:.75em;margin-left:.5em}
-.cand .loc{font-family:var(--sans);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-.hero{width:100%;height:auto;display:block;margin:14px 0 6px;border-radius:2px}
-.row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:0 0 12px}
-.row img{width:100%;height:auto;display:block;border-radius:2px;aspect-ratio:3/2;object-fit:cover}
-.cand p{margin:6px 0;line-height:1.55;max-width:50em}
-.cand p.take{border-left:2px solid var(--line);padding-left:12px;color:var(--ink)}
-.meta{font-family:var(--sans);font-size:12px;color:var(--muted)}
-.badge{display:inline-block;font-family:var(--sans);font-size:9.5px;letter-spacing:.14em;
- text-transform:uppercase;border:1px solid var(--line);padding:3px 8px;margin:8px 8px 0 0;color:var(--muted)}
-.num{font-family:var(--sans);font-size:11px;letter-spacing:.2em;color:var(--muted);margin-right:.6em}
+.loc{font-family:var(--sans);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.num{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:var(--muted);margin-right:.6em}
+.cand p{margin:6px 0;line-height:1.55;max-width:60em}
+.cand p.take{border-left:2px solid var(--line);padding-left:12px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0 8px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}
+.grid.collapsed .t:nth-child(n+5){display:none}
+.t{margin:0;cursor:zoom-in;position:relative}
+.t img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;border-radius:2px;background:#222}
+.t figcaption{position:absolute;left:6px;top:6px;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.08em;color:#fff;background:rgba(0,0,0,.55);padding:3px 7px;border-radius:2px}
+.t figcaption span{font-weight:300;opacity:.75;margin-left:6px;font-size:10px}
+.more{font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:none;border:1px solid var(--line);color:var(--muted);padding:7px 12px;cursor:pointer;border-radius:2px}
+.more:hover{color:var(--ink);border-color:var(--ink)}
+.badges{margin-top:6px}
+.badge{display:inline-block;font-family:var(--sans);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--line);padding:3px 8px;margin:8px 8px 0 0;color:var(--muted)}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(8,8,8,.96);display:none;z-index:50;align-items:center;justify-content:center;flex-direction:column}
+.lb.on{display:flex}
+.lb img{max-width:96vw;max-height:86vh;object-fit:contain;display:block}
+.lb .cap{font-family:var(--sans);color:#ddd;font-size:14px;letter-spacing:.06em;margin-top:12px;display:flex;gap:18px;align-items:baseline}
+.lb .cap b{font-size:22px;letter-spacing:.12em;color:#fff}
+.lb .cap i{font-style:normal;color:#888;font-size:12px}
+.lb .nav{position:absolute;top:0;bottom:0;width:22vw;cursor:pointer}
+.lb .nav.l{left:0}.lb .nav.r{right:0}
+.lb .nav:after{content:"‹";position:absolute;top:50%;left:24px;transform:translateY(-50%);font-size:64px;color:#666;font-family:var(--serif)}
+.lb .nav.r:after{content:"›";left:auto;right:24px}
+.lb .nav:hover:after{color:#fff}
+.lb .x{position:absolute;top:14px;right:22px;font-size:30px;color:#888;cursor:pointer;font-family:var(--sans)}
+.lb .x:hover{color:#fff}
+.toc{font-family:var(--sans);font-size:12px;letter-spacing:.06em;color:var(--muted);margin:10px 0 0}
+.toc a{color:var(--muted);text-decoration:none;margin-right:14px}.toc a:hover{color:var(--ink)}
 </style>
 </head>
 <body>
 <div class="page">
-<header><span class="k">APERTIS · внутренняя доска</span><span class="k">07.09.2026</span></header>
-<h1>Кипр, виллы — подборка</h1>
-<p class="note">Только достоверное: каждая карточка — одна страница проекта на сайте застройщика, галереи
-скачаны 07.09 целиком и просмотрены мной; картинки ниже — из них, ничего из смешанных портфелей.
-Порядок — мой рейтинг: сколько виллы принесут рендеру и насколько сырой сейчас кадр.
-Ранжируй ответом в чате: порядок имён, или «беру 1, 2, 4». Исходники лежат в
-<span class="meta">_APERTIS/_scout/cy-villas/&lt;slug&gt;/</span> и <span class="meta">projects/260907 */source_web2/</span>.</p>
+<header><span class="k">APERTIS · внутренняя доска · v2</span><span class="k">07.09.2026</span></header>
+<h1>Кипр, виллы — доска для ревью</h1>
+<p class="note">Семь проектов, которые берём; под каждым — вся галерея с сайта застройщика (просмотрена мной, один проект на карточку).
+<b>Номер картинки = «проект-кадр»</b>, например <b>02-07</b> — седьмой кадр Orion; называй так голосом. Клик по картинке —
+во весь экран, стрелки ←/→ или клик по краям — листать в рамках проекта, Esc — закрыть. По умолчанию показаны первые
+четыре, «показать все» раскрывает полотно.</p>
+<p class="toc"><a href="#p01">01 Amore Homes</a> <a href="#p02">02 Orion Villas</a> <a href="#p03">03 Breeze Residences II</a> <a href="#p04">04 Hidden Gem Residence</a> <a href="#p05">05 Aquamarine Coastal Villas</a> <a href="#p06">06 Panorama Phase C</a> <a href="#p07">07 Royal Horizon</a></p>
 
-<h3>Виллы — основная очередь</h3>
+<section class="cand" id="p01" data-gallery='[{&quot;c&quot;: &quot;01-01&quot;, &quot;s&quot;: &quot;img2/medousa-amore-01.jpg&quot;, &quot;f&quot;: &quot;img-01.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-02&quot;, &quot;s&quot;: &quot;img2/medousa-amore-02.jpg&quot;, &quot;f&quot;: &quot;img-02.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-03&quot;, &quot;s&quot;: &quot;img2/medousa-amore-03.jpg&quot;, &quot;f&quot;: &quot;img-03.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-04&quot;, &quot;s&quot;: &quot;img2/medousa-amore-04.jpg&quot;, &quot;f&quot;: &quot;img-04.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-05&quot;, &quot;s&quot;: &quot;img2/medousa-amore-05.jpg&quot;, &quot;f&quot;: &quot;img-05.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-06&quot;, &quot;s&quot;: &quot;img2/medousa-amore-06.jpg&quot;, &quot;f&quot;: &quot;img-06.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-07&quot;, &quot;s&quot;: &quot;img2/medousa-amore-07.jpg&quot;, &quot;f&quot;: &quot;img-07.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-08&quot;, &quot;s&quot;: &quot;img2/medousa-amore-08.jpg&quot;, &quot;f&quot;: &quot;img-08.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-09&quot;, &quot;s&quot;: &quot;img2/medousa-amore-09.jpg&quot;, &quot;f&quot;: &quot;img-09.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-10&quot;, &quot;s&quot;: &quot;img2/medousa-amore-10.jpg&quot;, &quot;f&quot;: &quot;img-10.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-11&quot;, &quot;s&quot;: &quot;img2/medousa-amore-11.jpg&quot;, &quot;f&quot;: &quot;img-11.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-12&quot;, &quot;s&quot;: &quot;img2/medousa-amore-12.jpg&quot;, &quot;f&quot;: &quot;img-12.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-13&quot;, &quot;s&quot;: &quot;img2/medousa-amore-13.jpg&quot;, &quot;f&quot;: &quot;img-13.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-14&quot;, &quot;s&quot;: &quot;img2/medousa-amore-14.jpg&quot;, &quot;f&quot;: &quot;img-14.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-15&quot;, &quot;s&quot;: &quot;img2/medousa-amore-15.jpg&quot;, &quot;f&quot;: &quot;img-15.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-16&quot;, &quot;s&quot;: &quot;img2/medousa-amore-16.jpg&quot;, &quot;f&quot;: &quot;img-16.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-17&quot;, &quot;s&quot;: &quot;img2/medousa-amore-17.jpg&quot;, &quot;f&quot;: &quot;img-17.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-18&quot;, &quot;s&quot;: &quot;img2/medousa-amore-18.jpg&quot;, &quot;f&quot;: &quot;img-18.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-19&quot;, &quot;s&quot;: &quot;img2/medousa-amore-19.jpg&quot;, &quot;f&quot;: &quot;img-19.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-20&quot;, &quot;s&quot;: &quot;img2/medousa-amore-20.jpg&quot;, &quot;f&quot;: &quot;img-20.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-21&quot;, &quot;s&quot;: &quot;img2/medousa-amore-21.jpg&quot;, &quot;f&quot;: &quot;img-21.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-22&quot;, &quot;s&quot;: &quot;img2/medousa-amore-22.jpg&quot;, &quot;f&quot;: &quot;img-22.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-23&quot;, &quot;s&quot;: &quot;img2/medousa-amore-23.jpg&quot;, &quot;f&quot;: &quot;img-23.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-24&quot;, &quot;s&quot;: &quot;img2/medousa-amore-24.jpg&quot;, &quot;f&quot;: &quot;img-24.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-25&quot;, &quot;s&quot;: &quot;img2/medousa-amore-25.jpg&quot;, &quot;f&quot;: &quot;img-25.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-26&quot;, &quot;s&quot;: &quot;img2/medousa-amore-26.jpg&quot;, &quot;f&quot;: &quot;img-26.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-27&quot;, &quot;s&quot;: &quot;img2/medousa-amore-27.jpg&quot;, &quot;f&quot;: &quot;img-27.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-28&quot;, &quot;s&quot;: &quot;img2/medousa-amore-28.jpg&quot;, &quot;f&quot;: &quot;img-28.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-29&quot;, &quot;s&quot;: &quot;img2/medousa-amore-29.jpg&quot;, &quot;f&quot;: &quot;img-29.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;01-30&quot;, &quot;s&quot;: &quot;img2/medousa-amore-30.jpg&quot;, &quot;f&quot;: &quot;img-30.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}]'>
+  <span class="loc">Кипр · Пафос, Konia</span>
+  <h2><span class="num">01</span>Amore Homes <small>Medousa Developers</small></h2>
+  <p>24 виллы (23×3 сп., 1×4), 114–164 м², вид на море; 21 в продаже, 3 проданы. Off-plan, только рендеры — 30 штук, все 1620 px.</p>
+  <p class="take">Мой №1. Рендеры чистые, но «пластиковые»: плоское небо, стерильные дворы, одинаковый свет. Контакт — WhatsApp продаж.</p>
+  <div class="grid collapsed">
+      <figure class="t" data-i="0"><img src="img2/medousa-amore-01-t.jpg" loading="lazy" alt=""><figcaption>01-01<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="1"><img src="img2/medousa-amore-02-t.jpg" loading="lazy" alt=""><figcaption>01-02<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="2"><img src="img2/medousa-amore-03-t.jpg" loading="lazy" alt=""><figcaption>01-03<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="3"><img src="img2/medousa-amore-04-t.jpg" loading="lazy" alt=""><figcaption>01-04<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="4"><img src="img2/medousa-amore-05-t.jpg" loading="lazy" alt=""><figcaption>01-05<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="5"><img src="img2/medousa-amore-06-t.jpg" loading="lazy" alt=""><figcaption>01-06<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="6"><img src="img2/medousa-amore-07-t.jpg" loading="lazy" alt=""><figcaption>01-07<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="7"><img src="img2/medousa-amore-08-t.jpg" loading="lazy" alt=""><figcaption>01-08<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="8"><img src="img2/medousa-amore-09-t.jpg" loading="lazy" alt=""><figcaption>01-09<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="9"><img src="img2/medousa-amore-10-t.jpg" loading="lazy" alt=""><figcaption>01-10<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="10"><img src="img2/medousa-amore-11-t.jpg" loading="lazy" alt=""><figcaption>01-11<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="11"><img src="img2/medousa-amore-12-t.jpg" loading="lazy" alt=""><figcaption>01-12<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="12"><img src="img2/medousa-amore-13-t.jpg" loading="lazy" alt=""><figcaption>01-13<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="13"><img src="img2/medousa-amore-14-t.jpg" loading="lazy" alt=""><figcaption>01-14<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="14"><img src="img2/medousa-amore-15-t.jpg" loading="lazy" alt=""><figcaption>01-15<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="15"><img src="img2/medousa-amore-16-t.jpg" loading="lazy" alt=""><figcaption>01-16<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="16"><img src="img2/medousa-amore-17-t.jpg" loading="lazy" alt=""><figcaption>01-17<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="17"><img src="img2/medousa-amore-18-t.jpg" loading="lazy" alt=""><figcaption>01-18<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="18"><img src="img2/medousa-amore-19-t.jpg" loading="lazy" alt=""><figcaption>01-19<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="19"><img src="img2/medousa-amore-20-t.jpg" loading="lazy" alt=""><figcaption>01-20<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="20"><img src="img2/medousa-amore-21-t.jpg" loading="lazy" alt=""><figcaption>01-21<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="21"><img src="img2/medousa-amore-22-t.jpg" loading="lazy" alt=""><figcaption>01-22<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="22"><img src="img2/medousa-amore-23-t.jpg" loading="lazy" alt=""><figcaption>01-23<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="23"><img src="img2/medousa-amore-24-t.jpg" loading="lazy" alt=""><figcaption>01-24<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="24"><img src="img2/medousa-amore-25-t.jpg" loading="lazy" alt=""><figcaption>01-25<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="25"><img src="img2/medousa-amore-26-t.jpg" loading="lazy" alt=""><figcaption>01-26<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="26"><img src="img2/medousa-amore-27-t.jpg" loading="lazy" alt=""><figcaption>01-27<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="27"><img src="img2/medousa-amore-28-t.jpg" loading="lazy" alt=""><figcaption>01-28<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="28"><img src="img2/medousa-amore-29-t.jpg" loading="lazy" alt=""><figcaption>01-29<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="29"><img src="img2/medousa-amore-30-t.jpg" loading="lazy" alt=""><figcaption>01-30<span>1620×1080</span></figcaption></figure>
+  </div>
+  <button class="more" type="button" data-n="30">показать все 30</button>
+  <div class="badges"><span class="badge">24 виллы · off-plan</span><span class="badge">WhatsApp +357 97 887 070</span><span class="badge">+357 26 923 561</span><span class="badge"><a href="https://medousadevelopers.com/en/project/amore-homes/" target="_blank">страница проекта</a></span></div>
+</section>
 
-<div class="cand"><span class="loc">Кипр · Пафос, Konia</span><h2><span class="num">01</span>Amore Homes <small>Medousa Developers</small></h2>
-<img class="hero" src="img/amore-0.jpg" alt="">
-<div class="row"><img src="img/amore-1.jpg" alt=""><img src="img/amore-2.jpg" alt=""><img src="img/amore-3.jpg" alt=""></div>
-<p>24 виллы (23 × 3 спальни, 1 × 4), 114–164 м², вид на море; 21 в продаже, 3 проданы. Off-plan, продаётся
-только рендерами — 30 штук в галерее, все 1620 px, один проект, консистентно.</p>
-<p class="take">Мой №1. Рендеры чистые, но «пластиковые»: плоское полуденное небо, стерильные дворы, одинаковый
-свет на всех 30 кадрах. Ровно тот случай, где второй вариант выглядит как другой ценник. Много ракурсов —
-есть из чего выбрать 4. Живой канал: WhatsApp продаж.</p>
-<span class="badge">24 виллы · off-plan</span><span class="badge">30 рендеров · 1620 px</span>
-<span class="badge">WhatsApp +357 97 887 070</span><span class="badge">+357 26 923 561</span>
-<span class="badge"><a href="https://medousadevelopers.com/en/project/amore-homes/" target="_blank">страница проекта</a></span></div>
+<section class="cand" id="p02" data-gallery='[{&quot;c&quot;: &quot;02-01&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-01.jpg&quot;, &quot;f&quot;: &quot;img-01.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 960}, {&quot;c&quot;: &quot;02-02&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-02.jpg&quot;, &quot;f&quot;: &quot;img-02.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 768}, {&quot;c&quot;: &quot;02-03&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-03.jpg&quot;, &quot;f&quot;: &quot;img-03.jpg&quot;, &quot;w&quot;: 6500, &quot;h&quot;: 4417}, {&quot;c&quot;: &quot;02-04&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-04.jpg&quot;, &quot;f&quot;: &quot;img-05.jpg&quot;, &quot;w&quot;: 6500, &quot;h&quot;: 4029}, {&quot;c&quot;: &quot;02-05&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-05.jpg&quot;, &quot;f&quot;: &quot;img-07.jpg&quot;, &quot;w&quot;: 6000, &quot;h&quot;: 3848}, {&quot;c&quot;: &quot;02-06&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-06.jpg&quot;, &quot;f&quot;: &quot;img-09.jpg&quot;, &quot;w&quot;: 6000, &quot;h&quot;: 4500}, {&quot;c&quot;: &quot;02-07&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-07.jpg&quot;, &quot;f&quot;: &quot;img-11.jpg&quot;, &quot;w&quot;: 7000, &quot;h&quot;: 5250}, {&quot;c&quot;: &quot;02-08&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-08.jpg&quot;, &quot;f&quot;: &quot;img-13.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1500}, {&quot;c&quot;: &quot;02-09&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-09.jpg&quot;, &quot;f&quot;: &quot;img-15.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1500}, {&quot;c&quot;: &quot;02-10&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-10.jpg&quot;, &quot;f&quot;: &quot;img-17.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1333}, {&quot;c&quot;: &quot;02-11&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-11.jpg&quot;, &quot;f&quot;: &quot;img-19.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1333}, {&quot;c&quot;: &quot;02-12&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-12.jpg&quot;, &quot;f&quot;: &quot;img-21.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1333}, {&quot;c&quot;: &quot;02-13&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-13.jpg&quot;, &quot;f&quot;: &quot;img-23.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1333}, {&quot;c&quot;: &quot;02-14&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-14.jpg&quot;, &quot;f&quot;: &quot;img-25.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;02-15&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-15.jpg&quot;, &quot;f&quot;: &quot;img-27.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;02-16&quot;, &quot;s&quot;: &quot;img2/toumazis-orion-16.jpg&quot;, &quot;f&quot;: &quot;img-29.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1500}]'>
+  <span class="loc">Кипр · Айя-Напа, первая линия</span>
+  <h2><span class="num">02</span>Orion Villas <small>C&amp;A Toumazis</small></h2>
+  <p>4 виллы первой линии, 4 спальни, участки 562–1897 м², выход на пляж; продажа поштучно или целиком.</p>
+  <p class="take">Самый громкий «до/после»: старая школа CG при исходниках 6000–7000 px. Риск: проект мог зависнуть — сначала спросить «в продаже?».</p>
+  <div class="grid collapsed">
+      <figure class="t" data-i="0"><img src="img2/toumazis-orion-01-t.jpg" loading="lazy" alt=""><figcaption>02-01<span>1920×960</span></figcaption></figure>
+      <figure class="t" data-i="1"><img src="img2/toumazis-orion-02-t.jpg" loading="lazy" alt=""><figcaption>02-02<span>1024×768</span></figcaption></figure>
+      <figure class="t" data-i="2"><img src="img2/toumazis-orion-03-t.jpg" loading="lazy" alt=""><figcaption>02-03<span>6500×4417</span></figcaption></figure>
+      <figure class="t" data-i="3"><img src="img2/toumazis-orion-04-t.jpg" loading="lazy" alt=""><figcaption>02-04<span>6500×4029</span></figcaption></figure>
+      <figure class="t" data-i="4"><img src="img2/toumazis-orion-05-t.jpg" loading="lazy" alt=""><figcaption>02-05<span>6000×3848</span></figcaption></figure>
+      <figure class="t" data-i="5"><img src="img2/toumazis-orion-06-t.jpg" loading="lazy" alt=""><figcaption>02-06<span>6000×4500</span></figcaption></figure>
+      <figure class="t" data-i="6"><img src="img2/toumazis-orion-07-t.jpg" loading="lazy" alt=""><figcaption>02-07<span>7000×5250</span></figcaption></figure>
+      <figure class="t" data-i="7"><img src="img2/toumazis-orion-08-t.jpg" loading="lazy" alt=""><figcaption>02-08<span>2000×1500</span></figcaption></figure>
+      <figure class="t" data-i="8"><img src="img2/toumazis-orion-09-t.jpg" loading="lazy" alt=""><figcaption>02-09<span>2000×1500</span></figcaption></figure>
+      <figure class="t" data-i="9"><img src="img2/toumazis-orion-10-t.jpg" loading="lazy" alt=""><figcaption>02-10<span>2000×1333</span></figcaption></figure>
+      <figure class="t" data-i="10"><img src="img2/toumazis-orion-11-t.jpg" loading="lazy" alt=""><figcaption>02-11<span>2000×1333</span></figcaption></figure>
+      <figure class="t" data-i="11"><img src="img2/toumazis-orion-12-t.jpg" loading="lazy" alt=""><figcaption>02-12<span>2000×1333</span></figcaption></figure>
+      <figure class="t" data-i="12"><img src="img2/toumazis-orion-13-t.jpg" loading="lazy" alt=""><figcaption>02-13<span>2000×1333</span></figcaption></figure>
+      <figure class="t" data-i="13"><img src="img2/toumazis-orion-14-t.jpg" loading="lazy" alt=""><figcaption>02-14<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="14"><img src="img2/toumazis-orion-15-t.jpg" loading="lazy" alt=""><figcaption>02-15<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="15"><img src="img2/toumazis-orion-16-t.jpg" loading="lazy" alt=""><figcaption>02-16<span>2000×1500</span></figcaption></figure>
+  </div>
+  <button class="more" type="button" data-n="16">показать все 16</button>
+  <div class="badges"><span class="badge">4 виллы · beachfront</span><span class="badge">info@catoumazis.com</span><span class="badge">+357 25 828 210</span><span class="badge"><a href="https://www.catoumazis.com/properties-for-sale/orion/" target="_blank">страница проекта</a></span></div>
+</section>
 
-<div class="cand"><span class="loc">Кипр · Айя-Напа, у марины</span><h2><span class="num">02</span>Orion Villas <small>C&amp;A Toumazis</small></h2>
-<img class="hero" src="img/orion-0.jpg" alt="">
-<div class="row"><img src="img/orion-1.jpg" alt=""><img src="img/orion-2.jpg" alt=""><img src="img/orion-3.jpg" alt=""></div>
-<p>4 виллы первой линии, 4 спальни, участки 562–1897 м², выход на песчаный пляж, продажа поштучно или целиком.
-Застройщик крупный (35+ лет, Лимассол), но именно эта галерея — старая школа CG: неоновая вода, плоское небо,
-интерьеры 2015 года.</p>
-<p class="take">Самый громкий «до/после» из всей подборки: продукт дорогой, а подача — как у типового посёлка.
-Исходники есть в 6000–7000 px, работать удобно. Риск: проект может быть давно в продаже и подзависший —
-прежде чем делать кадры, один звонок/письмо «актуально ли».</p>
-<span class="badge">4 виллы · beachfront</span><span class="badge">рендеры до 7000 px</span>
-<span class="badge">info@catoumazis.com</span><span class="badge">+357 25 828 210</span>
-<span class="badge"><a href="https://www.catoumazis.com/properties-for-sale/orion/" target="_blank">страница проекта</a></span></div>
+<section class="cand" id="p03" data-gallery='[{&quot;c&quot;: &quot;03-01&quot;, &quot;s&quot;: &quot;img2/prospecta-breeze2-01.jpg&quot;, &quot;f&quot;: &quot;src-01_typ-b-closeup-back-front-xtr-daylight-4k-14-02-2025.webp&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;03-02&quot;, &quot;s&quot;: &quot;img2/prospecta-breeze2-02.jpg&quot;, &quot;f&quot;: &quot;src-02_typ-a-closeup-back-xtr-4k-14-02-2025.webp&quot;, &quot;w&quot;: 1200, &quot;h&quot;: 675}, {&quot;c&quot;: &quot;03-03&quot;, &quot;s&quot;: &quot;img2/prospecta-breeze2-03.jpg&quot;, &quot;f&quot;: &quot;src-03_typ-a-closeup-front-xtr-4k-19-02-2025.webp&quot;, &quot;w&quot;: 1200, &quot;h&quot;: 675}, {&quot;c&quot;: &quot;03-04&quot;, &quot;s&quot;: &quot;img2/prospecta-breeze2-04.jpg&quot;, &quot;f&quot;: &quot;src-04_typ-b-closeup-back-front-xtr-daylight-galwebp.webp&quot;, &quot;w&quot;: 1200, &quot;h&quot;: 675}, {&quot;c&quot;: &quot;03-05&quot;, &quot;s&quot;: &quot;img2/prospecta-breeze2-05.jpg&quot;, &quot;f&quot;: &quot;src-05_typ-b-closeup-back-xtr-daylight-4k-14-02-2025.webp&quot;, &quot;w&quot;: 1200, &quot;h&quot;: 675}, {&quot;c&quot;: &quot;03-06&quot;, &quot;s&quot;: &quot;img2/prospecta-breeze2-06.jpg&quot;, &quot;f&quot;: &quot;src-06_typ-b-closeup-front-xtr-4k-19-02-2025.webp&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 960}, {&quot;c&quot;: &quot;03-07&quot;, &quot;s&quot;: &quot;img2/prospecta-breeze2-07.jpg&quot;, &quot;f&quot;: &quot;src-07_breeze2-aerial-main-4k-19-02-2025.webp&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;03-08&quot;, &quot;s&quot;: &quot;img2/prospecta-breeze2-08.jpg&quot;, &quot;f&quot;: &quot;src-08_breeze2-aerial-main-4k-19-02-2025-1536x864.webp&quot;, &quot;w&quot;: 1536, &quot;h&quot;: 864}]'>
+  <span class="loc">Кипр · Пафос, Chloraka</span>
+  <h2><span class="num">03</span>Breeze Residences II <small>Prospecta Development</small></h2>
+  <p>15 вилл, 3 спальни, 133–137 м², участки 230–395 м², закрытый посёлок, off-plan; оба типа в продаже.</p>
+  <p class="take">Самые простые рендеры: белые кубы на пустом небе. Половина 1200 px, лучшие 1920. Твоё «делаем».</p>
+  <div class="grid collapsed">
+      <figure class="t" data-i="0"><img src="img2/prospecta-breeze2-01-t.jpg" loading="lazy" alt=""><figcaption>03-01<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="1"><img src="img2/prospecta-breeze2-02-t.jpg" loading="lazy" alt=""><figcaption>03-02<span>1200×675</span></figcaption></figure>
+      <figure class="t" data-i="2"><img src="img2/prospecta-breeze2-03-t.jpg" loading="lazy" alt=""><figcaption>03-03<span>1200×675</span></figcaption></figure>
+      <figure class="t" data-i="3"><img src="img2/prospecta-breeze2-04-t.jpg" loading="lazy" alt=""><figcaption>03-04<span>1200×675</span></figcaption></figure>
+      <figure class="t" data-i="4"><img src="img2/prospecta-breeze2-05-t.jpg" loading="lazy" alt=""><figcaption>03-05<span>1200×675</span></figcaption></figure>
+      <figure class="t" data-i="5"><img src="img2/prospecta-breeze2-06-t.jpg" loading="lazy" alt=""><figcaption>03-06<span>1920×960</span></figcaption></figure>
+      <figure class="t" data-i="6"><img src="img2/prospecta-breeze2-07-t.jpg" loading="lazy" alt=""><figcaption>03-07<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="7"><img src="img2/prospecta-breeze2-08-t.jpg" loading="lazy" alt=""><figcaption>03-08<span>1536×864</span></figcaption></figure>
+  </div>
+  <button class="more" type="button" data-n="8">показать все 8</button>
+  <div class="badges"><span class="badge">15 вилл · off-plan</span><span class="badge">info@prospectadevelopment.com</span><span class="badge"><a href="https://prospectadevelopment.com/development/breeze-residences-ii/" target="_blank">страница проекта</a></span></div>
+</section>
 
-<div class="cand"><span class="loc">Кипр · Пафос, Chloraka</span><h2><span class="num">03</span>Breeze Residences II <small>Prospecta Development</small></h2>
-<img class="hero" src="img/breeze-0.jpg" alt="">
-<div class="row"><img src="img/breeze-1.jpg" alt=""><img src="img/breeze-2.jpg" alt=""><img src="img/breeze-3.jpg" alt=""></div>
-<p>15 вилл, 3 спальни, 133–137 м², участки 230–395 м², закрытый посёлок, off-plan, оба типа в продаже.
-Ты уже сказал «делаем» — держу третьим только потому, что у Amore и Orion эффект будет заметнее.</p>
-<p class="take">Рендеры самые простые из всех: белые кубики на пустом небе, безлюдно. Минус — половина картинок
-1200 px, лучшие две 1920. Prospecta — один контакт на два проекта (ниже Park View), можно слать одним письмом.</p>
-<span class="badge">15 вилл · off-plan</span><span class="badge">8 рендеров · 1200–1920 px</span>
-<span class="badge">info@prospectadevelopment.com</span>
-<span class="badge"><a href="https://prospectadevelopment.com/development/breeze-residences-ii/" target="_blank">страница проекта</a></span></div>
+<section class="cand" id="p04" data-gallery='[{&quot;c&quot;: &quot;04-01&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-01.jpg&quot;, &quot;f&quot;: &quot;img-01.jpg&quot;, &quot;w&quot;: 1570, &quot;h&quot;: 785}, {&quot;c&quot;: &quot;04-02&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-02.jpg&quot;, &quot;f&quot;: &quot;img-02.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 576}, {&quot;c&quot;: &quot;04-03&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-03.jpg&quot;, &quot;f&quot;: &quot;img-03.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-04&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-04.jpg&quot;, &quot;f&quot;: &quot;img-05.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-05&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-05.jpg&quot;, &quot;f&quot;: &quot;img-07.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 2000}, {&quot;c&quot;: &quot;04-06&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-06.jpg&quot;, &quot;f&quot;: &quot;img-09.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 2000}, {&quot;c&quot;: &quot;04-07&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-07.jpg&quot;, &quot;f&quot;: &quot;img-11.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-08&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-08.jpg&quot;, &quot;f&quot;: &quot;img-13.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-09&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-09.jpg&quot;, &quot;f&quot;: &quot;img-15.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-10&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-10.jpg&quot;, &quot;f&quot;: &quot;img-17.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-11&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-11.jpg&quot;, &quot;f&quot;: &quot;img-19.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-12&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-12.jpg&quot;, &quot;f&quot;: &quot;img-21.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-13&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-13.jpg&quot;, &quot;f&quot;: &quot;img-23.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-14&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-14.jpg&quot;, &quot;f&quot;: &quot;img-25.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-15&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-15.jpg&quot;, &quot;f&quot;: &quot;img-27.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;04-16&quot;, &quot;s&quot;: &quot;img2/toumazis-hidden-gem-16.jpg&quot;, &quot;f&quot;: &quot;img-29.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 1080}]'>
+  <span class="loc">Кипр · Лимассол, Yermasoyia</span>
+  <h2><span class="num">04</span>Hidden Gem Residence <small>C&amp;A Toumazis</small></h2>
+  <p>Одна вилла премиум-класса с видом на залив Лимассола, off-plan. 16 ракурсов день/вечер, 1920 px.</p>
+  <p class="take">Рендеры уже приличные — выигрыш меньше. Второй проект в письме Toumazis вместе с Orion.</p>
+  <div class="grid collapsed">
+      <figure class="t" data-i="0"><img src="img2/toumazis-hidden-gem-01-t.jpg" loading="lazy" alt=""><figcaption>04-01<span>1570×785</span></figcaption></figure>
+      <figure class="t" data-i="1"><img src="img2/toumazis-hidden-gem-02-t.jpg" loading="lazy" alt=""><figcaption>04-02<span>1024×576</span></figcaption></figure>
+      <figure class="t" data-i="2"><img src="img2/toumazis-hidden-gem-03-t.jpg" loading="lazy" alt=""><figcaption>04-03<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="3"><img src="img2/toumazis-hidden-gem-04-t.jpg" loading="lazy" alt=""><figcaption>04-04<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="4"><img src="img2/toumazis-hidden-gem-05-t.jpg" loading="lazy" alt=""><figcaption>04-05<span>2000×2000</span></figcaption></figure>
+      <figure class="t" data-i="5"><img src="img2/toumazis-hidden-gem-06-t.jpg" loading="lazy" alt=""><figcaption>04-06<span>2000×2000</span></figcaption></figure>
+      <figure class="t" data-i="6"><img src="img2/toumazis-hidden-gem-07-t.jpg" loading="lazy" alt=""><figcaption>04-07<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="7"><img src="img2/toumazis-hidden-gem-08-t.jpg" loading="lazy" alt=""><figcaption>04-08<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="8"><img src="img2/toumazis-hidden-gem-09-t.jpg" loading="lazy" alt=""><figcaption>04-09<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="9"><img src="img2/toumazis-hidden-gem-10-t.jpg" loading="lazy" alt=""><figcaption>04-10<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="10"><img src="img2/toumazis-hidden-gem-11-t.jpg" loading="lazy" alt=""><figcaption>04-11<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="11"><img src="img2/toumazis-hidden-gem-12-t.jpg" loading="lazy" alt=""><figcaption>04-12<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="12"><img src="img2/toumazis-hidden-gem-13-t.jpg" loading="lazy" alt=""><figcaption>04-13<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="13"><img src="img2/toumazis-hidden-gem-14-t.jpg" loading="lazy" alt=""><figcaption>04-14<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="14"><img src="img2/toumazis-hidden-gem-15-t.jpg" loading="lazy" alt=""><figcaption>04-15<span>1920×1080</span></figcaption></figure>
+      <figure class="t" data-i="15"><img src="img2/toumazis-hidden-gem-16-t.jpg" loading="lazy" alt=""><figcaption>04-16<span>1920×1080</span></figcaption></figure>
+  </div>
+  <button class="more" type="button" data-n="16">показать все 16</button>
+  <div class="badges"><span class="badge">1 вилла · люкс</span><span class="badge">info@catoumazis.com</span><span class="badge"><a href="https://www.catoumazis.com/properties-for-sale/hidden-gem/" target="_blank">страница проекта</a></span></div>
+</section>
 
-<div class="cand"><span class="loc">Кипр · Лимассол, Yermasoyia</span><h2><span class="num">04</span>Hidden Gem Residence <small>C&amp;A Toumazis</small></h2>
-<img class="hero" src="img/hidden-0.jpg" alt="">
-<div class="row"><img src="img/hidden-1.jpg" alt=""><img src="img/hidden-2.jpg" alt=""><img src="img/hidden-3.jpg" alt=""></div>
-<p>Одна вилла премиум-класса с видом на залив Лимассола, off-plan. Галерея — 15 ракурсов день/вечер, 1920 px.</p>
-<p class="take">Рендеры здесь уже приличные (вечерние — почти хорошие), выигрыш меньше, чем у первых трёх.
-Держу в запасе: если Toumazis откликнется на Orion, Hidden Gem — второй проект тем же контактом.</p>
-<span class="badge">1 вилла · люкс</span><span class="badge">15 рендеров · 1920 px</span>
-<span class="badge">info@catoumazis.com</span>
-<span class="badge"><a href="https://www.catoumazis.com/properties-for-sale/hidden-gem/" target="_blank">страница проекта</a></span></div>
+<section class="cand" id="p05" data-gallery='[{&quot;c&quot;: &quot;05-01&quot;, &quot;s&quot;: &quot;img2/aristo-aquamarine-01.jpg&quot;, &quot;f&quot;: &quot;src-01.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 720}, {&quot;c&quot;: &quot;05-02&quot;, &quot;s&quot;: &quot;img2/aristo-aquamarine-02.jpg&quot;, &quot;f&quot;: &quot;src-02.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 720}, {&quot;c&quot;: &quot;05-03&quot;, &quot;s&quot;: &quot;img2/aristo-aquamarine-03.jpg&quot;, &quot;f&quot;: &quot;src-03.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 720}, {&quot;c&quot;: &quot;05-04&quot;, &quot;s&quot;: &quot;img2/aristo-aquamarine-04.jpg&quot;, &quot;f&quot;: &quot;src-04.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 720}, {&quot;c&quot;: &quot;05-05&quot;, &quot;s&quot;: &quot;img2/aristo-aquamarine-05.jpg&quot;, &quot;f&quot;: &quot;src-05.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 720}, {&quot;c&quot;: &quot;05-06&quot;, &quot;s&quot;: &quot;img2/aristo-aquamarine-06.jpg&quot;, &quot;f&quot;: &quot;src-06.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 720}, {&quot;c&quot;: &quot;05-07&quot;, &quot;s&quot;: &quot;img2/aristo-aquamarine-07.jpg&quot;, &quot;f&quot;: &quot;src-07.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 720}]'>
+  <span class="loc">Кипр · Пафос, побережье</span>
+  <h2><span class="num">05</span>Aquamarine Coastal Villas <small>Aristo Developers</small></h2>
+  <p>3–5 спален, 209–428 м², участки 407–698 м², от €795 000 + VAT, напротив пляжа. Off-plan, часть вилл продана.</p>
+  <p class="take">Крупнейший девелопер острова — долгие решения. Галерея только 1920×720 (баннеры, кадр обрезан по высоте). Не первая очередь.</p>
+  <div class="grid collapsed">
+      <figure class="t" data-i="0"><img src="img2/aristo-aquamarine-01-t.jpg" loading="lazy" alt=""><figcaption>05-01<span>1920×720</span></figcaption></figure>
+      <figure class="t" data-i="1"><img src="img2/aristo-aquamarine-02-t.jpg" loading="lazy" alt=""><figcaption>05-02<span>1920×720</span></figcaption></figure>
+      <figure class="t" data-i="2"><img src="img2/aristo-aquamarine-03-t.jpg" loading="lazy" alt=""><figcaption>05-03<span>1920×720</span></figcaption></figure>
+      <figure class="t" data-i="3"><img src="img2/aristo-aquamarine-04-t.jpg" loading="lazy" alt=""><figcaption>05-04<span>1920×720</span></figcaption></figure>
+      <figure class="t" data-i="4"><img src="img2/aristo-aquamarine-05-t.jpg" loading="lazy" alt=""><figcaption>05-05<span>1920×720</span></figcaption></figure>
+      <figure class="t" data-i="5"><img src="img2/aristo-aquamarine-06-t.jpg" loading="lazy" alt=""><figcaption>05-06<span>1920×720</span></figcaption></figure>
+      <figure class="t" data-i="6"><img src="img2/aristo-aquamarine-07-t.jpg" loading="lazy" alt=""><figcaption>05-07<span>1920×720</span></figcaption></figure>
+  </div>
+  <button class="more" type="button" data-n="7">показать все 7</button>
+  <div class="badges"><span class="badge">виллы · от €795k</span><span class="badge">сайт-форма</span><span class="badge"><a href="https://www.aristodevelopers.com/developments/seaside-villas-aquamarine-coastal-paphos-cyprus" target="_blank">страница проекта</a></span></div>
+</section>
 
-<div class="cand"><span class="loc">Кипр · Пафос, побережье</span><h2><span class="num">05</span>Aquamarine Coastal Villas <small>Aristo Developers</small></h2>
-<img class="hero" src="img/aqua-0.jpg" alt="">
-<div class="row"><img src="img/aqua-1.jpg" alt=""><img src="img/aqua-2.jpg" alt=""><img src="img/aqua-3.jpg" alt=""></div>
-<p>3–5 спален, 209–428 м², участки 407–698 м², от €795 000 + VAT, напротив пляжа в туристической зоне Пафоса.
-Off-plan, только рендеры (скаут 18.08, семь кадров 1920×720 — сайт режет в ленту).</p>
-<p class="take">Рендеры средние, посёлок узнаваемо «кипрский белый». Минус — Aristo крупнейший девелопер острова,
-решения там долгие и через отдел маркетинга; плюс — если зайдёт, это десятки проектов. Не первая очередь.</p>
-<span class="badge">виллы · от €795k</span><span class="badge">7 рендеров · 1920 px</span>
-<span class="badge"><a href="https://www.aristodevelopers.com/developments/seaside-villas-aquamarine-coastal-paphos-cyprus" target="_blank">страница проекта</a></span></div>
+<section class="cand" id="p06" data-gallery='[{&quot;c&quot;: &quot;06-01&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-01.jpg&quot;, &quot;f&quot;: &quot;img-01.jpg&quot;, &quot;w&quot;: 1920, &quot;h&quot;: 960}, {&quot;c&quot;: &quot;06-02&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-02.jpg&quot;, &quot;f&quot;: &quot;img-02.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 681}, {&quot;c&quot;: &quot;06-03&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-03.jpg&quot;, &quot;f&quot;: &quot;img-03.jpg&quot;, &quot;w&quot;: 2500, &quot;h&quot;: 2000}, {&quot;c&quot;: &quot;06-04&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-04.jpg&quot;, &quot;f&quot;: &quot;img-05.jpg&quot;, &quot;w&quot;: 2500, &quot;h&quot;: 2000}, {&quot;c&quot;: &quot;06-05&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-05.jpg&quot;, &quot;f&quot;: &quot;img-07.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1332}, {&quot;c&quot;: &quot;06-06&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-06.jpg&quot;, &quot;f&quot;: &quot;img-09.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1332}, {&quot;c&quot;: &quot;06-07&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-07.jpg&quot;, &quot;f&quot;: &quot;img-11.jpg&quot;, &quot;w&quot;: 2000, &quot;h&quot;: 1332}, {&quot;c&quot;: &quot;06-08&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-08.jpg&quot;, &quot;f&quot;: &quot;img-15.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-09&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-09.jpg&quot;, &quot;f&quot;: &quot;img-16.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-10&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-10.jpg&quot;, &quot;f&quot;: &quot;img-17.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-11&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-11.jpg&quot;, &quot;f&quot;: &quot;img-18.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-12&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-12.jpg&quot;, &quot;f&quot;: &quot;img-19.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-13&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-13.jpg&quot;, &quot;f&quot;: &quot;img-20.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-14&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-14.jpg&quot;, &quot;f&quot;: &quot;img-21.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-15&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-15.jpg&quot;, &quot;f&quot;: &quot;img-22.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-16&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-16.jpg&quot;, &quot;f&quot;: &quot;img-23.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-17&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-17.jpg&quot;, &quot;f&quot;: &quot;img-24.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-18&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-18.jpg&quot;, &quot;f&quot;: &quot;img-25.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 723}, {&quot;c&quot;: &quot;06-19&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-19.jpg&quot;, &quot;f&quot;: &quot;img-26.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 724}, {&quot;c&quot;: &quot;06-20&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-20.jpg&quot;, &quot;f&quot;: &quot;img-27.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 724}, {&quot;c&quot;: &quot;06-21&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-21.jpg&quot;, &quot;f&quot;: &quot;img-28.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 724}, {&quot;c&quot;: &quot;06-22&quot;, &quot;s&quot;: &quot;img2/toumazis-panorama-c-22.jpg&quot;, &quot;f&quot;: &quot;img-29.jpg&quot;, &quot;w&quot;: 1024, &quot;h&quot;: 724}]'>
+  <span class="loc">Кипр · Лимассол, Yermasoyia</span>
+  <h2><span class="num">06</span>Panorama Phase C <small>C&amp;A Toumazis</small></h2>
+  <p>4 отдельные виллы, 3–4 спальни, участки 300–500 м², roof garden, вид на залив. Первый кадр на сайте похож на фото начатой стройки.</p>
+  <p class="take">Три экстерьера (сумерки, 2500 px), остальное интерьеры и планы. Третий проект в письме Toumazis, низкий приоритет.</p>
+  <div class="grid collapsed">
+      <figure class="t" data-i="0"><img src="img2/toumazis-panorama-c-01-t.jpg" loading="lazy" alt=""><figcaption>06-01<span>1920×960</span></figcaption></figure>
+      <figure class="t" data-i="1"><img src="img2/toumazis-panorama-c-02-t.jpg" loading="lazy" alt=""><figcaption>06-02<span>1024×681</span></figcaption></figure>
+      <figure class="t" data-i="2"><img src="img2/toumazis-panorama-c-03-t.jpg" loading="lazy" alt=""><figcaption>06-03<span>2500×2000</span></figcaption></figure>
+      <figure class="t" data-i="3"><img src="img2/toumazis-panorama-c-04-t.jpg" loading="lazy" alt=""><figcaption>06-04<span>2500×2000</span></figcaption></figure>
+      <figure class="t" data-i="4"><img src="img2/toumazis-panorama-c-05-t.jpg" loading="lazy" alt=""><figcaption>06-05<span>2000×1332</span></figcaption></figure>
+      <figure class="t" data-i="5"><img src="img2/toumazis-panorama-c-06-t.jpg" loading="lazy" alt=""><figcaption>06-06<span>2000×1332</span></figcaption></figure>
+      <figure class="t" data-i="6"><img src="img2/toumazis-panorama-c-07-t.jpg" loading="lazy" alt=""><figcaption>06-07<span>2000×1332</span></figcaption></figure>
+      <figure class="t" data-i="7"><img src="img2/toumazis-panorama-c-08-t.jpg" loading="lazy" alt=""><figcaption>06-08<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="8"><img src="img2/toumazis-panorama-c-09-t.jpg" loading="lazy" alt=""><figcaption>06-09<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="9"><img src="img2/toumazis-panorama-c-10-t.jpg" loading="lazy" alt=""><figcaption>06-10<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="10"><img src="img2/toumazis-panorama-c-11-t.jpg" loading="lazy" alt=""><figcaption>06-11<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="11"><img src="img2/toumazis-panorama-c-12-t.jpg" loading="lazy" alt=""><figcaption>06-12<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="12"><img src="img2/toumazis-panorama-c-13-t.jpg" loading="lazy" alt=""><figcaption>06-13<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="13"><img src="img2/toumazis-panorama-c-14-t.jpg" loading="lazy" alt=""><figcaption>06-14<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="14"><img src="img2/toumazis-panorama-c-15-t.jpg" loading="lazy" alt=""><figcaption>06-15<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="15"><img src="img2/toumazis-panorama-c-16-t.jpg" loading="lazy" alt=""><figcaption>06-16<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="16"><img src="img2/toumazis-panorama-c-17-t.jpg" loading="lazy" alt=""><figcaption>06-17<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="17"><img src="img2/toumazis-panorama-c-18-t.jpg" loading="lazy" alt=""><figcaption>06-18<span>1024×723</span></figcaption></figure>
+      <figure class="t" data-i="18"><img src="img2/toumazis-panorama-c-19-t.jpg" loading="lazy" alt=""><figcaption>06-19<span>1024×724</span></figcaption></figure>
+      <figure class="t" data-i="19"><img src="img2/toumazis-panorama-c-20-t.jpg" loading="lazy" alt=""><figcaption>06-20<span>1024×724</span></figcaption></figure>
+      <figure class="t" data-i="20"><img src="img2/toumazis-panorama-c-21-t.jpg" loading="lazy" alt=""><figcaption>06-21<span>1024×724</span></figcaption></figure>
+      <figure class="t" data-i="21"><img src="img2/toumazis-panorama-c-22-t.jpg" loading="lazy" alt=""><figcaption>06-22<span>1024×724</span></figcaption></figure>
+  </div>
+  <button class="more" type="button" data-n="22">показать все 22</button>
+  <div class="badges"><span class="badge">4 виллы</span><span class="badge">info@catoumazis.com</span><span class="badge"><a href="https://www.catoumazis.com/properties-for-sale/panorama-phase-c/" target="_blank">страница проекта</a></span></div>
+</section>
 
-<div class="cand"><span class="loc">Кипр · Лимассол, Yermasoyia</span><h2><span class="num">06</span>Panorama Phase C <small>C&amp;A Toumazis</small></h2>
-<img class="hero" src="img/panorama-0.jpg" alt="">
-<div class="row"><img src="img/panorama-1.jpg" alt=""><img src="img/panorama-2.jpg" alt=""></div>
-<p>4 отдельные виллы, 3–4 спальни, участки 300–500 м², вид на залив. В галерее только три экстерьера (сумеречные,
-2500 px), остальное — интерьеры и планы; первый кадр на странице похож на фото начатой стройки.</p>
-<p class="take">Мало сырья и, возможно, уже строится — низкий приоритет. Годится как «третий проект» в письме Toumazis.</p>
-<span class="badge">4 виллы</span><span class="badge">3 экстерьера · 2500 px</span>
-<span class="badge"><a href="https://www.catoumazis.com/properties-for-sale/panorama-phase-c/" target="_blank">страница проекта</a></span></div>
-
-<div class="cand"><span class="loc">Кипр · Пафос, Tala</span><h2><span class="num">07</span>Royal Horizon <small>Medousa Developers</small></h2>
-<img class="hero" src="img/royal-0.jpg" alt="">
-<div class="row"><img src="img/royal-1.jpg" alt=""><img src="img/royal-2.jpg" alt=""><img src="img/royal-3.jpg" alt=""></div>
-<p>6 вилл, из них 4 проданы, 2 в продаже. Галерея 20 рендеров 1620 px, включая аэро посёлка и интерьеры.</p>
-<p class="take">Рендеры того же уровня, что Amore, но осталось продать две виллы — мотивация платить за картинки низкая.
-Только как довесок к Amore тем же контактом.</p>
-<span class="badge">6 вилл · 2 в продаже</span><span class="badge">20 рендеров</span>
-<span class="badge"><a href="https://medousadevelopers.com/en/project/royal-horizon/" target="_blank">страница проекта</a></span></div>
-
-<h3>Квартирные — в запас</h3>
-
-<div class="cand"><span class="loc">Кипр · Ларнака, у новой марины</span><h2><span class="num">08</span>EOS Residences <small>Sunshadow Invest</small></h2>
-<img class="hero" src="img/eos-0.jpg" alt="">
-<div class="row"><img src="img/eos-1.jpg" alt=""><img src="img/eos-2.jpg" alt=""><img src="img/eos-3.jpg" alt=""></div>
-<p>8 квартир «этаж целиком», 2–3 спальни, до 116 м². Off-plan, 13 картинок 1400 px: 4 экстерьера, 8 интерьеров, схема.</p>
-<p class="take">Твоё решение — «попробуем исправить, но лучше виллы». Один проект, всё консистентно; экстерьеры плоские.
-Держу как первый квартирный, если виллы не дадут четырёх отправок.</p>
-<span class="badge">8 квартир</span><span class="badge">info@sunshadowinvest.com</span>
-<span class="badge"><a href="https://sunshadowinvest.com/our-projects/eos/" target="_blank">страница проекта</a></span></div>
-
-<div class="cand"><span class="loc">Кипр · Пафос</span><h2><span class="num">09</span>The Park View Residences <small>Prospecta Development</small></h2>
-<img class="hero" src="img/parkview-0.jpg" alt="">
-<div class="row"><img src="img/parkview-1.jpg" alt=""><img src="img/parkview-2.jpg" alt=""><img src="img/parkview-3.jpg" alt=""></div>
-<p>10 квартир, 1–2 спальни. 20 картинок 1920 px, все под именем проекта, но экстерьеры между собой не сходятся —
-похоже на нейросетевые итерации разных версий здания.</p>
-<p class="take">Ты прав: улучшать нейросетевой рендер — лотерея, геометрия может поплыть. Только как второй проект в
-письме Prospecta вместе с Breeze II, и только с одного «канонического» кадра (hero сайта).</p>
-<span class="badge">10 квартир</span><span class="badge">info@prospectadevelopment.com</span>
-<span class="badge"><a href="https://prospectadevelopment.com/development/the-park-view-residences/" target="_blank">страница проекта</a></span></div>
-
-<p class="note" style="margin-top:40px">Снято с доски: Artaş Villa Akyarlar (Бодрум) — на сайте только дрон-фото построенного;
-Lemonmaria — все проекты значатся завершёнными; Maispa — на сайте стоковые картинки, галереи проектов за формой;
-Korantina/Cybarco/Leptos — построено или рендеры уже полированные (скаут 18.08).</p>
+<section class="cand" id="p07" data-gallery='[{&quot;c&quot;: &quot;07-01&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-01.jpg&quot;, &quot;f&quot;: &quot;img-01.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-02&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-02.jpg&quot;, &quot;f&quot;: &quot;img-02.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-03&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-03.jpg&quot;, &quot;f&quot;: &quot;img-03.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-04&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-04.jpg&quot;, &quot;f&quot;: &quot;img-04.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-05&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-05.jpg&quot;, &quot;f&quot;: &quot;img-05.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-06&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-06.jpg&quot;, &quot;f&quot;: &quot;img-06.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-07&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-07.jpg&quot;, &quot;f&quot;: &quot;img-07.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-08&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-08.jpg&quot;, &quot;f&quot;: &quot;img-08.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-09&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-09.jpg&quot;, &quot;f&quot;: &quot;img-09.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-10&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-10.jpg&quot;, &quot;f&quot;: &quot;img-10.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-11&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-11.jpg&quot;, &quot;f&quot;: &quot;img-11.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-12&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-12.jpg&quot;, &quot;f&quot;: &quot;img-12.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-13&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-13.jpg&quot;, &quot;f&quot;: &quot;img-13.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-14&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-14.jpg&quot;, &quot;f&quot;: &quot;img-14.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-15&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-15.jpg&quot;, &quot;f&quot;: &quot;img-15.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-16&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-16.jpg&quot;, &quot;f&quot;: &quot;img-16.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-17&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-17.jpg&quot;, &quot;f&quot;: &quot;img-17.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-18&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-18.jpg&quot;, &quot;f&quot;: &quot;img-18.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-19&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-19.jpg&quot;, &quot;f&quot;: &quot;img-19.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}, {&quot;c&quot;: &quot;07-20&quot;, &quot;s&quot;: &quot;img2/medousa-royal-horizon-20.jpg&quot;, &quot;f&quot;: &quot;img-20.jpg&quot;, &quot;w&quot;: 1620, &quot;h&quot;: 1080}]'>
+  <span class="loc">Кипр · Пафос, Tala</span>
+  <h2><span class="num">07</span>Royal Horizon <small>Medousa Developers</small></h2>
+  <p>6 вилл; 4 проданы, 2 в продаже. 20 рендеров 1620 px, включая аэро посёлка и интерьеры.</p>
+  <p class="take">Уровень Amore, но осталось продать две виллы — мотивация низкая. Довесок к Amore тем же контактом.</p>
+  <div class="grid collapsed">
+      <figure class="t" data-i="0"><img src="img2/medousa-royal-horizon-01-t.jpg" loading="lazy" alt=""><figcaption>07-01<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="1"><img src="img2/medousa-royal-horizon-02-t.jpg" loading="lazy" alt=""><figcaption>07-02<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="2"><img src="img2/medousa-royal-horizon-03-t.jpg" loading="lazy" alt=""><figcaption>07-03<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="3"><img src="img2/medousa-royal-horizon-04-t.jpg" loading="lazy" alt=""><figcaption>07-04<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="4"><img src="img2/medousa-royal-horizon-05-t.jpg" loading="lazy" alt=""><figcaption>07-05<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="5"><img src="img2/medousa-royal-horizon-06-t.jpg" loading="lazy" alt=""><figcaption>07-06<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="6"><img src="img2/medousa-royal-horizon-07-t.jpg" loading="lazy" alt=""><figcaption>07-07<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="7"><img src="img2/medousa-royal-horizon-08-t.jpg" loading="lazy" alt=""><figcaption>07-08<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="8"><img src="img2/medousa-royal-horizon-09-t.jpg" loading="lazy" alt=""><figcaption>07-09<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="9"><img src="img2/medousa-royal-horizon-10-t.jpg" loading="lazy" alt=""><figcaption>07-10<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="10"><img src="img2/medousa-royal-horizon-11-t.jpg" loading="lazy" alt=""><figcaption>07-11<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="11"><img src="img2/medousa-royal-horizon-12-t.jpg" loading="lazy" alt=""><figcaption>07-12<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="12"><img src="img2/medousa-royal-horizon-13-t.jpg" loading="lazy" alt=""><figcaption>07-13<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="13"><img src="img2/medousa-royal-horizon-14-t.jpg" loading="lazy" alt=""><figcaption>07-14<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="14"><img src="img2/medousa-royal-horizon-15-t.jpg" loading="lazy" alt=""><figcaption>07-15<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="15"><img src="img2/medousa-royal-horizon-16-t.jpg" loading="lazy" alt=""><figcaption>07-16<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="16"><img src="img2/medousa-royal-horizon-17-t.jpg" loading="lazy" alt=""><figcaption>07-17<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="17"><img src="img2/medousa-royal-horizon-18-t.jpg" loading="lazy" alt=""><figcaption>07-18<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="18"><img src="img2/medousa-royal-horizon-19-t.jpg" loading="lazy" alt=""><figcaption>07-19<span>1620×1080</span></figcaption></figure>
+      <figure class="t" data-i="19"><img src="img2/medousa-royal-horizon-20-t.jpg" loading="lazy" alt=""><figcaption>07-20<span>1620×1080</span></figcaption></figure>
+  </div>
+  <button class="more" type="button" data-n="20">показать все 20</button>
+  <div class="badges"><span class="badge">6 вилл · 2 в продаже</span><span class="badge">WhatsApp +357 97 887 070</span><span class="badge"><a href="https://medousadevelopers.com/en/project/royal-horizon/" target="_blank">страница проекта</a></span></div>
+</section>
+<p class="note" style="margin-top:40px">Квартирные EOS Residences и The Park View — не берём (решение 07.09). Снято ранее: Artaş Akyarlar (построено),
+Lemonmaria (завершены), Maispa (стоковые картинки), Korantina/Cybarco/Leptos (построено или полированные рендеры).
+Машиночитаемый список кадров: <a href="index2.json">index2.json</a>.</p>
 </div>
+<div class="lb" id="lb"><span class="x" id="lbx">×</span><div class="nav l" id="lbl"></div><div class="nav r" id="lbr"></div><img id="lbi" alt=""><div class="cap"><b id="lbc"></b><span id="lbt"></span><i id="lbf"></i></div></div>
+<script>
+(function(){
+  var lb=document.getElementById('lb'),img=document.getElementById('lbi'),c=document.getElementById('lbc'),t=document.getElementById('lbt'),f=document.getElementById('lbf');
+  var list=[],idx=0,title='';
+  function show(i){idx=(i+list.length)%list.length;var it=list[idx];img.src=it.s;c.textContent=it.c;t.textContent=title+' · '+(idx+1)+' / '+list.length;f.textContent=it.f+' · '+it.w+'×'+it.h;
+    var n=list[(idx+1)%list.length];var pre=new Image();pre.src=n.s;}
+  function open(sec,i){list=JSON.parse(sec.getAttribute('data-gallery'));title=sec.querySelector('h2').childNodes[1].textContent.trim();lb.classList.add('on');show(i);}
+  function close(){lb.classList.remove('on');img.src='';}
+  document.querySelectorAll('.cand').forEach(function(sec){
+    sec.querySelectorAll('.t').forEach(function(fig){fig.addEventListener('click',function(){open(sec,parseInt(fig.getAttribute('data-i')));});});
+    var b=sec.querySelector('.more'),g=sec.querySelector('.grid');
+    if(parseInt(b.getAttribute('data-n'))<=4){b.style.display='none';g.classList.remove('collapsed');}
+    b.addEventListener('click',function(){var col=g.classList.toggle('collapsed');b.textContent=col?('показать все '+b.getAttribute('data-n')):'свернуть';});
+  });
+  document.getElementById('lbx').addEventListener('click',close);
+  document.getElementById('lbl').addEventListener('click',function(){show(idx-1);});
+  document.getElementById('lbr').addEventListener('click',function(){show(idx+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target===img)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1);});
+})();
+</script>
 </body>
 </html>
