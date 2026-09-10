@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Нейрорендер A510 — продающие рендеры ЖК за дни</title>
+  <meta name="description" content="Точная модель по чертежам, камеры и свет — от архитектора; материалы, люди, зелень и небо — от генеративного рендера. Серия из десяти кадров за пять дней, 4K.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Нейрорендер A510 — продающие рендеры ЖК за дни, а не недели">
+  <meta property="og:description" content="Серия из десяти кадров за пять дней. Модель по чертежам один в один, генеративный рендер, 4K.">
+  <meta property="og:image" content="https://a510.space/airender/img/og.jpg">
+  <meta property="og:url" content="https://a510.space/airender/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#111111">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #111111; --paper: #ffffff; --muted: #666666; --line: #e6e6e6; --dim: #444444; }
+    * { box-sizing: border-box; }
+    html { color-scheme: light; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.45; }
+    a { color: inherit; }
+    img { display: block; width: 100%; height: auto; }
+    .mono { font-family: 'Roboto Mono', 'SF Mono', Menlo, monospace; letter-spacing: 0.06em; }
+    .wrap { max-width: 1312px; margin: 0 auto; padding: 0 24px; }
+    header { border-bottom: 1px solid var(--line); }
+    header .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 22px; padding-bottom: 22px; }
+    header .logo { display: flex; align-items: center; gap: 14px; text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.1em; }
+    header .logo svg { width: 28px; height: 28px; }
+    header nav a { text-decoration: none; font-size: 13px; }
+    header nav a:hover { color: var(--muted); }
+    section { padding: 88px 0; }
+    section + section { border-top: 1px solid var(--line); }
+    .label { font-size: 12px; color: var(--muted); }
+    h1 { margin: 0; font-size: clamp(38px, 4.6vw, 64px); line-height: 1.02; font-weight: 600; letter-spacing: -0.02em; text-wrap: pretty; }
+    h2 { margin: 0; font-size: clamp(28px, 3vw, 40px); line-height: 1.1; font-weight: 600; letter-spacing: -0.01em; text-wrap: pretty; }
+    p { margin: 0; text-wrap: pretty; }
+    .lead { font-size: 20px; color: #333333; }
+    .body { font-size: 17px; color: var(--dim); }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .stack { display: flex; flex-direction: column; gap: 24px; }
+    .fig { display: flex; flex-direction: column; gap: 12px; }
+    .fig .frame { background: #e9e6df; aspect-ratio: 3 / 2; overflow: hidden; }
+    .fig .frame img { width: 100%; height: 100%; object-fit: cover; }
+    .btn { display: inline-flex; align-items: center; height: 48px; padding: 0 24px; background: var(--ink); color: var(--paper); text-decoration: none; font-size: 13px; }
+    .btn:hover { background: #333333; }
+    .caption { display: flex; justify-content: space-between; gap: 24px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+    .dark { background: var(--ink); color: var(--paper); }
+    .dark .body { color: #bbbbbb; }
+    .table { display: flex; flex-direction: column; border-top: 1px solid #333333; margin-top: 8px; }
+    .row { display: grid; grid-template-columns: 360px 1fr 1fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid #333333; font-size: 17px; line-height: 1.4; }
+    .row.head { padding: 14px 0; font-size: 12px; color: #888888; }
+    .row .k { color: #bbbbbb; }
+    footer { border-top: 1px solid var(--line); }
+    footer .wrap { display: flex; justify-content: space-between; gap: 24px; padding-top: 40px; padding-bottom: 40px; font-size: 12px; color: #888888; flex-wrap: wrap; }
+    @media (max-width: 900px) {
+      section { padding: 56px 0; }
+      .two, .grid2, .grid4 { grid-template-columns: 1fr; gap: 24px; }
+      .two { gap: 20px; }
+      .row { grid-template-columns: 1fr; gap: 6px; padding: 16px 0; }
+      .row.head { display: none; }
+      .row .k { font-size: 12px; font-family: 'Roboto Mono', monospace; letter-spacing: 0.06em; color: #888888; }
+      .row span:nth-child(2)::before { content: 'Классический рендер: '; color: #888888; }
+      .row span:nth-child(3)::before { content: 'Нейрорендер A510: '; color: #888888; }
+      .lead { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="../" class="logo mono">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="stroke:currentColor;stroke-width:30px;fill:none;" aria-hidden="true">
+        <path d="M50 455v-253.1l202.5 -151.9 202.5 151.9v253.1z" style="fill:currentColor"/>
+        <path d="M50 455v-253.1l202.5 -151.9 202.5 151.9v253.1z" transform="translate(0,495)"/>
+        <path d="M50 455v-253.1l202.5 -151.9 202.5 151.9v253.1z" transform="translate(495)"/>
+        <path d="M50 455v-253.1l202.5 -151.9 202.5 151.9v253.1z" transform="translate(495,495)"/>
+      </svg>
+      <span>A510 ARCHITECTS</span>
+    </a>
+    <nav class="mono"><a href="../contact.html">CONTACT</a></nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero">
+    <div class="wrap stack" style="gap: 32px;">
+      <div class="label mono">A510 · НЕЙРОРЕНДЕР · ПЕРВЫЙ ПОКАЗ</div>
+      <div class="two">
+        <h1>Продающие рендеры ЖК за дни, а не недели</h1>
+        <div class="stack">
+          <p class="lead">Серия из десяти кадров за пять дней. Точная модель по чертежам, камеры и свет — от архитектора; материалы, люди, зелень и небо — от генеративного рендера. Утверждённый кадр — в 4K, и по нему — варианты света, времени дня и сезона.</p>
+          <div><a class="btn mono" href="../contact.html">ПРОБНЫЙ КАДР ДЛЯ ВАШЕГО ПРОЕКТА</a></div>
+        </div>
+      </div>
+      <div class="fig">
+        <div class="frame" style="aspect-ratio: 3 / 2;"><img src="img/r02.jpg" alt="Нейрорендер: вид с Дмитровского шоссе, башня и стилобат" width="1800" height="1200" fetchpriority="high"></div>
+        <div class="caption mono"><span>МФК НА ДМИТРОВСКОМ ШОССЕ, МОСКВА · 29 ЭТАЖЕЙ · КАМЕРА 02</span><span>МОДЕЛЬ ПО ЧЕРТЕЖАМ + ГЕНЕРАТИВНЫЙ РЕНДЕР · 2026</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="wrap stack" style="gap: 40px;">
+      <div class="two">
+        <h2>Архитектура не «придумывается». Она берётся из модели</h2>
+        <p class="body">Слева — подложка из SketchUp: геометрия один в один по альбому АГР, каждое окно, пояс и парапет. Справа — кадр, сгенерированный по этой подложке. Камера, пропорции и разбивка фасада совпадают; нейросеть дорисовывает материалы, свет, людей и зелень.</p>
+      </div>
+      <div class="grid2">
+        <div class="fig"><div class="frame"><img src="img/u01.jpg" alt="Подложка SketchUp, камера 01" loading="lazy"></div><div class="label mono">01 · ПОДЛОЖКА SKETCHUP</div></div>
+        <div class="fig"><div class="frame"><img src="img/r01.jpg" alt="Нейрорендер, камера 01" loading="lazy"></div><div class="label mono">01 · НЕЙРОРЕНДЕР</div></div>
+        <div class="fig"><div class="frame"><img src="img/u03.jpg" alt="Подложка SketchUp, камера 03" loading="lazy"></div><div class="label mono">03 · ПОДЛОЖКА SKETCHUP</div></div>
+        <div class="fig"><div class="frame"><img src="img/r03.jpg" alt="Нейрорендер, камера 03" loading="lazy"></div><div class="label mono">03 · НЕЙРОРЕНДЕР</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" style="border-top: 0; padding-top: 0;">
+    <div class="wrap stack">
+      <div class="grid2">
+        <div class="fig"><div class="frame"><img src="img/r04.jpg" alt="Секция с Тупикового проезда" loading="lazy"></div></div>
+        <div class="fig"><div class="frame"><img src="img/r05.jpg" alt="Двор на кровле стилобата, вид сверху" loading="lazy"></div></div>
+      </div>
+      <div class="grid2">
+        <div class="fig"><div class="frame"><img src="img/r06.jpg" alt="Входная зона из парка" loading="lazy"></div></div>
+        <div class="stack" style="justify-content: flex-end; gap: 16px;">
+          <div class="label mono">ПЕРВЫЕ ШЕСТЬ РАКУРСОВ СЕРИИ ИЗ ДЕСЯТИ</div>
+          <p class="body">Общий вид через шоссе, вид с тротуара, угол стилобата, секция с Тупикового проезда, двор на кровле стилобата, входная зона. Одно солнце на всю серию, вертикали строго вертикальны, люди в масштабе.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="compare" class="dark">
+    <div class="wrap stack" style="gap: 40px;">
+      <div class="two">
+        <h2>Классический рендер и нейрорендер — что меняется</h2>
+        <p class="body">Остаётся ручным то, за что отвечает архитектор: модель по чертежам, выбор ракурсов, режиссура света. Уходит ручной труд по материалам, людям, деревьям и правкам.</p>
+      </div>
+      <div class="table">
+        <div class="row head mono"><span></span><span>КЛАССИЧЕСКИЙ РЕНДЕР</span><span>НЕЙРОРЕНДЕР A510</span></div>
+        <div class="row"><span class="k">Серия из 10 кадров, от чертежей</span><span>4 недели</span><span>5 дней</span></div>
+        <div class="row"><span class="k">Свет, время дня, сезон</span><span>пересчёт кадра, дни</span><span>четыре варианта утверждённого кадра</span></div>
+        <div class="row"><span class="k">Разрешение</span><span>2K–4K</span><span>4K</span></div>
+        <div class="row"><span class="k">Геометрия здания</span><span>по модели</span><span>по модели — один в один по АГР</span></div>
+        <div class="row"><span class="k">Материалы и окружение</span><span>библиотеки, ручная настройка</span><span>по референсам архитектора проекта</span></div>
+        <div class="row"><span class="k">Стоимость</span><span>от 65 000 ₽ за кадр</span><span>30 000 ₽ за кадр</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap stack" style="gap: 40px;">
+      <h2>Как это устроено</h2>
+      <div class="grid4">
+        <div class="stack" style="gap: 14px;"><div class="label mono">01 · МОДЕЛЬ</div><p class="body" style="font-size: 16px;">Здание строится в SketchUp по векторному альбому АГР: планы, фасады, узлы. Окружение — соседние дома, дороги, парк — по ситуационному плану.</p></div>
+        <div class="stack" style="gap: 14px;"><div class="label mono">02 · КАМЕРЫ И СВЕТ</div><p class="body" style="font-size: 16px;">Архитектор ставит ракурсы: двухточечная перспектива для улицы, аэро для двора. Одно низкое тёплое солнце на всю серию, реальные тени.</p></div>
+        <div class="stack" style="gap: 14px;"><div class="label mono">03 · ПОДЛОЖКА</div><p class="body" style="font-size: 16px;">Экспорт кадра с плоскими цветами и прозрачными деревьями. Это и есть «замок» на геометрию: нейросеть не имеет права её менять.</p></div>
+        <div class="stack" style="gap: 14px;"><div class="label mono">04 · КАДР</div><p class="body" style="font-size: 16px;">Генерация по подложке и доске материалов из референсов проекта. Кадр утверждается с архитектором, затем апскейл до 4K — и четыре его варианта: свет, время дня, сезон.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="variants" style="border-top: 0; padding-top: 0;">
+    <div class="wrap stack" style="gap: 32px;">
+      <div class="two">
+        <h2>Утверждённый кадр — и четыре его состояния</h2>
+        <p class="body">После утверждения кадра меняем свет, время дня и даже сезон — без пересъёмки и без новой модели. Заказчик получает один кадр в 4K и его варианты по запросу.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="wrap two" style="align-items: center;">
+      <h2>Пришлите чертежи одного ракурса — вернём кадр</h2>
+      <div class="stack" style="gap: 16px;">
+        <p class="body">Один пробный ракурс вашего ЖК бесплатно: модель по вашим чертежам, кадр на утверждение, честный разбор, что сработало и что нет.</p>
+        <div><a class="btn mono" href="../contact.html">НАПИСАТЬ НАМ</a></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap mono">
+    <span>ПРОЕКТ: МФК НА ДМИТРОВСКОМ ШОССЕ · АРХИТЕКТУРА — АМ «АТРИУМ» · ВИЗУАЛИЗАЦИЯ — A510</span>
+    <span>A510 · 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
