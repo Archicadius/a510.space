@@ -330,6 +330,9 @@
       entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
     for (var j = 0; j < blocks.length; j++) io.observe(blocks[j]);
+    /* страховка: если наблюдатель почему-то не сработал (скрытая вкладка, превью, блокировка) —
+       через 2,5 с показываем всё как есть. Страница клиента не имеет права остаться пустой. */
+    setTimeout(function () { for (var q = 0; q < blocks.length; q++) blocks[q].classList.add('in'); }, 2500);
   }
   var vids = document.querySelectorAll('.clip-item video');
   if (!vids.length) return;
