@@ -118,6 +118,24 @@
   .row .val { white-space: nowrap; }
   .price-note { margin: 0 0 clamp(16px, 4vw, 24px); font-size: clamp(0.97rem, 3.7vw, 1.05rem); line-height: 1.55; color: var(--muted); max-width: 34em; }
 
+  /* плитка «что ещё можем снять по проекту» (11.09): ракурсы, детали, движение — одним тихим блоком */
+  .strip { border-top: 1px solid var(--line); padding: clamp(30px, 7vw, 52px) 0 clamp(46px, 11vw, 88px); display: flex; flex-direction: column; gap: clamp(18px, 4vw, 26px); }
+  .strip-note { margin: 0; max-width: 36em; font-size: clamp(0.97rem, 3.7vw, 1.05rem); line-height: 1.55; color: var(--muted); }
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(8px, 1.6vw, 12px); }
+  @media (max-width: 640px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
+  .tile { margin: 0; position: relative; }
+  .tile img, .tile video { width: 100%; display: block; aspect-ratio: 3 / 2; object-fit: cover; background: var(--field); }
+  .tile figcaption { position: absolute; left: 8px; bottom: 7px; font-family: var(--sans); font-size: 8.5px;
+    letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.82);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.55); pointer-events: none; }
+
+  /* мягкое появление при прокрутке */
+  .rv { opacity: 0; transform: translateY(16px); transition: opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1); }
+  .rv.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .rv { opacity: 1 !important; transform: none !important; transition: none !important; } }
+
+  .about { margin: 0 0 14px; max-width: 34em; font-size: clamp(1.05rem, 4vw, 1.3rem); line-height: 1.5; }
+  .about a { color: inherit; border-bottom: 1px solid var(--line); text-decoration: none; }
   .ask { margin: 0; max-width: 30em; font-size: clamp(1.18rem, 4.8vw, 1.55rem); line-height: 1.35; letter-spacing: -0.01em; }
   .buttons { display: flex; flex-wrap: wrap; gap: 12px; }
   .btn {
@@ -155,7 +173,7 @@
       <h1>Pardo Yapı</h1>
       <p class="prepared">Pardo Yapı için hazırlandı <span>/</span> özel bağlantı <span>/</span> Ağustos 2026</p>
     </div>
-    <p class="intro">Alıcının kararı görsellerle başlar. Mimar olarak, bir evi satan görselin nasıl göründüğünü biliyoruz. Bu sayfa bir teklif: elinizdeki pazarlama materyallerini güçlendirmek ve projelerinizi daha avantajlı sunmak. APERTIS, A510 Architects mimarlık ofisinin görsel koludur. Aşağıda, alıcılara zaten gösterdiğiniz iki görselin yeniden hazırlanmış halleri var. Hiçbir şey yeniden tasarlanmadı — aynı bina, aynı kamera, aynı geometri; yalnızca ikinci halleri.</p>
+    <p class="intro">Alıcının kararı görsellerle başlar. Mimar olarak, bir evi satan görselin nasıl göründüğünü biliyoruz. Bu sayfa bir teklif: elinizdeki pazarlama materyallerini güçlendirmek ve projelerinizi daha avantajlı sunmak. APERTIS, A510 Architects mimarlık ofisinin görsel pratiğidir: villalar, binalar ve bütün siteler tasarlıyoruz — dışıyla, içiyle ve çevresiyle; bu görseller de kendimizi tanıtma biçimimiz. Aşağıda, alıcılara zaten gösterdiğiniz iki görselin yeniden hazırlanmış halleri var. Hiçbir şey yeniden tasarlanmadı — aynı bina, aynı kamera, aynı geometri; yalnızca ikinci halleri.</p>
   </header>
 
   <div class="cases">
@@ -185,6 +203,8 @@
     </figure>
   </div>
 
+
+
   <section class="block">
     <div class="label"><span>01</span><h2>Nasıl çalışır</h2></div>
     <ul class="changes">
@@ -209,12 +229,12 @@
       <div class="col after">
         <span>Konuşmaya açık olduklarımız</span>
         <ul>
+          <li>Mimarlık — bir sonraki villanız, binanız ya da siteniz; dış cephe ve iç mekân, peyzaj dahil. Asıl işimiz bu; görseller ona açılan kapı.</li>
           <li>Farklı görsel sayısı — projenize göre</li>
           <li>Hazır karelerden kısa tanıtım klibi</li>
           <li>Bunun gibi özel bir proje sayfası</li>
           <li>Türkçe ve İngilizce sunum</li>
           <li>Diğer projeleriniz için aynı çalışma</li>
-          <li>Mimari projenin kendisi — villa, bina ya da site bütünüyle; peyzaj ve iç mekân dahil. Çünkü önce mimarız</li>
         </ul>
       </div>
     </div>
@@ -229,7 +249,13 @@
   </section>
 
   <section class="block">
-    <div class="label"><span>04</span><h2>İletişim</h2></div>
+    <div class="label"><span>04</span><h2>Bunun arkasında kim var</h2></div>
+    <p class="about">APERTIS'i A510 Architects mimarlık ofisi yürütüyor. Evler, konut binaları ve bütün siteler tasarlıyoruz — mimarisi, iç mekânları ve çevresindeki peyzajıyla. Alıcının bir görselde ne görmesi gerektiğini bu yüzden biliyoruz: görselin sattığı şeyi biz tasarlıyoruz. Görseller ilk el sıkışmamız; arkalarında ofis duruyor ve bir sonraki projeniz için de hazır.</p>
+    <p class="about"><a href="https://a510.space/" target="_blank" rel="noopener">A510 Architects — seçilmiş işler</a></p>
+  </section>
+
+  <section class="block">
+    <div class="label"><span>05</span><h2>İletişim</h2></div>
     <p class="ask">Tek bir kelime yeterli. Yanıtınız üzerine seçeceğiniz projeyle başlarız.</p>
     <div class="buttons">
       <a class="btn" href="mailto:apertis@a510.space?subject=Pardo Yapı">E-posta ile yanıtlayın</a>
@@ -277,6 +303,35 @@
       if (e.key === 'ArrowRight') { e.preventDefault(); set(now + 4); }
     });
   });
+})();
+</script>
+<script>
+/* 11.09: мягкое появление секций + петли играют только когда видны (и не играют при prefers-reduced-motion) */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var blocks = document.querySelectorAll('.cases > figure, section.block, section.strip, header .intro');
+  if (!reduce && 'IntersectionObserver' in window) {
+    for (var i = 0; i < blocks.length; i++) blocks[i].classList.add('rv');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    for (var j = 0; j < blocks.length; j++) io.observe(blocks[j]);
+    /* страховка: если наблюдатель почему-то не сработал (скрытая вкладка, превью, блокировка) —
+       через 2,5 с показываем всё как есть. Страница клиента не имеет права остаться пустой. */
+    setTimeout(function () { for (var q = 0; q < blocks.length; q++) blocks[q].classList.add('in'); }, 2500);
+  }
+  var vids = document.querySelectorAll('.tile video');
+  if (!vids.length) return;
+  if (reduce) { for (var v = 0; v < vids.length; v++) vids[v].removeAttribute('autoplay'); return; }
+  if (!('IntersectionObserver' in window)) return;
+  var vio = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      var el = e.target;
+      if (e.isIntersecting) { var p = el.play(); if (p && p.catch) p.catch(function () {}); }
+      else { try { el.pause(); } catch (err) {} }
+    });
+  }, { threshold: 0.25 });
+  for (var k = 0; k < vids.length; k++) vio.observe(vids[k]);
 })();
 </script>
 <script>
