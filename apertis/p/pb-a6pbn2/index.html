@@ -121,7 +121,8 @@
   /* плитка «что ещё можем снять по проекту» (11.09): ракурсы, детали, движение — одним тихим блоком */
   .strip { border-top: 1px solid var(--line); padding: clamp(30px, 7vw, 52px) 0 clamp(46px, 11vw, 88px); display: flex; flex-direction: column; gap: clamp(18px, 4vw, 26px); }
   .strip-note { margin: 0; max-width: 36em; font-size: clamp(0.97rem, 3.7vw, 1.05rem); line-height: 1.55; color: var(--muted); }
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(196px, 1fr)); gap: clamp(8px, 1.6vw, 12px); }
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(8px, 1.6vw, 12px); }
+  @media (max-width: 640px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
   .tile { margin: 0; position: relative; }
   .tile img, .tile video { width: 100%; display: block; aspect-ratio: 3 / 2; object-fit: cover; background: var(--field); }
   .tile figcaption { position: absolute; left: 8px; bottom: 7px; font-family: var(--sans); font-size: 8.5px;
