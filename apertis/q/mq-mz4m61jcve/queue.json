@@ -516,6 +516,213 @@
       "subject": "APERTIS — тест очереди Луны",
       "from_name": "APERTIS · A510 Architects",
       "body": "Это тестовое письмо для проверки отправки через очередь Луны. Клиентские письма не отправлялись."
+    },
+    {
+      "id": "apertis-261013-01-hubox-paramytha-hills",
+      "to": "info@hubox.net",
+      "subject": "Paramytha Hills — images and a project presentation",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Hello HUBOX team,\n\nWe prepared two enhanced views for Paramytha Hills, together with additional detail and lifestyle studies. The street-front and garden previews are attached.\n\nThe page shows the before-and-after comparisons, the additional frames and an example of a branded project presentation that your team can share with buyers in one link:\nhttps://a510.space/apertis/p/hubox-paramytha-hills/\n\nWould you like us to prepare a full image set for Paramytha Hills?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after.jpg",
+          "url": "https://a510.space/apertis/p/hubox-paramytha-hills/assets/view-01-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 281446,
+          "sha256": "11885f71571a5a2a82a555fed70914e4ac820e7f6e00d0d205e30a6e33d59c88"
+        },
+        {
+          "filename": "view-02-after.jpg",
+          "url": "https://a510.space/apertis/p/hubox-paramytha-hills/assets/view-02-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 377661,
+          "sha256": "a7202a7842260a8d755e766a39048a68ab16f07a3450f491ec8801f02493d42a"
+        }
+      ]
+    },
+    {
+      "id": "apertis-261013-02-mz-olivia",
+      "to": "info@mzresidence.com",
+      "subject": "MZ6 Olivia — images and a project presentation",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Hello MZ team,\n\nWe prepared two enhanced views for MZ6 Olivia, together with additional detail and lifestyle studies. The street-corner façade and front elevation previews are attached.\n\nThe page shows the before-and-after comparisons, the additional frames and an example of a branded project presentation that your team can share with buyers in one link:\nhttps://a510.space/apertis/p/mz-olivia/\n\nWould you like us to prepare a full image set for MZ6 Olivia?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after.jpg",
+          "url": "https://a510.space/apertis/p/mz-olivia/assets/view-01-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 275731,
+          "sha256": "166370c8eba5faceb003e480a9fec22fd3b700266d9c86720bd9115431f24ced"
+        },
+        {
+          "filename": "view-02-after.jpg",
+          "url": "https://a510.space/apertis/p/mz-olivia/assets/view-02-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 277868,
+          "sha256": "35bd5b49ab6527f9db39083dc7a6f2c835bec49b115eca6e98b601e9a720f425"
+        }
+      ]
+    },
+    {
+      "id": "apertis-261013-03-novocasa-perfect-homes-138",
+      "to": "andreas@novocasa.com.cy",
+      "subject": "Perfect Homes 138 — images and a project presentation",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Hello NovoCasa team,\n\nWe prepared two enhanced views for Perfect Homes 138, together with additional detail and lifestyle studies. The street-corner and entrance previews are attached.\n\nThe page shows the before-and-after comparisons, the additional frames and an example of a branded project presentation that your team can share with buyers in one link:\nhttps://a510.space/apertis/p/novocasa-perfect-homes-138/\n\nWould you like us to prepare a full image set for Perfect Homes 138?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after.jpg",
+          "url": "https://a510.space/apertis/p/novocasa-perfect-homes-138/assets/view-01-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 294191,
+          "sha256": "bd8695dc18f86751a85aa408a0838fb9727babbabc81df41316c8bfff9cee5eb"
+        },
+        {
+          "filename": "view-02-after.jpg",
+          "url": "https://a510.space/apertis/p/novocasa-perfect-homes-138/assets/view-02-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 152871,
+          "sha256": "54d14e90f432be16d3eaf57c86879281e37b231305d60b289e5c65a0551c8ebb"
+        }
+      ]
+    },
+    {
+      "id": "apertis-261013-04-essa-kypseli",
+      "to": "info@theessagroup.com",
+      "subject": "Kypseli Residence — images and a project presentation",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Hello ESSA team,\n\nWe prepared two enhanced views for Kypseli Residence, together with additional detail and lifestyle studies. The oblique and frontal exterior previews are attached.\n\nThe page shows the before-and-after comparisons, the additional frames and an example of a branded project presentation that your team can share with buyers in one link:\nhttps://a510.space/apertis/p/essa-kypseli/\n\nWould you like us to prepare a full image set for Kypseli Residence?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after.jpg",
+          "url": "https://a510.space/apertis/p/essa-kypseli/assets/view-01-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 323299,
+          "sha256": "7b0f52c60d72e46becdbda398d5e8b7adcbf1c9b3763461b4d49eec95bd83172"
+        },
+        {
+          "filename": "view-02-after.jpg",
+          "url": "https://a510.space/apertis/p/essa-kypseli/assets/view-02-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 330827,
+          "sha256": "d7802481502bfa00e556b09d942ebe70f57b53a42985c6ad3e035ecb83fd6e13"
+        }
+      ]
+    },
+    {
+      "id": "apertis-261013-06-demirel-valora",
+      "to": "info@demirelinsaat.com",
+      "subject": "Valora Suits — görseller ve proje sunumu",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Merhaba Demirel ekibi,\n\nValora Suits için sokak köşesi ve havuz başı teras görsellerini iyileştirdik; ayrıca detay ve yaşam kareleri hazırladık. İki örnek JPEG ektedir.\n\nSayfada önce/sonra karşılaştırmaları, ek kareler ve ekibinizin alıcılara tek bağlantıyla iletebileceği markalı bir proje sunumu örneği yer alıyor:\nhttps://a510.space/apertis/p/demirel-valora/\n\nValora Suits için eksiksiz bir görsel seti hazırlamamızı ister misiniz?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after.jpg",
+          "url": "https://a510.space/apertis/p/demirel-valora/assets/view-01-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 392934,
+          "sha256": "2e528b18456ce0e4d6d4a79749786dd4c885aff53b7551e2d0be14cad7dd9a99"
+        },
+        {
+          "filename": "view-02-after.jpg",
+          "url": "https://a510.space/apertis/p/demirel-valora/assets/view-02-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 358458,
+          "sha256": "d457f17772f876f775d02ce03df7008340798aafac471c9f373da2d0be999ed5"
+        }
+      ]
+    },
+    {
+      "id": "apertis-261013-07-gokmenoglu-fethiye",
+      "to": "info@gokmenogluinsaat.com",
+      "subject": "Fethiye Villa Projesi — görseller ve proje sunumu",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Merhaba Gökmenoğlu ekibi,\n\nFethiye Villa Projesi için giriş yolu ve bahçe cephesi görsellerini iyileştirdik; ayrıca detay ve yaşam kareleri hazırladık. İki örnek JPEG ektedir.\n\nSayfada önce/sonra karşılaştırmaları, ek kareler ve ekibinizin alıcılara tek bağlantıyla iletebileceği markalı bir proje sunumu örneği yer alıyor:\nhttps://a510.space/apertis/p/gokmenoglu-fethiye/\n\nFethiye Villa Projesi için eksiksiz bir görsel seti hazırlamamızı ister misiniz?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after.jpg",
+          "url": "https://a510.space/apertis/p/gokmenoglu-fethiye/assets/view-01-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 315241,
+          "sha256": "5a7800887148b27defc5bb42bd59d2422793cfc4fd2d92d4173cf18f0745eaab"
+        },
+        {
+          "filename": "view-02-after.jpg",
+          "url": "https://a510.space/apertis/p/gokmenoglu-fethiye/assets/view-02-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 370467,
+          "sha256": "4cf4ad7406624dcd21ff78dc197a801ca8c9440617041a7ee84cfddd18c610bd"
+        }
+      ]
+    },
+    {
+      "id": "apertis-261013-08-cmt-yasam1332",
+      "to": "info@cmtyapi.com",
+      "subject": "Yaşam 1332 — görseller ve proje sunumu",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Merhaba CMT ekibi,\n\nYaşam 1332 için sokak cephesi ve ana giriş görsellerini iyileştirdik; ayrıca detay ve yaşam kareleri hazırladık. İki örnek JPEG ektedir.\n\nSayfada önce/sonra karşılaştırmaları, ek kareler ve ekibinizin alıcılara tek bağlantıyla iletebileceği markalı bir proje sunumu örneği yer alıyor:\nhttps://a510.space/apertis/p/cmt-yasam1332/\n\nYaşam 1332 için eksiksiz bir görsel seti hazırlamamızı ister misiniz?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after.jpg",
+          "url": "https://a510.space/apertis/p/cmt-yasam1332/assets/view-01-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 375793,
+          "sha256": "d5b6bb21d5944a7af11a0eef2bd645bebf5471f9041e06a6dcf8426909c91f6b"
+        },
+        {
+          "filename": "view-02-after.jpg",
+          "url": "https://a510.space/apertis/p/cmt-yasam1332/assets/view-02-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 310204,
+          "sha256": "5394fa63d9f5f485bcbecba3a1c9cf80a4a280ecc62e3c069fff17a8344e4114"
+        }
+      ]
+    },
+    {
+      "id": "apertis-261013-09-hermes-hill",
+      "to": "info@hermesyapi.com.tr",
+      "subject": "Hermes Hill — görseller ve proje sunumu",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Merhaba Hermes ekibi,\n\nHermes Hill için avlu ve su öğesinin iki farklı açıdan görsellerini iyileştirdik; ayrıca detay ve yaşam kareleri hazırladık. İki örnek JPEG ektedir.\n\nSayfada önce/sonra karşılaştırmaları, ek kareler ve ekibinizin alıcılara tek bağlantıyla iletebileceği markalı bir proje sunumu örneği yer alıyor:\nhttps://a510.space/apertis/p/hermes-hill/\n\nHermes Hill için eksiksiz bir görsel seti hazırlamamızı ister misiniz?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after.jpg",
+          "url": "https://a510.space/apertis/p/hermes-hill/assets/view-01-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 463508,
+          "sha256": "05b423dec612bf5d8e6385a6afa1262274387c60fa3ebeb5fe12b064f0c07d75"
+        },
+        {
+          "filename": "view-02-after.jpg",
+          "url": "https://a510.space/apertis/p/hermes-hill/assets/view-02-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 396853,
+          "sha256": "d02b0cbef42e2767a5f740c328158c8efe27ed5caeb1aad8b1539dcd92f23681"
+        }
+      ]
+    },
+    {
+      "id": "apertis-261013-10-ozaydin-serenity",
+      "to": "info@ozaydinyapi.com.tr",
+      "subject": "Villa Serenity — görseller ve proje sunumu",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Merhaba Özaydın ekibi,\n\nVilla Serenity için havuzlu köşe cephesi ve bahçe cephesi görsellerini iyileştirdik; ayrıca detay ve yaşam kareleri hazırladık. İki örnek JPEG ektedir.\n\nSayfada önce/sonra karşılaştırmaları, ek kareler ve ekibinizin alıcılara tek bağlantıyla iletebileceği markalı bir proje sunumu örneği yer alıyor:\nhttps://a510.space/apertis/p/ozaydin-serenity/\n\nVilla Serenity için eksiksiz bir görsel seti hazırlamamızı ister misiniz?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after.jpg",
+          "url": "https://a510.space/apertis/p/ozaydin-serenity/assets/view-01-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 335300,
+          "sha256": "697c87e10fa14c5954ee6318c8eb20e343a4858c27c87c085b4aab4298c820fe"
+        },
+        {
+          "filename": "view-02-after.jpg",
+          "url": "https://a510.space/apertis/p/ozaydin-serenity/assets/view-02-after.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 351529,
+          "sha256": "72770d52aecd95c1e9da89db408d68275909b08a57d614387835558c455d8330"
+        }
+      ]
     }
   ]
 }
