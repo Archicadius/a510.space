@@ -509,6 +509,13 @@
         }
       ],
       "subject_canonical_english": "National Park Houses — images and a project presentation"
+    },
+    {
+      "id": "261013-owner-luna-queue-test-124234",
+      "to": "archicadius@gmail.com",
+      "subject": "APERTIS — тест очереди Луны",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Это тестовое письмо для проверки отправки через очередь Луны. Клиентские письма не отправлялись."
     }
   ]
 }
