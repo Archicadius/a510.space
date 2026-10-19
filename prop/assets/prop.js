@@ -1,7 +1,7 @@
 (function(){
   var root=document.documentElement, KEY='prop-lang';
   function setLang(l){root.lang=l;try{localStorage.setItem(KEY,l)}catch(e){}
-    document.querySelectorAll('[data-title-'+l+']').forEach(function(n){document.title=n.getAttribute('data-title-'+l)});
+    var t=document.querySelector('[data-title-'+l+']');if(t)document.title=t.getAttribute('data-title-'+l);
     var b=document.getElementById('lang');if(b)b.setAttribute('aria-label',l==='ru'?'Switch to English':'Переключить на русский');}
   var q=new URLSearchParams(location.search).get('lang'),saved=null;
   try{saved=localStorage.getItem(KEY)}catch(e){}
@@ -13,4 +13,9 @@
     document.querySelectorAll('.shot').forEach(function(s){s.addEventListener('click',function(){var i=s.querySelector('img');im.src=s.getAttribute('data-full')||i.src;im.alt=i.alt;cap.textContent=i.alt;box.showModal();});});
     box.querySelector('button').addEventListener('click',function(){box.close()});
     box.addEventListener('click',function(e){if(e.target===box)box.close()});}
+  if('IntersectionObserver' in window){
+    var els=document.querySelectorAll('.section,.facts,.intro,.manager');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){el.classList.add('reveal');io.observe(el);});
+  }
 })();
