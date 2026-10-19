@@ -1,5 +1,5 @@
 (function(){
-  var root=document.documentElement, KEY='alsu-lang';
+  var root=document.documentElement, KEY='prop-lang';
   function setLang(l){root.lang=l;try{localStorage.setItem(KEY,l)}catch(e){}
     document.querySelectorAll('[data-title-'+l+']').forEach(function(n){document.title=n.getAttribute('data-title-'+l)});
     var b=document.getElementById('lang');if(b)b.setAttribute('aria-label',l==='ru'?'Switch to English':'Переключить на русский');}

@@ -70,3 +70,11 @@ h2{font-weight:400;font-size:clamp(1.75rem,3.6vw,2.5rem);line-height:1.12;letter
 html[lang=ru] [lang=en]:not(html),html[lang=en] [lang=ru]:not(html){display:none!important}
 a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 @media (max-width:600px){.page{padding:0 16px}.hero{padding-top:36px}.section{padding-top:64px}.manager .who{flex-direction:column}}
+/* tiles + video */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:16px}
+.tiles .shot img{aspect-ratio:1/1;object-fit:cover}
+.wide-img img{aspect-ratio:auto}
+.video{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:flex-start}
+.video video{flex:0 0 auto;width:min(300px,100%);aspect-ratio:464/832;background:#000;display:block}
+.video>div{flex:1 1 320px;min-width:0}
+.badge{display:inline-flex;gap:8px;align-items:center;margin-top:16px;padding:8px 14px;border:1px solid var(--ink);font:11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase}
