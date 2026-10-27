@@ -310,4 +310,5 @@ footer{padding-top:28px}.download-small{font:12px/1.6 var(--sans)}
 const tabs=[...document.querySelectorAll('[role="tab"]')];
 function chooseTab(tab){tabs.forEach(t=>{const active=t===tab;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!active;});}
 tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>chooseTab(tab));tab.addEventListener('keydown',e=>{let n;if(e.key==='ArrowRight')n=(i+1)%tabs.length;if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;if(e.key==='Home')n=0;if(e.key==='End')n=tabs.length-1;if(n!==undefined){e.preventDefault();chooseTab(tabs[n]);tabs[n].focus();}});});
-</script></body></html>
+</script><script defer src="/assets/a510-t.js"></script>
+</body></html>
