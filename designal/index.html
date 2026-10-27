@@ -250,7 +250,28 @@ dialog.lb::backdrop{background:#fff}
   });
   document.getElementById('lb-close').addEventListener('click',function(){lb.close();});
   lb.addEventListener('click',function(e){if(e.target===lb)lb.close();});
-  var sh=document.getElementById('share'),url='https://a510.space/designal/';
+  /* Маячок: открытие, город/страна, время на странице, клики. ?r=метка — чья ссылка */
+  var B='https://a510-hub.vercel.app/api/apertis/visit';
+  var r='direct';
+  try{var q=new URLSearchParams(location.search).get('r');if(q){q=q.toLowerCase().replace(/[^a-z0-9-]/g,'').slice(0,20);if(q)r=q;}}catch(e){}
+  var T='dsg-'+r;
+  function hit(t,d){var u=B+'?t='+encodeURIComponent(t)+(d!=null?'&d='+d:'');try{if(d!=null&&navigator.sendBeacon){navigator.sendBeacon(u);return;}fetch(u,{mode:'no-cors',keepalive:true}).catch(function(){});}catch(e){}}
+  hit(T);
+  var t0=Date.now(),sent=false;
+  function bye(){if(sent)return;sent=true;hit(T,Math.round((Date.now()-t0)/1000));}
+  addEventListener('pagehide',bye);
+  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')bye();else sent=false;});
+  function clk(a){return ('dsgc-'+a+'-'+r).slice(0,32);}
+  document.querySelectorAll('a[href]').forEach(function(a){
+    var h=a.getAttribute('href'),k=null;
+    if(h.indexOf('t.me/')>-1)k='tg';else if(h.indexOf('mailto:')===0)k='mail';
+    else if(h.indexOf('alpha-60')>-1)k='pdf60';else if(h.indexOf('orion-180')>-1)k='pdf180';
+    else if(h==='#price')k='price';
+    if(k)a.addEventListener('click',function(){hit(clk(k));});
+  });
+  var pr=document.getElementById('price'),seen=false;
+  if(pr&&'IntersectionObserver' in window){new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting&&!seen){seen=true;hit(clk('seeprice'));o.disconnect();}});}).observe(pr);}
+  var sh=document.getElementById('share'),url='https://a510.space/designal/?r='+(r==='direct'?'fw':(r+'-fw').slice(0,20));
   sh.addEventListener('click',function(){
     try{
       if(navigator.share){navigator.share({title:'A510 · Интерьер',url:url}).catch(function(){});return;}
