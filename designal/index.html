@@ -1,86 +1,263 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Интерьер вашего дома — A510 Architects</title>
-  <meta name="description" content="Индивидуальный дизайн интерьера дома от A510. Концепция — 1 500 ₽/м², проект с чертежами — 2 500 ₽/м². Интерьеры Riga Holiday, примеры проектных альбомов.">
-  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#ffffff">
-  <link rel="canonical" href="https://a510.space/designal/">
-  <meta property="og:url" content="https://a510.space/designal/">
-  <meta property="og:image" content="https://a510.space/designal/assets/orion-08.webp">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Дом, в котором всё на своём месте. A510">
-  <meta property="og:description" content="Дизайн интерьера с понятной стоимостью. От первого образа до продуманных деталей.">
-  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="assets/orion-08.webp">
-  <link rel="stylesheet" href="style.css?v=20261014-mono"><script defer src="script.js?v=20261014"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A510 · Интерьер</title>
+<meta name="description" content="Интерьер как архитектура. От генплана посёлка до ручки шкафа — A510 Architects проектирует улицы, дома и то, как в них живут.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://a510.space/designal/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A510 · Интерьер как архитектура">
+<meta property="og:description" content="От генплана посёлка до ручки шкафа. Ваш сценарий жизни станет продуманным интерьером.">
+<meta property="og:url" content="https://a510.space/designal/">
+<meta property="og:image" content="https://a510.space/designal/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#111111">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<style>
+body{margin:0;background:#fff}
+a{color:#111}
+img{display:block;max-width:100%}
+.pg{--xl:96px;--m:30px;--s:17px;font-family:'Inter Tight','Helvetica Neue',Helvetica,Arial,sans-serif;color:#111;background:#fff;font-size:var(--s);line-height:1.5;-webkit-font-smoothing:antialiased}
+.xl{font-size:var(--xl);font-weight:600;line-height:.95;letter-spacing:-.045em;margin:0}
+.m{font-size:var(--m);font-weight:600;line-height:1.15;letter-spacing:-.02em;margin:0}
+.s{font-size:var(--s);font-weight:400;line-height:1.5;margin:0}
+.b{font-weight:600}
+.g{color:#6e6e73}
+.w{max-width:1440px;margin:0 auto;padding-left:56px;padding-right:56px;box-sizing:border-box}
+.g12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+.pill{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 22px;border-radius:999px;font-size:var(--s);font-weight:600;text-decoration:none;box-sizing:border-box;white-space:nowrap}
+.pill-d{background:#111;color:#fff}.pill-d:hover{background:#333;color:#fff}
+.pill-l{background:#fff;color:#111}.pill-l:hover{background:#e8e8ed;color:#111}
+.tl{font-size:var(--s);font-weight:400;text-decoration:none}
+.tl:hover{text-decoration:underline;text-underline-offset:4px}
+.ph{overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.full{position:relative;overflow:hidden;color:#fff}
+.full>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.full .shade{position:absolute;inset:0}
+.full .inner{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;box-sizing:border-box}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details[open] .s-closed,details:not([open]) .s-open{display:none}
+.zoom{all:unset;cursor:zoom-in;display:block}
+.zoom:focus-visible{outline:2px solid #111;outline-offset:4px}
+dialog.lb{border:0;padding:0;margin:0;width:100vw;height:100vh;max-width:none;max-height:none;background:#fff}
+dialog.lb[open]{display:flex;flex-direction:column}
+dialog.lb::backdrop{background:#fff}
+.lb-bar{display:flex;justify-content:flex-end;padding:12px 20px}
+.lb-body{flex:1;overflow:auto;padding:0 20px 24px}
+.lb-body img{max-width:none;width:1900px}
+@media (max-width:1100px){
+  .pg{--xl:68px;--m:26px}
+  .c-l,.c-r{grid-column:1 / -1 !important}
+}
+@media (max-width:760px){
+  .pg{--xl:44px;--m:22px;--s:16px}
+  .w{padding-left:20px;padding-right:20px}
+  .g12{column-gap:0}
+  .mf{grid-column:1 / -1 !important;margin-top:0 !important}
+  .mstack{flex-direction:column !important;align-items:stretch !important}
+  .mgap{row-gap:12px !important}
+  .mpad{padding-top:88px !important}
+  .m43{aspect-ratio:4/3 !important}
+  .m45{aspect-ratio:4/5 !important}
+  .mtall{height:auto !important;max-height:none !important;aspect-ratio:auto !important;min-height:max(560px,86svh) !important;display:flex;flex-direction:column}
+  .mtall .inner{flex:1;height:auto}
+  .mo1{order:-1}
+}
+</style>
 </head>
 <body>
-<a class="skip" href="#main">К содержанию</a>
-<header class="header">
-  <a class="brand" href="https://a510.space/" aria-label="A510 Architects — главная"><svg viewBox="0 0 42 42" aria-hidden="true"><path d="M2 10 10 3l8 7v10H2z" fill="currentColor"/><path d="m25 10 8-7 8 7v10H25zM2 32l8-7 8 7v10H2zm23 0 8-7 8 7v10H25z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>A510<span class="brand-sub">ARCHITECTS</span></span></a>
-  <nav aria-label="Основная навигация"><a href="#projects">Интерьеры</a><a href="#packages">Стоимость</a><a href="#albums">Примеры PDF</a></nav>
-  <a class="header-contact" href="#contact">Обсудить дом <span aria-hidden="true">↗</span></a>
+<div class="pg">
+
+<section class="full mtall" style="height: 94vh; min-height: 640px; max-height: 980px">
+<img src="img/hero.webp" alt="Гостиная с панелями из дерева, светлым диваном и люстрой" style="object-position: 46% 58%" fetchpriority="high">
+<div class="shade" style="background: linear-gradient(to top, rgba(0,0,0,.66) 0%, rgba(0,0,0,.08) 48%, rgba(0,0,0,.28) 100%)"></div>
+<div class="inner">
+<header class="w" style="position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; padding-top: 26px; padding-bottom: 26px">
+<a href="https://a510.space/" aria-label="A510 Architects" style="display: flex; min-height: 44px; align-items: center">
+<svg viewBox="0 0 1000 1000" width="30" height="30" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="44"><path d="M50 455v-253.1l202.5-151.9 202.5 151.9v253.1z" fill="#fff"/><path d="M545 455v-253.1l202.5-151.9 202.5 151.9v253.1z"/><path d="M50 950v-253.1l202.5-151.9 202.5 151.9v253.1z"/><path d="M545 950v-253.1l202.5-151.9 202.5 151.9v253.1z"/></g></svg>
+</a>
+<a href="https://a510.space/" class="s b" style="letter-spacing: .2em; text-decoration: none; color: #fff">A510 ARCHITECTS</a>
 </header>
-<main id="main">
-  <section class="hero" aria-labelledby="hero-title">
-    <img class="hero-image" src="assets/orion-08.webp" width="2400" height="1800" alt="Светлая кухня-гостиная с большим обеденным столом и выходом в сад, проект Орион-180" fetchpriority="high">
-    <div class="hero-shade"></div>
-    <div class="hero-top"><span class="eyebrow">A510 / ДИЗАЙН ИНТЕРЬЕРА</span><span class="hero-tag">Для владельцев загородных домов</span></div>
-    <div class="hero-content"><h1 id="hero-title">Дом, в котором<br>всё на своём месте.</h1><div class="hero-bottom"><p>Ваш ритм жизни. Ваш характер.<br>Наш опыт — от планировки до деталей.</p><a class="button light" href="#packages">Найти своё решение <span aria-hidden="true">↗</span></a></div></div>
-    <div class="hero-caption"><span>RIGA HOLIDAY · ОРИОН-180</span><span>ДИЗАЙН ИНТЕРЬЕРА · ВИЗУАЛИЗАЦИЯ A510</span></div>
-  </section>
-  <div class="ribbon"><span>ИНДИВИДУАЛЬНЫЙ ПРОЕКТ</span><span>ДВА ПОНЯТНЫХ ПАКЕТА</span><span>ОТ 1 500 ₽/М²</span></div>
+<div class="w g12" style="width: 100%; padding-bottom: 64px; row-gap: 24px; align-items: end">
+<h1 class="xl c-l" style="grid-column: 1 / span 8">Интерьер<br>как архитектура</h1>
+<div class="c-r" style="grid-column: 9 / span 4; display: flex; flex-direction: column; gap: 22px; padding-bottom: 6px">
+<p class="s"><span class="b">От генплана посёлка до ручки шкафа.</span> Мы проектируем улицы, дома и то, как в них живут. Ваш сценарий жизни станет продуманным интерьером.</p>
+<div style="display: flex; align-items: center; flex-wrap: wrap; gap: 14px 26px">
+<a class="pill pill-l" href="https://t.me/a510_luna_bot?start=designal">Обсудить проект</a>
+<a class="tl" href="#price" style="color: #fff">Стоимость</a>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-  <section class="intro wrap section">
-    <div class="section-label"><span>01 / ПОДХОД</span><span class="rule"></span></div>
-    <div class="intro-layout"><h2>Знакомая архитектура.<br><em>Личная история.</em></h2><div class="intro-copy"><p class="lead">Мы проектировали дома и интерьеры для «Альянс Девелопмент». Теперь этот опыт может стать основой вашего дома.</p><p>Начинаем с того, как вы живёте: где собирается семья, как проходит утро, что хочется видеть из любимого кресла. Соединяем эти привычки с архитектурой, светом и материалами.</p><p>Вы получаете цельный интерьер и заранее знаете, что входит в проект и сколько он стоит.</p><a class="text-link" href="#projects">Посмотреть наши интерьеры <span aria-hidden="true">↓</span></a></div></div>
-  </section>
+<section class="w" style="padding-top: 56px">
+<a href="#alliance" class="mstack" style="display: flex; align-items: center; justify-content: space-between; gap: 14px 40px; padding: 28px 0; border-top: 1px solid #111; border-bottom: 1px solid #111; text-decoration: none; color: #111">
+<span style="display: flex; flex-direction: column; gap: 6px">
+<span class="m">Владельцам домов «Альянс Девелопмент» — особые условия</span>
+<span class="s g">Мы спроектировали все дома Альянса и знаем их изнутри и снаружи.</span>
+</span>
+<span class="m" style="white-space: nowrap">от 1 800 ₽/м²</span>
+</a>
+</section>
 
-  <section id="projects" class="projects wrap section" aria-labelledby="projects-title">
-    <div class="section-label"><span>02 / ИНТЕРЬЕРЫ A510</span><span class="rule"></span><span>ВЫБРАННЫЕ ПРОЕКТЫ</span></div>
-    <div class="section-heading"><h2 id="projects-title">Разные дома.<br><em>Одинаковое внимание.</em></h2><p>Свет и пропорции, фактура дерева,<br>место для любимых вещей.<br>Хороший интерьер складывается из деталей.</p></div>
-    <div class="project-tabs" role="tablist" aria-label="Выбрать проект">
-      <button role="tab" id="tab-alpha" aria-selected="true" aria-controls="project-panel" data-project="alpha">01 <span>Альфа-60</span></button>
-      <button role="tab" id="tab-orion" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="orion">02 <span>Орион-180</span></button>
-      <button role="tab" id="tab-krasnodar" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="krasnodar">03 <span>Краснодар</span></button>
-    </div>
-    <div id="project-panel" role="tabpanel" aria-labelledby="tab-alpha">
-      <div class="project-main"><button class="image-button" data-zoom aria-label="Увеличить изображение интерьера"><img id="project-main-image" src="assets/alpha-03.webp" width="2400" height="1800" loading="lazy" alt="Альфа-60: светлая гостиная с выходом в сад"><span class="zoom-label" aria-hidden="true">Рассмотреть <span>↗</span></span></button></div>
-      <div class="project-description"><div><span id="project-location" class="eyebrow">RIGA HOLIDAY</span><h3 id="project-name">Альфа-60</h3></div><p id="project-description">Открытая кухня-гостиная, естественный свет и спокойная палитра. Пространство для жизни за городом — без лишнего.</p><a id="project-pdf-link" class="text-link" href="downloads/alpha-60-example.pdf" target="_blank" rel="noopener">Посмотреть альбом <span aria-hidden="true">↗</span></a></div>
-      <div class="project-pair"><button class="image-button" data-zoom aria-label="Увеличить второй ракурс"><img id="project-second-image" src="assets/alpha-05.webp" width="2400" height="1800" loading="lazy" alt="Альфа-60: кухня и обеденная зона"></button><button class="image-button" data-zoom aria-label="Увеличить третий ракурс"><img id="project-third-image" src="assets/alpha-19.webp" width="2400" height="1800" loading="lazy" alt="Альфа-60: спальня в светлой палитре"></button></div>
-      <p class="small image-note">На изображениях — проектные визуализации A510.</p>
-    </div>
-  </section>
+<section class="w g12 mpad" style="padding-top: 140px; row-gap: 32px; align-items: center">
+<div class="c-l" style="grid-column: 1 / span 4; display: flex; flex-direction: column; gap: 22px">
+<h2 class="xl">Сначала — как вы живёте</h2>
+<p class="s">Кто собирается за этим столом по воскресеньям, где работать, где хранить вещи. Мы начинаем с планировки и света, а материалы и мебель подбираем под ваш уклад.</p>
+</div>
+<div class="ph c-r m43" style="grid-column: 6 / span 7; aspect-ratio: 2200 / 1650"><img src="img/dining.webp" alt="Столовая с большим столом и окном в сад" loading="lazy"></div>
+</section>
 
-  <section class="mood" aria-labelledby="mood-title"><img src="assets/orion-44.webp" alt="Мастер-спальня Орион-180: тёмное дерево, мягкий свет, низкая кровать" width="2400" height="1800" loading="lazy"><div class="mood-overlay"></div><div class="mood-copy"><span class="eyebrow">ПРОСТРАНСТВО ДЛЯ СЕБЯ</span><h2 id="mood-title">Когда всё продумано,<br><em>можно просто жить.</em></h2></div><span class="mood-credit">ОРИОН-180 / МАСТЕР-СПАЛЬНЯ / ВИЗУАЛИЗАЦИЯ</span></section>
+<section class="mpad" style="padding-top: 140px">
+<div class="full mtall" style="aspect-ratio: 2200 / 1100">
+<img src="img/light.webp" alt="Лаунж с мягкой мебелью, деревянным потолком и световым фонарём" loading="lazy">
+<div class="shade" style="background: linear-gradient(to top, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 55%)"></div>
+<div class="inner"><div class="w" style="width: 100%; padding-bottom: 56px"><p class="xl" style="max-width: 900px">Свет. Материал.<br>Пропорция.</p></div></div>
+</div>
+</section>
 
-  <section class="documentation wrap section" aria-labelledby="docs-title">
-    <div class="section-label"><span>03 / ОТ ОБРАЗА К ДЕТАЛЯМ</span><span class="rule"></span></div>
-    <div class="section-heading"><h2 id="docs-title">Красота.<br><em>С точностью до детали.</em></h2><p>За каждым интерьером — система решений.<br>В пакете с чертежами она становится<br>понятным заданием для реализации.</p></div>
-    <div class="drawings"><figure><button class="image-button" data-zoom aria-label="Увеличить планировку"><img src="assets/drawing-plan.webp" alt="Альфа-60 — планировка с мебелью, лист 23 оригинального альбома" width="1600" height="1132" loading="lazy"></button><figcaption><span>01</span><div><h3>Как устроен дом</h3><p>Планировка, мебель и удобные связи между помещениями.</p></div></figcaption></figure><figure><button class="image-button" data-zoom aria-label="Увеличить план освещения"><img src="assets/drawing-light.webp" alt="Альфа-60 — план верхней разводки электроприборов, лист 36" width="1600" height="1132" loading="lazy"></button><figcaption><span>02</span><div><h3>Как работает свет</h3><p>Расположение светильников и логика повседневных сценариев.</p></div></figcaption></figure><figure><button class="image-button" data-zoom aria-label="Увеличить развёртки"><img src="assets/drawing-elevation.webp" alt="Альфа-60 — развёртки кухни-гостиной, лист 40" width="1600" height="1132" loading="lazy"></button><figcaption><span>03</span><div><h3>Как сходятся детали</h3><p>Развёртки, материалы и размеры для согласованного результата.</p></div></figcaption></figure></div>
-  </section>
+<section class="w g12 mpad" style="padding-top: 140px; row-gap: 32px; align-items: center">
+<div class="ph c-l m45" style="grid-column: 1 / span 6; aspect-ratio: 4 / 5"><img src="img/storage.webp" alt="Прихожая со встроенными подсвеченными стеллажами и шкафами" loading="lazy"></div>
+<div class="c-r mo1" style="grid-column: 8 / span 5; display: flex; flex-direction: column; gap: 22px">
+<h2 class="xl">Каждый метр работает</h2>
+<p class="s">Шкафы, ниши, подсветка, розетки и проходы решаем на плане — до выбора плитки и мебели. Вещам есть место, свету есть смысл, а интерьер удобен каждый день, а не только на фотографии.</p>
+</div>
+</section>
 
-  <section id="packages" class="pricing section" aria-labelledby="price-title"><div class="wrap">
-    <div class="section-label"><span>04 / СТОИМОСТЬ</span><span class="rule"></span><span>ПОНЯТНО ДО СТАРТА</span></div>
-    <div class="section-heading"><h2 id="price-title">Ваш дом.<br><em>Два пути к результату.</em></h2><p>Выберите глубину проработки.<br>Площадь, состав и итоговую стоимость<br>фиксируем до начала работы.</p></div>
-    <div class="price-grid">
-      <article class="price-card"><div class="package-top"><span class="eyebrow">01 / ОБРАЗ И ПЛАНИРОВКА</span></div><h3>Концепция интерьера</h3><p class="package-purpose">Увидеть будущий дом и принять<br>основные решения.</p><div class="price">1 500 <span>₽/м²</span></div><ul><li>Бриф и сценарии жизни</li><li>Планировочное решение с мебелью</li><li>Стилевая концепция</li><li>Визуализации согласованных помещений</li><li>Палитра отделочных материалов</li><li>Итоговый альбом в PDF</li></ul><p class="package-note">Рабочие чертежи в этот пакет не входят.</p><a class="button outline" href="#contact" data-package="Концепция интерьера">Обсудить концепцию <span aria-hidden="true">↗</span></a></article>
-      <article class="price-card featured"><div class="package-top"><span class="eyebrow">02 / ОБРАЗ И ДОКУМЕНТАЦИЯ</span><span class="tag">С ЧЕРТЕЖАМИ</span></div><h3>Проект интерьера</h3><p class="package-purpose">Продумать интерьер и передать<br>решения строителям.</p><div class="price">2 500 <span>₽/м²</span></div><ul><li>Всё, что входит в концепцию</li><li>Планы монтажа и демонтажа по задаче</li><li>Планы полов, потолков и отделки</li><li>Размещение света, розеток и сантехники</li><li>Развёртки стен</li><li>Ведомости отделочных материалов</li></ul><p class="package-note">Альбом согласованных решений в PDF.</p><a class="button light" href="#contact" data-package="Проект интерьера">Обсудить проект <span aria-hidden="true">↗</span></a></article>
-    </div>
-    <div class="estimate"><div class="estimate-input"><label for="area">Посчитайте для своего дома</label><div class="area-control"><input type="number" id="area" min="1" max="2000" step="1" value="150" inputmode="decimal" aria-describedby="estimate-note"><span>м²</span></div></div><div class="estimate-results" aria-live="polite" aria-atomic="true"><div><span>Концепция</span><output id="concept-total" for="area">225 000 ₽</output></div><div><span>Проект с чертежами</span><output id="full-total" for="area">375 000 ₽</output></div></div></div>
-    <p class="small pricing-note" id="estimate-note">Предварительный расчёт по внутренней проектируемой площади. Точный состав, исходные данные, число визуализаций, правок и срок согласуем в задании. Обмеры, инженерные разделы, комплектация и авторское сопровождение обсуждаются отдельно. Отделка, мебель и строительные работы в стоимость проекта не входят.</p>
-    <details class="scope"><summary>Подробный состав и границы проекта <span aria-hidden="true">+</span></summary><div class="scope-grid"><div><h3>Концепция</h3><p>Обсуждаем привычки семьи, пожелания к интерьеру и бюджет реализации. Разрабатываем планировку, образ помещений и сочетания материалов. Состав помещений и ракурсов закрепляем в задании.</p></div><div><h3>Документация</h3><p>В пакете «Проект интерьера» дополняем концепцию планами и развёртками. Дизайнерские схемы оборудования показывают расположение и привязки; инженерные расчёты и производственные чертежи мебели согласуются отдельно.</p></div><div><h3>Исходные данные</h3><p>Начинаем с актуального плана и подтверждённых размеров. Если нужны обмеры, определяем их порядок до начала проектирования. Итоговую стоимость, этапы и правки закрепляем в договоре.</p></div></div></details>
-  </div></section>
+<section class="w g12 mgap" style="padding-top: 24px; row-gap: 24px">
+<div class="ph mf" style="grid-column: 1 / span 6; aspect-ratio: 4 / 3"><img src="img/lounge.webp" alt="Зона отдыха с диванами у зелёной стены и деревянной панели" loading="lazy"></div>
+<div class="ph mf" style="grid-column: 7 / span 6; aspect-ratio: 4 / 3"><img src="img/kitchen.webp" alt="Кухня с островом из мрамора и стеной из тёмного дерева" loading="lazy"></div>
+</section>
 
-  <section id="albums" class="albums wrap section" aria-labelledby="albums-title"><div class="section-label"><span>05 / ПОСМОТРИТЕ РЕЗУЛЬТАТ</span><span class="rule"></span></div><div class="section-heading"><h2 id="albums-title">За красивой картинкой —<br><em>настоящий проект.</em></h2><p>Откройте примеры альбомов.<br>Визуализации, планы, развёртки.<br>Без регистрации и ожидания.</p></div>
-    <div class="album-grid"><article class="album-card"><a class="album-image" href="downloads/alpha-60-example.pdf" target="_blank" rel="noopener" aria-label="Открыть пример проекта Альфа-60, PDF"><img src="assets/alpha-05-sm.webp" alt="Интерьер Альфа-60 на обложке примера проекта" width="800" height="600" loading="lazy"><span class="pdf-badge">PDF ↗</span></a><div class="album-info"><span class="eyebrow">RIGA HOLIDAY</span><h3>Альфа-60</h3><p>Демонстрационная выборка · 18 листов<br><span data-pdf-size="alpha">PDF · 5,3 МБ</span> · нумерация оригинала сохранена</p><a class="text-link" href="downloads/alpha-60-example.pdf" download>Скачать пример <span aria-hidden="true">↓</span></a></div></article><article class="album-card"><a class="album-image" href="downloads/orion-180-example.pdf" target="_blank" rel="noopener" aria-label="Открыть пример проекта Орион-180, PDF"><img src="assets/orion-03-sm.webp" alt="Интерьер Орион-180 на обложке примера проекта" width="800" height="600" loading="lazy"><span class="pdf-badge">PDF ↗</span></a><div class="album-info"><span class="eyebrow">RIGA HOLIDAY</span><h3>Орион-180</h3><p>Демонстрационная выборка · 23 листа<br><span data-pdf-size="orion">PDF · 20,5 МБ</span> · нумерация оригинала сохранена</p><a class="text-link" href="downloads/orion-180-example.pdf" download>Скачать пример <span aria-hidden="true">↓</span></a></div></article></div><p class="small album-note">Примеры показывают наши ранее разработанные проекты. Состав вашего альбома определяется выбранным пакетом и заданием.</p>
-  </section>
+<section class="w g12 mpad" style="padding-top: 140px; row-gap: 32px; align-items: center">
+<div class="c-l" style="grid-column: 1 / span 5; display: flex; flex-direction: column; gap: 22px">
+<h2 class="xl">Чертежи для стройки</h2>
+<p class="s">Каждая стена, каждый шкаф и светильник на своём месте ещё до начала ремонта. Проект можно отдать бригаде — ничего не придётся придумывать на объекте.</p>
+</div>
+<div class="c-r" style="grid-column: 7 / span 6"><img src="img/axon.webp" alt="Аксонометрия первого этажа дома с мебелью и отделкой" style="width: 100%" loading="lazy"></div>
+</section>
 
-  <section class="process wrap section" aria-labelledby="process-title"><div class="section-label"><span>06 / КАК МЫ РАБОТАЕМ</span><span class="rule"></span></div><div class="section-heading"><h2 id="process-title">От первого разговора<br><em>до вашего интерьера.</em></h2></div><ol class="steps"><li><span>01</span><h3>Знакомимся с домом</h3><p>Изучаем план, исходные данные, ваши пожелания и бюджет реализации.</p></li><li><span>02</span><h3>Находим решение</h3><p>Согласуем планировку и направление интерьера. Закладываем основу всех следующих решений.</p></li><li><span>03</span><h3>Собираем образ</h3><p>Показываем интерьер в визуализациях. Уточняем материалы, свет и детали.</p></li><li><span>04</span><h3>Передаём проект</h3><p>Оформляем итоговый альбом. В пакете с чертежами — добавляем документацию для реализации.</p></li></ol></section>
+<section class="w mpad" id="price" style="padding-top: 160px">
+<h2 class="xl">Стоимость</h2>
 
-  <section id="contact" class="contact section"><div class="wrap contact-layout"><div><span class="eyebrow">СЛЕДУЮЩИЙ ШАГ</span><h2>Расскажите<br><em>о вашем доме.</em></h2><p>Пришлите план, площадь и несколько слов о том,<br>каким вы хотите видеть свой интерьер.</p><a class="button light contact-button" id="email-link" href="mailto:bureau.A510@gmail.com?subject=Дизайн%20интерьера%20дома%20—%20A510">Обсудить мой дом <span aria-hidden="true">↗</span></a><a class="contact-email" href="mailto:bureau.A510@gmail.com">bureau.A510@gmail.com</a></div><div class="contact-image"><img src="assets/krasnodar-02.webp" alt="Тёплый свет в интерьере прихожей частного дома, Краснодар" width="2400" height="2400" loading="lazy"><span>КРАСНОДАР / ЧАСТНЫЙ ИНТЕРЬЕР / ВИЗУАЛИЗАЦИЯ</span></div></div></section>
-</main>
-<footer class="footer wrap"><a href="https://a510.space/">A510 ARCHITECTS <span aria-hidden="true">↗</span></a><span>АРХИТЕКТУРА. ИНТЕРЬЕРЫ. ВНИМАНИЕ К ЖИЗНИ.</span><span>© A510, 2026</span></footer>
-<dialog id="lightbox" aria-label="Просмотр изображения"><button id="close-lightbox" aria-label="Закрыть изображение">Закрыть <span aria-hidden="true">×</span></button><img id="lightbox-image" alt=""><p id="lightbox-caption"></p></dialog>
-</body></html>
+<div class="g12" style="margin-top: 56px; row-gap: 32px; border-top: 1px solid #111; padding-top: 32px; align-items: start">
+<div class="c-l" style="grid-column: 1 / span 4; display: flex; flex-direction: column; gap: 16px">
+<h3 class="m">Эксклюзивный интерьер</h3>
+<p class="m">от 5 000 ₽/м²</p>
+<p class="s">Для сложных проектов и искушённых заказчиков. Интерьер, которого больше ни у кого не будет: мебель и детали по нашим эскизам, редкие материалы, решения, найденные под конкретный дом. Объём работы обсуждаем после знакомства с объектом.</p>
+</div>
+<div class="ph c-r m43" style="grid-column: 6 / span 7; aspect-ratio: 2400 / 1840"><img src="img/exclusive.webp" alt="Гостиная с белым диваном, деревянными панелями и люстрой, вид на кухню" loading="lazy"></div>
+</div>
+
+<div id="alliance" class="g12" style="margin-top: 72px; row-gap: 32px; border-top: 1px solid #111; padding-top: 32px">
+<div class="c-l" style="grid-column: 1 / span 4; display: flex; flex-direction: column; gap: 16px">
+<h3 class="m">Для домов «Альянс Девелопмент»</h3>
+<p class="s">Мы спроектировали все дома Альянса и знаем их изнутри и снаружи. Поэтому продуманный, красивый интерьер, готовый к ремонту, для них стоит меньше.</p>
+</div>
+<div class="c-r" style="grid-column: 6 / span 7; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+<div class="mf" style="border-top: 1px solid #d2d2d7; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<p class="s b">Концепция</p>
+<p class="m">1 800 ₽/м²</p>
+<p class="s g">Планировка с мебелью, концепция и палитра материалов, визуализации, итоговый PDF.</p>
+</div>
+<div class="mf" style="border-top: 1px solid #d2d2d7; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
+<p class="s b">Проект</p>
+<p class="m">3 000 ₽/м²</p>
+<p class="s g">Всё из концепции, а также планы отделки и оборудования, развёртки стен, ведомости материалов.</p>
+</div>
+</div>
+</div>
+
+<div class="g12" style="margin-top: 40px; row-gap: 12px">
+<p class="s c-l" style="grid-column: 1 / span 5">Например, дом 150 м²: концепция — 270 000 ₽, проект — 450 000 ₽.</p>
+<p class="s g c-r" style="grid-column: 6 / span 7">Стоимость считается по проектируемой площади. Площадь, состав и итоговую сумму фиксируем в договоре до начала работы.</p>
+</div>
+
+<details style="margin-top: 36px; border-top: 1px solid #d2d2d7; border-bottom: 1px solid #d2d2d7">
+<summary class="s b" style="padding: 18px 0"><span class="s-closed">Состав и условия</span><span class="s-open">Закрыть</span></summary>
+<div class="g12" style="padding-bottom: 32px; row-gap: 24px">
+<div class="c-l" style="grid-column: 1 / span 6"><p class="s b">Проект интерьера, полный состав</p><p class="s g">Планы монтажа и демонтажа, полов, потолков и отделки, схемы света, розеток и сантехники, развёртки стен, ведомости материалов, PDF-альбом согласованных решений.</p></div>
+<div class="c-r" style="grid-column: 7 / span 6"><p class="s b">Обсуждаются отдельно</p><p class="s g">Обмеры, инженерные разделы, комплектация и авторский надзор. Строительные работы, мебель и материалы в стоимость проекта не входят. Число визуализаций, правок и сроки согласуем в задании.</p></div>
+</div>
+</details>
+</section>
+
+<section class="w mpad" style="padding-top: 160px">
+<div class="g12" style="row-gap: 20px; align-items: end">
+<h2 class="xl c-l" style="grid-column: 1 / span 6">Примеры альбомов</h2>
+<p class="s g c-r" style="grid-column: 8 / span 5">Фрагменты ранее выполненных проектов: развёртка стены гостиной с размерами, отделкой и розетками, планировка с мебелью.</p>
+</div>
+<button class="zoom" type="button" data-zoom="img/elevation.webp" aria-label="Увеличить развёртку" style="margin-top: 56px; width: 100%"><img src="img/elevation.webp" alt="Развёртка стены гостиной с панелями, телевизором, размерами и отметками розеток" style="width: 100%" loading="lazy"></button>
+<div class="g12" style="margin-top: 48px; row-gap: 32px; align-items: start">
+<button class="zoom mf" type="button" data-zoom="img/plan.webp" aria-label="Увеличить планировку" style="grid-column: 1 / span 5"><img src="img/plan.webp" alt="Фрагмент чертежа: планировка с мебелью и размерами" loading="lazy"></button>
+<div class="mf" style="grid-column: 7 / span 6; border-top: 1px solid #111">
+<a href="downloads/alpha-60-example.pdf" class="mstack" style="display: flex; justify-content: space-between; align-items: baseline; gap: 4px 24px; padding: 20px 0; border-bottom: 1px solid #d2d2d7; text-decoration: none; color: #111"><span class="s b">Пример альбома, дом 60 м²</span><span class="s g">PDF, 18 листов, 5,3 МБ</span></a>
+<a href="downloads/orion-180-example.pdf" class="mstack" style="display: flex; justify-content: space-between; align-items: baseline; gap: 4px 24px; padding: 20px 0; border-bottom: 1px solid #d2d2d7; text-decoration: none; color: #111"><span class="s b">Пример альбома, дом 180 м²</span><span class="s g">PDF, 23 листа, 20,5 МБ</span></a>
+</div>
+</div>
+</section>
+
+<section class="mpad" id="contact" style="padding-top: 160px">
+<div class="full mtall" style="height: 92vh; min-height: 620px; max-height: 940px">
+<img src="img/finale.webp" alt="Прихожая с подсвеченным зеркалом, бра и деревянными панелями" style="object-position: 50% 45%" loading="lazy">
+<div class="shade" style="background: linear-gradient(to top, rgba(0,0,0,.72) 0%, rgba(0,0,0,.15) 55%, rgba(0,0,0,.1) 100%)"></div>
+<div class="inner">
+<div class="w g12" style="width: 100%; padding-bottom: 64px; row-gap: 24px; align-items: end">
+<h2 class="xl c-l" style="grid-column: 1 / span 7">Расскажите<br>о своём доме</h2>
+<div class="c-r" style="grid-column: 8 / span 5; display: flex; flex-direction: column; gap: 20px; padding-bottom: 6px">
+<p class="s">Пришлите план, площадь и несколько слов о том, что важно в будущем интерьере. Если у вас дом Альянса, достаточно назвать модель.</p>
+<div style="display: flex; align-items: center; flex-wrap: wrap; gap: 14px 26px">
+<a class="pill pill-l" href="https://t.me/a510_luna_bot?start=designal">Обсудить проект</a>
+<a class="tl" href="mailto:designal@a510.space" style="color: #fff">designal@a510.space</a>
+</div>
+<button type="button" id="share" class="tl" style="font-family: inherit; background: none; border: 0; padding: 0; min-height: 44px; cursor: pointer; color: rgba(255,255,255,.8); text-align: left">Поделиться страницей</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="w" style="padding-top: 32px; padding-bottom: 32px; text-align: center">
+<a href="https://a510.space/" class="s b" style="letter-spacing: .2em; text-decoration: none; color: #111">A510 ARCHITECTS</a>
+</div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Чертёж крупно">
+<div class="lb-bar"><button type="button" id="lb-close" class="pill pill-d" style="font-family: inherit; border: 0; cursor: pointer">Закрыть</button></div>
+<div class="lb-body"><img id="lb-img" src="" alt="Чертёж крупно"></div>
+</dialog>
+
+</div>
+<script>
+(function(){
+  var lb=document.getElementById('lb'),im=document.getElementById('lb-img');
+  document.querySelectorAll('[data-zoom]').forEach(function(b){
+    b.addEventListener('click',function(){
+      im.src=b.getAttribute('data-zoom');
+      if(lb.showModal){lb.showModal();}else{window.open(im.src,'_blank');}
+    });
+  });
+  document.getElementById('lb-close').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close();});
+  var sh=document.getElementById('share'),url='https://a510.space/designal/';
+  sh.addEventListener('click',function(){
+    try{
+      if(navigator.share){navigator.share({title:'A510 · Интерьер',url:url}).catch(function(){});return;}
+      if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){sh.textContent='Ссылка скопирована';});}
+    }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
