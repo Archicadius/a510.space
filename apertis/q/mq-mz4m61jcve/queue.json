@@ -953,6 +953,53 @@
           "sha256": "b00bf937dbde3ed878a5975171caaee5f0681c4ae3c2bda33bfa204fcf1f2d5b"
         }
       ]
+    },
+    {
+      "id": "261027-alperen-resend-small",
+      "to": "info@eylemgrup.com",
+      "from_name": "APERTIS · A510 Architects",
+      "subject": "Alperen Evleri — görseller ve proje sunumu",
+      "body": "Merhaba Eylem Grup ekibi,\n\nAlperen Evleri için iki özgün proje görselini iyileştirdik; ayrıca üç detay ve yaşam karesi hazırladık. İki örnek JPEG ektedir.\n\nSayfada önce/sonra karşılaştırmaları, ek kareler ve bağımsız olarak hazırladığımız markalı proje sunumu örneği yer alıyor:\nhttps://a510.space/apertis/r/alperen-261012/\n\nAlperen Evleri için eksiksiz bir görsel seti hazırlamamızı ister misiniz?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after-mail.jpg",
+          "url": "https://a510.space/apertis/r/alperen-261012/assets/view-01-after-mail.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 250772,
+          "sha256": "38cd16a20893d11b2779eedb8ffdb883ea1bcbfc415b2438b1b839facc897d27"
+        },
+        {
+          "filename": "view-02-after-mail.jpg",
+          "url": "https://a510.space/apertis/r/alperen-261012/assets/view-02-after-mail.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 248776,
+          "sha256": "1a3fd19873770fd88deba0e4570520a8f9e7df9862260c91213acd3e9fa2df92"
+        }
+      ],
+      "subject_canonical_english": "Alperen Evleri — images and a project presentation"
+    },
+    {
+      "id": "261027-hubox-resend-michael",
+      "to": "michael@hubox.net",
+      "subject": "Paramytha Hills — images and a project presentation",
+      "from_name": "APERTIS · A510 Architects",
+      "body": "Hello HUBOX team,\n\nWe prepared two enhanced views for Paramytha Hills, together with additional detail and lifestyle studies. The street-front and garden previews are attached.\n\nThe page shows the before-and-after comparisons, the additional frames and an example of a branded project presentation that your team can share with buyers in one link:\nhttps://a510.space/apertis/p/hubox-paramytha-hills/\n\nWould you like us to prepare a full image set for Paramytha Hills?\n\nAPERTIS · A510 Architects\napertis@a510.space\nhttps://a510.space/\n",
+      "attachments": [
+        {
+          "filename": "view-01-after-mail.jpg",
+          "url": "https://a510.space/apertis/p/hubox-paramytha-hills/assets/view-01-after-mail.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 250651,
+          "sha256": "14557461498a8e1d11f2fd813450b8ad7772603c98eed647b81c5c14615361c6"
+        },
+        {
+          "filename": "view-02-after-mail.jpg",
+          "url": "https://a510.space/apertis/p/hubox-paramytha-hills/assets/view-02-after-mail.jpg",
+          "content_type": "image/jpeg",
+          "byte_size": 245745,
+          "sha256": "17234b382ac9cc5b4191c1b3b1f22398592ca753b9fbdece364fb5b2a82d347d"
+        }
+      ]
     }
   ]
 }
