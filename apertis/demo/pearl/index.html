@@ -196,7 +196,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-bet
 <script>
 const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}}),{threshold:.15});
 document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
-(function(){var T='pearl-demo1';var B='https://a510-hub.vercel.app/api/apertis/visit';
+(function(){try{if(localStorage.getItem('a510_nt')==='1')return;}catch(e){}var T='pearl-demo1';var B='https://a510-hub.vercel.app/api/apertis/visit';
 try{fetch(B+'?t='+T,{mode:'no-cors'});}catch(e){}
 var t0=Date.now();
 addEventListener('pagehide',function(){

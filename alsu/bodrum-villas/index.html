@@ -208,7 +208,7 @@
 <dialog class="lightbox" id="lightbox"><img src="" alt=""><div class="lbar"><span data-cap></span><button type="button"><span lang="ru">Закрыть</span><span lang="en">Close</span><span lang="tr">Kapat</span></button></div></dialog>
 <script src="/prop/assets/prop.js"></script>
 <script>
-(function(){var T="alsu-bodrum-villas";var B='https://a510-hub.vercel.app/api/apertis/visit';
+(function(){try{if(localStorage.getItem('a510_nt')==='1')return;}catch(e){}var T="alsu-bodrum-villas";var B='https://a510-hub.vercel.app/api/apertis/visit';
 try{fetch(B+'?t='+T,{mode:'no-cors'}).catch(function(){});}catch(e){}
 var t0=Date.now();addEventListener('pagehide',function(){try{navigator.sendBeacon(B+'?t='+T+'&d='+Math.round((Date.now()-t0)/1000));}catch(e){}});
 })();
