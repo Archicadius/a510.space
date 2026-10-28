@@ -259,7 +259,7 @@ dialog.lb::backdrop{background:#fff}
   var r='direct';
   try{var q=new URLSearchParams(location.search).get('r');if(q){q=q.toLowerCase().replace(/[^a-z0-9-]/g,'').slice(0,20);if(q)r=q;}}catch(e){}
   var T='dsg-'+r;
-  function hit(t,d){try{if(localStorage.getItem('a510_nt')==='1')return;}catch(e){}var u=B+'?t='+encodeURIComponent(t)+(d!=null?'&d='+d:'');try{if(d!=null&&navigator.sendBeacon){navigator.sendBeacon(u);return;}fetch(u,{mode:'no-cors',keepalive:true}).catch(function(){});}catch(e){}}
+  function hit(t,d){try{if(/#notrack|[?&]notrack/.test(location.href)){localStorage.setItem('a510_nt','1');return;}if(localStorage.getItem('a510_nt')==='1')return;}catch(e){if(/notrack/.test(location.href))return;}var u=B+'?t='+encodeURIComponent(t)+(d!=null?'&d='+d:'');try{if(d!=null&&navigator.sendBeacon){navigator.sendBeacon(u);return;}fetch(u,{mode:'no-cors',keepalive:true}).catch(function(){});}catch(e){}}
   hit(T);
   var t0=Date.now(),sent=false;
   function bye(){if(sent)return;sent=true;hit(T,Math.round((Date.now()-t0)/1000));}

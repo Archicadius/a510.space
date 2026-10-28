@@ -7,8 +7,11 @@
   'use strict';
   var EP = 'https://a510-hub.vercel.app/api/site/hit';
   var d = document, w = window, L = location;
+  if (L.hash === '#notrack' || /[?&]notrack(=|&|$)/.test(L.search)) {
+    try { localStorage.setItem('a510_nt', '1'); } catch (e) {}
+    return;
+  }
   try {
-    if (L.hash === '#notrack') localStorage.setItem('a510_nt', '1');
     if (L.hash === '#track') localStorage.removeItem('a510_nt');
     if (localStorage.getItem('a510_nt') === '1') return;
   } catch (e) {}
