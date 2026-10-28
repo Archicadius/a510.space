@@ -43,6 +43,13 @@ img{display:block;max-width:100%}
 .full>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .full .shade{position:absolute;inset:0}
 .full .inner{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;box-sizing:border-box}
+.gl{color:rgba(255,255,255,.62)}
+.dark{background:#111;color:#fff}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.pcell{border-top:1px solid #d2d2d7;padding-top:18px;display:flex;flex-direction:column;gap:10px}
+.pcell.dk{border-top-color:rgba(255,255,255,.3)}
+.abig{font-size:56px}.aprice{font-size:56px;white-space:nowrap}
+@media (max-width:760px){.abig{font-size:36px}.aprice{font-size:30px}.pair{gap:16px}}
 details>summary{list-style:none;cursor:pointer}
 details>summary::-webkit-details-marker{display:none}
 details[open] .s-closed,details:not([open]) .s-open{display:none}
@@ -90,7 +97,7 @@ dialog.lb::backdrop{background:#fff}
 <div class="w g12" style="width: 100%; padding-bottom: 64px; row-gap: 24px; align-items: end">
 <h1 class="xl c-l" style="grid-column: 1 / span 8">Интерьер<br>как архитектура</h1>
 <div class="c-r" style="grid-column: 9 / span 4; display: flex; flex-direction: column; gap: 22px; padding-bottom: 6px">
-<p class="s"><span class="b">От генплана посёлка до ручки шкафа.</span> Мы проектируем улицы, дома и то, как в них живут. Ваш сценарий жизни станет продуманным интерьером.</p>
+<p class="s"><span class="b">От генплана посёлка до ручки шкафа</span> Мы проектируем улицы, дома и то, как в них живут. Ваш сценарий жизни станет продуманным интерьером</p>
 <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 14px 26px">
 <a class="pill pill-l" href="https://t.me/a510_luna_bot?start=designal">Обсудить проект</a>
 <a class="tl" href="#price" style="color: #fff">Стоимость</a>
@@ -104,7 +111,7 @@ dialog.lb::backdrop{background:#fff}
 <a href="#alliance" class="mstack" style="display: flex; align-items: center; justify-content: space-between; gap: 14px 40px; padding: 28px 0; border-top: 1px solid #111; border-bottom: 1px solid #111; text-decoration: none; color: #111">
 <span style="display: flex; flex-direction: column; gap: 6px">
 <span class="m">Владельцам домов «Альянс Девелопмент» — особые условия</span>
-<span class="s g">Мы спроектировали все дома Альянса и знаем их изнутри и снаружи.</span>
+<span class="s g">Мы спроектировали все дома Альянса и знаем их изнутри и снаружи</span>
 </span>
 <span class="m" style="white-space: nowrap">от 1 800 ₽/м²</span>
 </a>
@@ -113,7 +120,7 @@ dialog.lb::backdrop{background:#fff}
 <section class="w g12 mpad" style="padding-top: 140px; row-gap: 32px; align-items: center">
 <div class="c-l" style="grid-column: 1 / span 4; display: flex; flex-direction: column; gap: 22px">
 <h2 class="xl">Сначала — как вы живёте</h2>
-<p class="s">Кто собирается за этим столом по воскресеньям, где работать, где хранить вещи. Мы начинаем с планировки и света, а материалы и мебель подбираем под ваш уклад.</p>
+<p class="s">Кто собирается за этим столом по воскресеньям, где работать, где хранить вещи. Мы начинаем с планировки и света, а материалы и мебель подбираем под ваш уклад</p>
 </div>
 <div class="ph c-r m43" style="grid-column: 6 / span 7; aspect-ratio: 2200 / 1650"><img src="img/dining.webp" alt="Столовая с большим столом и окном в сад" loading="lazy"></div>
 </section>
@@ -130,7 +137,7 @@ dialog.lb::backdrop{background:#fff}
 <div class="ph c-l m45" style="grid-column: 1 / span 6; aspect-ratio: 4 / 5"><img src="img/storage.webp" alt="Прихожая со встроенными подсвеченными стеллажами и шкафами" loading="lazy"></div>
 <div class="c-r mo1" style="grid-column: 8 / span 5; display: flex; flex-direction: column; gap: 22px">
 <h2 class="xl">Каждый метр работает</h2>
-<p class="s">Шкафы, ниши, подсветка, розетки и проходы решаем на плане — до выбора плитки и мебели. Вещам есть место, свету есть смысл, а интерьер удобен каждый день, а не только на фотографии.</p>
+<p class="s">Шкафы, ниши, подсветка, розетки и проходы решаем на плане — до выбора плитки и мебели. Вещам есть место, свету есть смысл, а интерьер удобен каждый день, а не только на фотографии</p>
 </div>
 </section>
 
@@ -142,7 +149,7 @@ dialog.lb::backdrop{background:#fff}
 <section class="w g12 mpad" style="padding-top: 140px; row-gap: 32px; align-items: center">
 <div class="c-l" style="grid-column: 1 / span 5; display: flex; flex-direction: column; gap: 22px">
 <h2 class="xl">Чертежи для стройки</h2>
-<p class="s">Каждая стена, каждый шкаф и светильник на своём месте ещё до начала ремонта. Проект можно отдать бригаде — ничего не придётся придумывать на объекте.</p>
+<p class="s">Каждая стена, каждый шкаф и светильник на своём месте ещё до начала ремонта. Проект можно отдать бригаде — ничего не придётся придумывать на объекте</p>
 </div>
 <div class="c-r" style="grid-column: 7 / span 6"><img src="img/axon.webp" alt="Аксонометрия первого этажа дома с мебелью и отделкой" style="width: 100%" loading="lazy"></div>
 </section>
@@ -151,43 +158,40 @@ dialog.lb::backdrop{background:#fff}
 <h2 class="xl">Стоимость</h2>
 
 <div class="g12" style="margin-top: 56px; row-gap: 32px; border-top: 1px solid #111; padding-top: 32px; align-items: start">
-<div class="c-l" style="grid-column: 1 / span 4; display: flex; flex-direction: column; gap: 16px">
-<h3 class="m">Эксклюзивный интерьер</h3>
-<p class="m">от 5 000 ₽/м²</p>
-<p class="s">Для сложных проектов и искушённых заказчиков. Интерьер, которого больше ни у кого не будет: мебель и детали по нашим эскизам, редкие материалы, решения, найденные под конкретный дом. Объём работы обсуждаем после знакомства с объектом.</p>
+<div class="c-l" style="grid-column: 1 / span 4; display: flex; flex-direction: column; gap: 16px"><h3 class="m">Интерьер</h3><p class="s">Продуманный интерьер, готовый к ремонту: от планировки до ведомостей материалов</p></div>
+<div class="c-r pair" style="grid-column: 6 / span 7">
+<div class="pcell"><p class="s b">Концепция</p><p class="m">3 000 ₽/м²</p><p class="s g">Планировка с мебелью, концепция и палитра материалов, визуализации, итоговый PDF</p></div>
+<div class="pcell"><p class="s b">Проект</p><p class="m">5 000 ₽/м²</p><p class="s g">Всё из концепции, а также планы отделки и оборудования, развёртки стен, ведомости материалов</p></div>
 </div>
-<div class="ph c-r m43" style="grid-column: 6 / span 7; aspect-ratio: 2400 / 1840"><img src="img/exclusive.webp" alt="Гостиная с белым диваном, деревянными панелями и люстрой, вид на кухню" loading="lazy"></div>
 </div>
+</section>
 
-<div id="alliance" class="g12" style="margin-top: 72px; row-gap: 32px; border-top: 1px solid #111; padding-top: 32px">
-<div class="c-l" style="grid-column: 1 / span 4; display: flex; flex-direction: column; gap: 16px">
-<h3 class="m">Для домов «Альянс Девелопмент»</h3>
-<p class="s">Мы спроектировали все дома Альянса и знаем их изнутри и снаружи. Поэтому продуманный, красивый интерьер, готовый к ремонту, для них стоит меньше.</p>
+<section class="dark" id="alliance" style="margin-top: 72px">
+<div class="w g12" style="padding-top: 80px; padding-bottom: 80px; row-gap: 32px; align-items: start">
+<div class="c-l" style="grid-column: 1 / span 5; display: flex; flex-direction: column; gap: 20px">
+<h3 class="xl abig">Для домов «Альянс Девелопмент»</h3>
+<p class="s gl">Мы спроектировали все дома Альянса и знаем их изнутри и снаружи, поэтому для владельцев этих домов интерьер стоит меньше</p>
 </div>
-<div class="c-r" style="grid-column: 6 / span 7; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
-<div class="mf" style="border-top: 1px solid #d2d2d7; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
-<p class="s b">Концепция</p>
-<p class="m">1 800 ₽/м²</p>
-<p class="s g">Планировка с мебелью, концепция и палитра материалов, визуализации, итоговый PDF.</p>
-</div>
-<div class="mf" style="border-top: 1px solid #d2d2d7; padding-top: 18px; display: flex; flex-direction: column; gap: 10px">
-<p class="s b">Проект</p>
-<p class="m">3 000 ₽/м²</p>
-<p class="s g">Всё из концепции, а также планы отделки и оборудования, развёртки стен, ведомости материалов.</p>
+<div class="c-r pair" style="grid-column: 7 / span 6">
+<div class="pcell dk"><p class="s b">Концепция</p><p class="xl aprice">1 800 ₽/м²</p><p class="s gl">вместо 3 000 ₽/м²</p></div>
+<div class="pcell dk"><p class="s b">Проект</p><p class="xl aprice">3 000 ₽/м²</p><p class="s gl">вместо 5 000 ₽/м²</p></div>
+<p class="s" style="grid-column: 1 / -1; margin-top: 8px">Например, проект дома 150 м² — 450 000 ₽ вместо 750 000 ₽</p>
 </div>
 </div>
-</div>
+</section>
 
-<div class="g12" style="margin-top: 40px; row-gap: 12px">
-<p class="s c-l" style="grid-column: 1 / span 5">Например, дом 150 м²: концепция — 270 000 ₽, проект — 450 000 ₽.</p>
-<p class="s g c-r" style="grid-column: 6 / span 7">Стоимость считается по проектируемой площади. Площадь, состав и итоговую сумму фиксируем в договоре до начала работы.</p>
+<section class="w">
+<div class="g12" style="margin-top: 72px; row-gap: 32px; border-top: 1px solid #111; padding-top: 32px; align-items: start">
+<div class="c-l" style="grid-column: 1 / span 4; display: flex; flex-direction: column; gap: 16px"><h3 class="m">Эксклюзивный интерьер</h3><p class="m">от 8 000 ₽/м²</p><p class="s">Для сложных проектов и искушённых заказчиков. Мебель и детали по нашим эскизам, редкие материалы, решения, найденные под конкретный дом</p></div>
+<div class="ph c-r m43" style="grid-column: 6 / span 7; aspect-ratio: 2400 / 1840"><img src="img/exclusive.webp" alt="Гостиная с белым диваном, деревянными панелями и люстрой" loading="lazy"></div>
 </div>
+<p class="s g" style="margin-top: 40px">Стоимость считается по проектируемой площади. Площадь, состав и итоговую сумму фиксируем в договоре до начала работы</p>
 
 <details style="margin-top: 36px; border-top: 1px solid #d2d2d7; border-bottom: 1px solid #d2d2d7">
 <summary class="s b" style="padding: 18px 0"><span class="s-closed">Состав и условия</span><span class="s-open">Закрыть</span></summary>
 <div class="g12" style="padding-bottom: 32px; row-gap: 24px">
-<div class="c-l" style="grid-column: 1 / span 6"><p class="s b">Проект интерьера, полный состав</p><p class="s g">Планы монтажа и демонтажа, полов, потолков и отделки, схемы света, розеток и сантехники, развёртки стен, ведомости материалов, PDF-альбом согласованных решений.</p></div>
-<div class="c-r" style="grid-column: 7 / span 6"><p class="s b">Обсуждаются отдельно</p><p class="s g">Обмеры, инженерные разделы, комплектация и авторский надзор. Строительные работы, мебель и материалы в стоимость проекта не входят. Число визуализаций, правок и сроки согласуем в задании.</p></div>
+<div class="c-l" style="grid-column: 1 / span 6"><p class="s b">Проект интерьера, полный состав</p><p class="s g">Планы монтажа и демонтажа, полов, потолков и отделки, схемы света, розеток и сантехники, развёртки стен, ведомости материалов, PDF-альбом согласованных решений</p></div>
+<div class="c-r" style="grid-column: 7 / span 6"><p class="s b">Обсуждаются отдельно</p><p class="s g">Обмеры, инженерные разделы, комплектация и авторский надзор. Строительные работы, мебель и материалы в стоимость проекта не входят. Число визуализаций, правок и сроки согласуем в задании</p></div>
 </div>
 </details>
 </section>
@@ -195,7 +199,7 @@ dialog.lb::backdrop{background:#fff}
 <section class="w mpad" style="padding-top: 160px">
 <div class="g12" style="row-gap: 20px; align-items: end">
 <h2 class="xl c-l" style="grid-column: 1 / span 6">Примеры альбомов</h2>
-<p class="s g c-r" style="grid-column: 8 / span 5">Фрагменты ранее выполненных проектов: развёртка стены гостиной с размерами, отделкой и розетками, планировка с мебелью.</p>
+<p class="s g c-r" style="grid-column: 8 / span 5">Фрагменты ранее выполненных проектов: развёртка стены гостиной с размерами, отделкой и розетками, планировка с мебелью</p>
 </div>
 <button class="zoom" type="button" data-zoom="img/elevation.webp" aria-label="Увеличить развёртку" style="margin-top: 56px; width: 100%"><img src="img/elevation.webp" alt="Развёртка стены гостиной с панелями, телевизором, размерами и отметками розеток" style="width: 100%" loading="lazy"></button>
 <div class="g12" style="margin-top: 48px; row-gap: 32px; align-items: start">
@@ -215,7 +219,7 @@ dialog.lb::backdrop{background:#fff}
 <div class="w g12" style="width: 100%; padding-bottom: 64px; row-gap: 24px; align-items: end">
 <h2 class="xl c-l" style="grid-column: 1 / span 7">Расскажите<br>о своём доме</h2>
 <div class="c-r" style="grid-column: 8 / span 5; display: flex; flex-direction: column; gap: 20px; padding-bottom: 6px">
-<p class="s">Пришлите план, площадь и несколько слов о том, что важно в будущем интерьере. Если у вас дом Альянса, достаточно назвать модель.</p>
+<p class="s">Пришлите план, площадь и несколько слов о том, что важно в будущем интерьере. Если у вас дом Альянса, достаточно назвать модель</p>
 <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 14px 26px">
 <a class="pill pill-l" href="https://t.me/a510_luna_bot?start=designal">Обсудить проект</a>
 <a class="tl" href="mailto:designal@a510.space" style="color: #fff">designal@a510.space</a>
@@ -255,12 +259,12 @@ dialog.lb::backdrop{background:#fff}
   var r='direct';
   try{var q=new URLSearchParams(location.search).get('r');if(q){q=q.toLowerCase().replace(/[^a-z0-9-]/g,'').slice(0,20);if(q)r=q;}}catch(e){}
   var T='dsg-'+r;
-  function hit(t,d){try{if(localStorage.getItem('a510_nt')==='1')return;}catch(e){}var u=B+'?t='+encodeURIComponent(t)+(d!=null?'&d='+d:'');try{if(d!=null&&navigator.sendBeacon){navigator.sendBeacon(u);return;}fetch(u,{mode:'no-cors',keepalive:true}).catch(function(){});}catch(e){}}
+  function hit(t,d){var u=B+'?t='+encodeURIComponent(t)+(d!=null?'&d='+d:'');try{if(d!=null&&navigator.sendBeacon){navigator.sendBeacon(u);return;}fetch(u,{mode:'no-cors',keepalive:true}).catch(function(){});}catch(e){}}
   hit(T);
   var t0=Date.now(),sent=false;
   function bye(){if(sent)return;sent=true;hit(T,Math.round((Date.now()-t0)/1000));}
   addEventListener('pagehide',bye);
-  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')bye();else sent=false;});
+  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')bye();});
   function clk(a){return ('dsgc-'+a+'-'+r).slice(0,32);}
   document.querySelectorAll('a[href]').forEach(function(a){
     var h=a.getAttribute('href'),k=null;
@@ -273,6 +277,7 @@ dialog.lb::backdrop{background:#fff}
   if(pr&&'IntersectionObserver' in window){new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting&&!seen){seen=true;hit(clk('seeprice'));o.disconnect();}});}).observe(pr);}
   var sh=document.getElementById('share'),url='https://a510.space/designal/?r='+(r==='direct'?'fw':(r+'-fw').slice(0,20));
   sh.addEventListener('click',function(){
+    hit(clk('share'));
     try{
       if(navigator.share){navigator.share({title:'A510 · Интерьер',url:url}).catch(function(){});return;}
       if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){sh.textContent='Ссылка скопирована';});}
@@ -280,7 +285,5 @@ dialog.lb::backdrop{background:#fff}
   });
 })();
 </script>
-<script defer src="/assets/a510-t.js" data-t="dsg"></script>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "67f02ff56b2d4e06b0002545d33c09e5"}'></script>
 </body>
 </html>
