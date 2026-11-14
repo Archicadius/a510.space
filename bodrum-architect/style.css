@@ -33,7 +33,7 @@ footer{justify-content:center;padding-block:22px;font-size:14px}
  .hero-inner{height:86svh;min-height:540px}.hero-image{object-position:58% center}.cover-text{grid-template-columns:1fr;gap:18px;padding-block:32px}.cover-text p{font-size:17px}.cover-text .pill{margin-top:16px}h1{font-size:clamp(44px,10.6vw,68px)}
  .intro{flex-direction:column;align-items:start;gap:26px}.intro>img{width:168px}
  .copy p{margin-top:13px}
- .project-pair img{aspect-ratio:4/3}.project-pair figcaption{font-size:13px}.meeting .actions{gap:3px}
+ .project-pair figcaption{font-size:13px}.meeting .actions{gap:3px}
 }
 
 
@@ -61,4 +61,21 @@ footer{justify-content:center;padding-block:22px;font-size:14px}
  .studio-facts{gap:12px}
  .studio-facts strong{font-size:clamp(28px,8.5vw,51px)}
  .studio-facts li>span{font-size:14px}
+}
+
+/* Keep the original architectural composition, including both ends of the facade. */
+.chapter .scene--facade{min-height:0;grid-template-columns:minmax(0,1fr)}
+.scene--facade>img,.scene--facade::before,.scene--facade .scene-copy{grid-area:1/1}
+.scene--facade>img{position:static;height:auto;aspect-ratio:16/9}
+.scene--facade::before{background:linear-gradient(to top,#000c,transparent 48%)}
+.scene--facade .scene-copy{padding-block:clamp(24px,2.7vw,48px)}
+
+@media(max-width:1100px){
+ .scene--facade::before{position:relative;align-self:stretch;background:linear-gradient(to top,#000,transparent 36%)}
+ .scene--facade .scene-copy{grid-area:2/1;margin-top:max(-10vw,-64px);padding-block:0 28px}
+ .scene--facade .scene-copy p{margin-top:14px}
+}
+@media(max-width:760px),(max-width:960px) and (max-height:520px) and (pointer:coarse){
+ .project-pair{grid-template-columns:minmax(0,1fr);row-gap:26px}
+ .project-pair img{aspect-ratio:auto}
 }
