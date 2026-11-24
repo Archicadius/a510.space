@@ -211,3 +211,14 @@ figcaption{margin-top:10px;font-size:15px}
 /* 261124 pass 25: TV and large screens — the page is shown as on a 1536 px laptop, enlarged */
 @media(min-width:1800px){html{zoom:1.25}.scene{min-height:min(calc(92svh/1.25),1000px)}.scene.wide{min-height:0}}
 @media(min-width:2400px){html{zoom:1.6}.scene{min-height:min(calc(92svh/1.6),1000px)}.scene.wide{min-height:0}}
+
+/* 261124 pass 26 (trial): light theme. Follows the system setting; ?theme=light or ?theme=dark forces one. Photos and text on photos stay as they are */
+html.light body{background:#fff;color:#000}
+html.light .scene,html.light .pic b{color:#fff}
+html.light .kicker{color:#6b6b6b}
+html.light .scene .kicker.on{color:#fff}
+html.light .frames figcaption,html.light .five span{color:#555}
+html.light .planbox{filter:invert(1)}
+html.light .plan5 .key .stops li::before{background:#000;color:#fff}
+html.light .plan5 .key li{color:#000}
+html.light a:focus-visible,html.light button:focus-visible{outline-color:#000}
