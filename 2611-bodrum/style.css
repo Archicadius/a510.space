@@ -207,3 +207,7 @@ figcaption{margin-top:10px;font-size:15px}
 .scene.wide{min-height:0;aspect-ratio:1934/813}
 .frames.wide img{aspect-ratio:1934/813}
 @media(max-width:900px){.scene.wide{aspect-ratio:auto;min-height:clamp(440px,86svh,820px)}}
+
+/* 261124 pass 25: TV and large screens — the page is shown as on a 1536 px laptop, enlarged */
+@media(min-width:1800px){html{zoom:1.25}.scene{min-height:min(calc(92svh/1.25),1000px)}.scene.wide{min-height:0}}
+@media(min-width:2400px){html{zoom:1.6}.scene{min-height:min(calc(92svh/1.6),1000px)}.scene.wide{min-height:0}}
