@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<title>A510 Architects</title>
+<rect width="1000" height="1000" rx="180" fill="#000"/>
+<g transform="translate(150 150) scale(.7)" fill="none" stroke="#fff" stroke-width="34">
+<path d="M50 455v-253.1l202.5 -151.9 202.5 151.9v253.1z" fill="#fff"/>
+<path d="M50 455v-253.1l202.5 -151.9 202.5 151.9v253.1z" transform="translate(495)"/>
+<path d="M50 455v-253.1l202.5 -151.9 202.5 151.9v253.1z" transform="translate(0,495)"/>
+<path d="M50 455v-253.1l202.5 -151.9 202.5 151.9v253.1z" transform="translate(495,495)"/>
+</g>
+</svg>
