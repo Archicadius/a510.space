@@ -198,3 +198,12 @@ figcaption{margin-top:10px;font-size:15px}
 .frames.five5 figure{grid-column:span 2}
 .frames.five5 figure:nth-child(-n+2){grid-column:span 3}
 @media(max-width:760px){.frames.five5 figure,.frames.five5 figure:nth-child(-n+2){grid-column:1/-1}}
+.scene .tag{position:absolute;right:var(--pad);bottom:clamp(32px,4.5vw,76px);margin:0;text-align:right;max-width:20em}
+.scene .tag b{display:block;font-size:clamp(18px,1.9vw,30px);font-weight:600;line-height:1.05;letter-spacing:-.025em}
+.scene .tag span{display:block;margin-top:8px;font-size:15px;color:#d6d6d6}
+@media(max-width:760px){.scene .tag{display:none}}
+
+/* 261124 pass 20: wide style frames 1934x813, shown uncropped */
+.scene.wide{min-height:0;aspect-ratio:1934/813}
+.frames.wide img{aspect-ratio:1934/813}
+@media(max-width:900px){.scene.wide{aspect-ratio:auto;min-height:clamp(440px,86svh,820px)}}
